@@ -1,0 +1,166 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Магазины
+	.cart1-wrapper
+		.cart-position
+			.container
+				.cart-pos-item
+					.cart-pos-icon
+						img(src="./img/busket.png", alt="")
+					h5 Ваша корзина
+				.cart-dotted-border
+				.cart-pos-item.next-step
+					.cart-pos-icon
+						img(src="./img/delivery.png", alt="")
+					h5 Детали получения
+				.cart-dotted-border
+				.cart-pos-item.next-step
+					.cart-pos-icon
+						img(src="./img/payment.png", alt="")
+					h5 Способ оплаты
+		.cart-content
+			.container
+				.row
+					.col-md-9
+						.cart-product-wrapper
+							.cart-product-image
+								img(src="./img/banka.png", alt="")
+							.cart-product-text
+								p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+								a Удалить
+							.cart-product-price-wrapper
+								p.cart-product-price
+									| 2390
+									span 
+										img(src="./img/rubl1.svg", alt="")
+								span Цена
+							.cart-product-quantity-wrapper
+								select#sel1.form-control
+									option 1
+									option 2
+									option 3
+									option 4
+								span Кол-во
+							.cart-product-total-price-wrapper
+								p.cart-product-price
+									| 2390
+									span 
+										img(src="./img/rubl1.svg", alt="")
+								span Сумма
+						.cart-product-wrapper
+							.cart-product-image
+								img(src="./img/banka.png", alt="")
+							.cart-product-text
+								p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+								a Удалить
+							.cart-product-price-wrapper
+								p.cart-product-price
+									| 2390
+									span 
+										img(src="./img/rubl1.svg", alt="")
+								span Цена
+							.cart-product-quantity-wrapper
+								select#sel1.form-control
+									option 1
+									option 2
+									option 3
+									option 4
+								span Кол-во
+							.cart-product-total-price-wrapper
+								p.cart-product-price
+									| 2390
+									span 
+										img(src="./img/rubl1.svg", alt="")
+								span Сумма
+					.col-md-3
+						.cart-sum
+							h5 Товары (2)
+							.dotted-border
+							.total-cart-wrapper
+								h5 Всего (руб.)
+								p.total-cart-sum 12199
+							.dotted-border
+							.button-cart-buy
+								a(href="./cart2.html") Оформить заказ
+		.category-you-saw.may-like
+				.container
+					h1 С этим товаром часто покупают	
+					.row
+						.col-md-3
+							.main-product-slider-item
+								.image-wrapper
+									img(src="img/banka.png", alt="")
+								.text-wrapper
+									p.slider-product-name Интерьерная краска SUPERWEISS
+									p.slider-product-description Ослепительно белая акриловая краска для внутренних работ
+								.action-block
+									.prices
+										.new-price
+											p 
+												| 12199
+												span
+													img(src="./img/rubl1.svg", alt="")
+									.button-buy
+										img(class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAABcRAAAXEQHKJvM/AAABXElEQVRIS+2WYZWDMBCEkYAEJEQCEpCABCQgAQmRcBIioRJOQh3MZUr2ulkSAv3deW9e6Sb5kuxCoAPQVbxEB+x6Rvvo/qT/waUgAQ+U9cCNCUrBGljkcRxzCT4b0Bo9YE8PU7OlmHi+A9er3kybi/7FUdVU2YDWoOIEP1FXQM5pwms7orZkLWfGXIJPJj6qth8VX5CzXvA+DXDpVyydVgXwBqDbVrxT+KqBnV06aAfVPpk2j7qmrhAkTFdfw+VWZOyswNRaglMcyFXqbd9VFf6JeEfpNB3gM9rb9akfC2cLmv238M500PmmRuQFHfGGyrWoCZfiiSzc+jb8DPaFX/IXfh/e2w5oA8V8YvULJDCoH3eeD60jmB6wH2yEBZQV7Fas2CYvE14T1Dp7RK6Uq0/FSTk5WVxM9g4dcX1VFEFMy4z8S+HfNtCjnEM5qwlyJVDJtQbuYkH7FDz1H6QcYWHKGKzGAAAAAElFTkSuQmCC" alt="")
+										a КУПИТЬ
+						.col-md-3
+							.main-product-slider-item
+								.image-wrapper
+									img(src="img/banka.png", alt="")
+								.text-wrapper
+									p.slider-product-name Интерьерная краска SUPERWEISS
+									p.slider-product-description Ослепительно белая акриловая краска для внутренних работ
+								.action-block
+									.prices
+										.new-price
+											p 
+												| 12199
+												span
+													img(src="./img/rubl1.svg", alt="")
+									.button-buy
+										img(class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAABcRAAAXEQHKJvM/AAABXElEQVRIS+2WYZWDMBCEkYAEJEQCEpCABCQgAQmRcBIioRJOQh3MZUr2ulkSAv3deW9e6Sb5kuxCoAPQVbxEB+x6Rvvo/qT/waUgAQ+U9cCNCUrBGljkcRxzCT4b0Bo9YE8PU7OlmHi+A9er3kybi/7FUdVU2YDWoOIEP1FXQM5pwms7orZkLWfGXIJPJj6qth8VX5CzXvA+DXDpVyydVgXwBqDbVrxT+KqBnV06aAfVPpk2j7qmrhAkTFdfw+VWZOyswNRaglMcyFXqbd9VFf6JeEfpNB3gM9rb9akfC2cLmv238M500PmmRuQFHfGGyrWoCZfiiSzc+jb8DPaFX/IXfh/e2w5oA8V8YvULJDCoH3eeD60jmB6wH2yEBZQV7Fas2CYvE14T1Dp7RK6Uq0/FSTk5WVxM9g4dcX1VFEFMy4z8S+HfNtCjnEM5qwlyJVDJtQbuYkH7FDz1H6QcYWHKGKzGAAAAAElFTkSuQmCC" alt="")
+										a КУПИТЬ
+						.col-md-3
+							.main-product-slider-item
+								.image-wrapper
+									img(src="img/banka.png", alt="")
+								.text-wrapper
+									p.slider-product-name Интерьерная краска SUPERWEISS
+									p.slider-product-description Ослепительно белая акриловая краска для внутренних работ
+								.action-block
+									.prices
+										.new-price
+											p 
+												| 12199
+												span
+													img(src="./img/rubl1.svg", alt="")
+									.button-buy
+										img(class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAABcRAAAXEQHKJvM/AAABXElEQVRIS+2WYZWDMBCEkYAEJEQCEpCABCQgAQmRcBIioRJOQh3MZUr2ulkSAv3deW9e6Sb5kuxCoAPQVbxEB+x6Rvvo/qT/waUgAQ+U9cCNCUrBGljkcRxzCT4b0Bo9YE8PU7OlmHi+A9er3kybi/7FUdVU2YDWoOIEP1FXQM5pwms7orZkLWfGXIJPJj6qth8VX5CzXvA+DXDpVyydVgXwBqDbVrxT+KqBnV06aAfVPpk2j7qmrhAkTFdfw+VWZOyswNRaglMcyFXqbd9VFf6JeEfpNB3gM9rb9akfC2cLmv238M500PmmRuQFHfGGyrWoCZfiiSzc+jb8DPaFX/IXfh/e2w5oA8V8YvULJDCoH3eeD60jmB6wH2yEBZQV7Fas2CYvE14T1Dp7RK6Uq0/FSTk5WVxM9g4dcX1VFEFMy4z8S+HfNtCjnEM5qwlyJVDJtQbuYkH7FDz1H6QcYWHKGKzGAAAAAElFTkSuQmCC" alt="")
+										a КУПИТЬ
+						.col-md-3
+							.main-product-slider-item
+								.image-wrapper
+									img(src="img/banka.png", alt="")
+								.text-wrapper
+									p.slider-product-name Интерьерная краска SUPERWEISS
+									p.slider-product-description Ослепительно белая акриловая краска для внутренних работ
+								.action-block
+									.prices
+										.new-price
+											p 
+												| 12199
+												span
+													img(src="./img/rubl1.svg", alt="")
+									.button-buy
+										img(class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAAACXBIWXMAABcRAAAXEQHKJvM/AAABXElEQVRIS+2WYZWDMBCEkYAEJEQCEpCABCQgAQmRcBIioRJOQh3MZUr2ulkSAv3deW9e6Sb5kuxCoAPQVbxEB+x6Rvvo/qT/waUgAQ+U9cCNCUrBGljkcRxzCT4b0Bo9YE8PU7OlmHi+A9er3kybi/7FUdVU2YDWoOIEP1FXQM5pwms7orZkLWfGXIJPJj6qth8VX5CzXvA+DXDpVyydVgXwBqDbVrxT+KqBnV06aAfVPpk2j7qmrhAkTFdfw+VWZOyswNRaglMcyFXqbd9VFf6JeEfpNB3gM9rb9akfC2cLmv238M500PmmRuQFHfGGyrWoCZfiiSzc+jb8DPaFX/IXfh/e2w5oA8V8YvULJDCoH3eeD60jmB6wH2yEBZQV7Fas2CYvE14T1Dp7RK6Uq0/FSTk5WVxM9g4dcX1VFEFMy4z8S+HfNtCjnEM5qwlyJVDJtQbuYkH7FDz1H6QcYWHKGKzGAAAAAElFTkSuQmCC" alt="")
+										a КУПИТЬ
+include footer.jade

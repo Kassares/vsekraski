@@ -1,0 +1,77 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Сервис >
+							li 
+								a Часто задаваемые вопросы
+	.faq-wrapper
+		.container
+			h1 Часто задаваемые вопросы
+			h5.faq-header
+				| Здесь вы найдете ответы на самые частые вопросы:
+				br
+				a о товарах на сайте и в магазинах,
+				a доставке,
+				a оплате,
+				a акциях и специальных программах,
+				a сервисе,
+				br
+				| а также о многом другом.
+			p.question-category Наличие и характеристики товара:
+			#accordion.panel-group(role='tablist', aria-multiselectable='true')
+				.panel.panel-default
+					#ask1.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#answer1', aria-expanded='true', aria-controls='collapseOne')
+								| Как зарезервировать товар? 
+						img(src="./img/blue-plus.png", alt="")        
+					#answer1.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Под изображением товара вы найдёте кнопку «характеристики», после нажатия которой откроется вкладка с основными характеристиками продукта.
+				.panel.panel-default
+					#ask2.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#answer2', aria-expanded='true', aria-controls='collapseOne')
+								| Где можно посмотреть характеристики товара?
+						img(src="./img/blue-plus.png", alt="")        
+					#answer2.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Под изображением товара вы найдёте кнопку «характеристики», после нажатия которой откроется вкладка с основными характеристиками продукта.
+				.panel.panel-default
+					#ask3.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#answer3', aria-expanded='true', aria-controls='collapseOne')
+								| Могу ли я заказать товар в интернет-магазине другого города?
+						img(src="./img/blue-plus.png", alt="")        
+					#answer3.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Под изображением товара вы найдёте кнопку «характеристики», после нажатия которой откроется вкладка с основными характеристиками продукта.
+			p.question-category Акции. Стоимость товара:
+			#accordion.panel-group(role='tablist', aria-multiselectable='true')
+				.panel.panel-default
+					#ask4.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#answer4', aria-expanded='true', aria-controls='collapseOne')
+								| Как узнать, какие сейчас проходят акции? 
+						img(src="./img/blue-plus.png", alt="")        
+					#answer4.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Под изображением товара вы найдёте кнопку «характеристики», после нажатия которой откроется вкладка с основными характеристиками продукта.
+				.panel.panel-default
+					#ask5.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#answer5', aria-expanded='true', aria-controls='collapseOne')
+								| Как узнать, какие сейчас проходят акции?
+						img(src="./img/blue-plus.png", alt="")        
+					#answer5.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Под изображением товара вы найдёте кнопку «характеристики», после нажатия которой откроется вкладка с основными характеристиками продукта.
+include footer.jade

@@ -1,0 +1,87 @@
+include header.jade
+
+.layer-testimonial-white
+	.testimonial-success-wrapper
+		.testimonial-success
+			h1 Спасибо за вопрос!
+			p Мы с радостью на него ответим, в течении 30 минут.
+			.button-testimonial-to-main
+				a(href="./index.html") На главную
+			.close-test
+				img(src="./img/close-test.png", alt="")
+.layer-ask-form
+	.ask-form-wrapper
+		.title-ask-form
+			h3 Обратная связь
+
+		form
+			h5 Пожалуйста заполните формы, а потом напишите сообщение, мы с радостью вам ответим, в течении 30 минут.
+			p
+				| Имя
+				span *
+			input(type="text")		
+			p
+				| Фамилия 
+				span *
+			input(type="text")		
+			p
+				| E-mail 
+				span *
+			input(type="text")		
+			p
+				| Номер телефона
+				span *
+			input(type="text")
+			p
+				| Сообщение
+				span *
+			textarea(type="text")
+			.checkbox-wrapper
+				input(id="card-bonus",class="type-checkbox", type="checkbox")
+				label(for="card-bonus")
+				p.card-bonus Я представитель юридического лица
+			.sign-up-button#send-ask-button
+				a 
+					p Отправить	
+		.close-ask-form
+			img(src="./img/close-test.png", alt="")
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Сервис >
+							li 
+								a Часто задаваемые вопросы
+	.ask-wrapper
+		.container
+			h1 Задать вопрос
+			h5 Прежде чем задать вопрос, вы можете перейти в раздел «Часто задаваемые вопросы», и там найти ответ.
+			.ask-send
+				p Уважаемые покупатели! Мы рады предложить вам помощь в решении возникших сложностей с услугами и товарами, приобретенными в нашем магазине. Вы можете оставить заявку в форме обратной связи или обратиться к нам по телефону.
+				.button-ask#form-ask
+					a Обратная связь
+			.phones-to-ask
+				h5 Задать вопрос по телефону
+				.phones-ask-wrapper
+					.phone-ask-item
+						.phone-name
+							p Узнать о вашей доставке
+						.phone-number-ask
+							p +7 (4852) 555-555 (доб. 122)
+					.phone-ask-item
+						.phone-name
+							p Узнать о наличие
+						.phone-number-ask
+							p +7 (4852) 555-555 (доб. 124)
+					.phone-ask-item
+						.phone-name
+							p По общим вопросам
+						.phone-number-ask
+							p +7 (4852) 555-555 (доб. 132)
+include footer.jade 

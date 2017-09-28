@@ -1,0 +1,85 @@
+.shops-header
+	h1
+		padding: 39px 0px 44px
+		span
+			border-bottom: 1px dashed #dadada
+			cursor: pointer
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				background: url(../img/arrow-down.png)
+				background-size: cover
+				width: 12px
+				height: 10px
+				top: 40% 
+		ul
+			display: none
+	.how-display-shops
+		cursor: pointer
+		width: 50%
+		float: left
+		text-align: right
+		padding-top: 51px
+		p
+			font: 12px $gpmed
+		img
+			float: left
+			width: 17px
+			margin-left: 15px
+		.target-icon
+			margin-top: -3px
+			filter: grayscale(1)
+			opacity: 0.6
+			margin-left: 17px
+.shops-list
+	padding-bottom: 150px
+
+	.shops-single
+		border-bottom: 1px dotted #dadada
+		&:first-child
+			border-top: 1px dotted #dadada	
+		.row
+			.col-md-4
+				min-height: 68px
+				display: flex
+				align-items: center
+				p
+					font: 15px $gplig
+					color: #272726
+					margin-bottom: 0px
+					span
+						// border: 1px solid #000
+						// border-radius: 50%
+						width: 19px
+						height: 19px
+						display: inline-block
+						text-align: center
+						margin-right: 7px
+				.to-single-shop-button
+					width: 100%
+					float: right
+					.to-single-shop
+						float: right
+						margin-right: 20px
+						position: relative
+						h5
+							margin: 0
+							font: 12px $gpmed
+						&:hover
+							text-decoration: none
+							color: #0097a7
+						&:after
+							content: ''
+							position: absolute
+							background: url(../img/arrow-down.png)
+							background-size: cover
+							width: 9px
+							height: 8px
+							top: 17%
+							right: -20px
+.shops-map
+	height: 0px
+#map
+	transition: 1s all ease	
+	opacity: 0

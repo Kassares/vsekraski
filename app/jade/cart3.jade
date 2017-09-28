@@ -1,0 +1,148 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Магазины
+	.cart1-wrapper.cart2-wrapper.cart3-wrapper
+		.cart-position
+			.container
+				.cart-pos-item
+					.cart-pos-icon.done
+						img(src="./img/done.png", alt="")
+					h5 Ваша корзина
+				.cart-dotted-border
+				.cart-pos-item
+					.cart-pos-icon.done
+						img(src="./img/done.png", alt="")
+					h5 Детали получения
+				.cart-dotted-border
+				.cart-pos-item
+					.cart-pos-icon
+						img(src="./img/payment.png", alt="")
+					h5 Способ оплаты
+		.cart-content
+			.container
+				.row
+					.col-md-9
+						.cart-prev-choosen-products(data-toggle="collapse" data-target="#products-collapse")
+							p.your-choose
+								| Ваш заказ:
+								span 2 товара
+							p#cart-collapse-products Свернуть список 
+							p#cart-show-products Показать список
+						.cart-product-collapse#products-collapse.collapse
+							.cart-product-wrapper
+								.cart-product-image
+									img(src="./img/banka.png", alt="")
+								.cart-product-text
+									p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+									a Удалить
+								.cart-product-price-wrapper
+									p.cart-product-price
+										| 2390
+										span &#8381
+									span Цена
+								.cart-product-quantity-wrapper
+									select#sel1.form-control
+										option 1
+										option 2
+										option 3
+										option 4
+									span Кол-во
+								.cart-product-total-price-wrapper
+									p.cart-product-price
+										| 2390
+										span &#8381
+									span Сумма
+
+							.cart-product-wrapper
+								.cart-product-image
+									img(src="./img/banka.png", alt="")
+								.cart-product-text
+									p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+									a Удалить
+								.cart-product-price-wrapper
+									p.cart-product-price
+										| 2390
+										span &#8381
+									span Цена
+								.cart-product-quantity-wrapper
+									select#sel1.form-control
+										option 1
+										option 2
+										option 3
+										option 4
+									span Кол-во
+								.cart-product-total-price-wrapper
+									p.cart-product-price
+										| 2390
+										span &#8381
+									span Сумма
+						.cart-payment-wrapper
+							.cart-payment-header
+								h3 Способ оплаты
+							.cart-payment-ways
+								.radio-wrapper
+									input(type="radio" name="payment" id="payment-cash")
+									label(for="payment-cash") Наличными при получении
+								.radio-wrapper
+									input(type="radio" name="payment" id="payment-card")
+									label(for="payment-card") Картой при получении
+								.radio-wrapper(data-toggle="collapse" data-target="#payment-online-collapse")
+									input(type="radio" name="payment" id="payment-online")
+									label(for="payment-online") Картой он-лайн
+								#payment-online-collapse.collapse
+									h1 Оплата картой
+									.row
+										.col-md-6
+											h5 Номер карты 
+											input.cart-number
+											.row
+												.col-md-6
+													h5 Срок действия
+													.card-usage
+														input(type="text" placeholder="MM")
+														span /
+														input(type="text" placeholder="YY")
+												.col-md-6.card-secure
+													h5 Код безопасности
+													input
+													span Что это?
+											.row
+												.col-md-12
+													h5 Имя владельца карты
+												.col-md-6
+													input(type="text" placeholder="YY")
+												.col-md-6
+													input(type="text" placeholder="YY")
+											.dotted-border
+											.row
+												.col-md-12
+													input(type="checkbox" name="card" id="remember-card")
+													label(for="remember-card") Запомнить данные карты
+											.row
+												.col-md-12
+													.pay-now-button
+														a Оплатить сейчас
+										.col-md-6
+											h5 Тип карты
+											.card-wrapper
+												img(src="./img/visa.png", alt="")
+												img(src="./img/maestro.png", alt="")
+												img(src="./img/mastercard.png", alt="")
+					.col-md-3
+						.cart-sum
+							h5 Товары (2)
+							.dotted-border
+							.total-cart-wrapper
+								h5 Всего (руб.)
+								p.total-cart-sum 12199
+							.dotted-border
+include footer.jade

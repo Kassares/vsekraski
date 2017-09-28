@@ -1,0 +1,359 @@
+.product-top
+	padding-top: 40px
+	width: 100%
+	float: left
+	padding-bottom: 30px
+	.product-top-wrapper
+		border: 1px solid #a7a9ac
+		padding: 25px 30px
+		float: left
+		.product-name
+			font: 26px $gpreg
+			width: 80%
+			float: left
+		.product-logo
+			float: right
+			width: 50px
+		.product-sertification
+			float: left
+			font: 13px $gplig
+			color: #a6a8ab
+			&:before
+				content: ''
+				background: url(../img/sertificated.png)
+				background-size: 100%
+				background-repeat: no-repeat
+				width: 20px
+				height: 20px
+				display: inline-block
+				float: left
+		.product-image
+			width: 80%
+			margin: 0 auto
+			display: block
+			padding-top: 20px
+		.product-to-color
+			padding: 25px 20px
+			// background: #e6e7e8
+			height: 40px
+			float: right
+			margin-top: 30px
+			a
+				font: 13px $gpmed
+			img
+				float: right
+				width: 	7px
+				transform: rotate(270deg)
+				padding-top: 17px
+	.price-buy-wrapper
+		border: 1px solid #a7a9ac	
+		width: 100%
+		float: left
+		padding: 25px 20px
+		width: 100%
+		p
+			float: left
+		h5
+			float: left
+			font: 12px $gpmed
+		.product-price-wrapper
+			// display: flex
+			// align-items: end
+			h5
+				padding-top: 20px
+			.prices
+				float: right
+				.old-price
+					position: relative
+					float: right
+					p
+						font: 14px $gpreg
+						color: #a7a9ac
+						margin: 0px
+				.old-price:after
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0px
+					height: 1px
+					width: 100%
+					background: #ed1a3b
+				.new-price
+					font: 30px $gpmed
+		.product-economy
+			width: 100%
+			float: left
+			h5
+				margin: 0
+			.economy
+				width: 43px
+				float: right
+
+				color: #fff
+				height: 15px
+				span.economy-sum
+					padding: 2px 3px
+					background: #faa61a
+					border-radius: 2px
+					float: left	
+					font: 13px $gpmed		
+					
+		.button-buy
+			width: 100%
+			text-align: center
+			padding: 20px 0px
+			display: flex
+			align-items: center
+			margin-top: 40px
+			a
+				margin: 0 auto
+				display: inline-block
+				float: none
+			p
+				margin: 0
+				padding-left: 5px
+		.to-favor
+			text-align: center
+			float: left
+			display: block
+			width: 100%
+			margin-top: 40px
+			margin-bottom: 20px
+			padding-left: 15%
+			a
+				display: inline-block
+				width: 100%
+				height: 100%
+				&:hover
+					color: #0099a8
+				img
+					width: 18px
+					display: inline-block
+					float: left
+					margin-top: 2px
+					margin-right: 5px
+#product-tabs
+	.product-tabs-buttons
+		width: 100%
+		background: #e6e7e8
+		float: left
+		.nav.nav-tabs
+			display: flex
+			flex-wrap: inherit
+			li
+				&:hover
+					a
+						color: #0099a8
+						text-decoration: none
+				a
+					padding: 20px 33px
+					border: 0px solid transparent
+					border-radius: 0px
+					font: 13px $gpbol
+					text-transform: uppercase
+
+					span
+						color: #fff
+						border-radius: 10px
+						background: #808080
+						margin-left: 5px
+						padding: 1px 7px
+				&.active
+					a
+						background: #f1f2f2
+						color: #0099a8
+	.tab-content
+		.tab-pane
+			float: left
+			width: 100%
+			padding-bottom: 40px
+			.tab-pane-wrapper
+				height: 720px
+				overflow: hidden
+				ul
+					margin-left: 15px
+				h1
+					font-size: 28px
+					padding: 60px 0 40px
+				p
+					padding-bottom: 10px
+					font-size: 14px
+				h5
+					font: 14px $gpmed
+					margin-top: 30px
+				.specifications-wrapper
+					width: 100%
+					padding-right: 33%
+					float: left
+					margin-bottom: 40px
+					.specifications-item
+						border-bottom: 1px solid #e6e7e8
+						float: left
+						width: 100%
+						h5
+							float: left
+							width: 40%
+							margin: 0
+							padding: 10px 0 0
+						p
+							float: left
+							margin: 0
+							padding: 10px 0 0
+			.read-more
+				h5
+					float: left
+					margin: 0
+				img
+					width: 7px
+					transform: rotate(270deg)
+					padding-top: 0px
+					margin-left: 5px
+		.testimonials-wrapper
+			height: auto !important
+		.testimonial-wrapper
+			float: left
+			margin-bottom: 40px
+			.testimonial-image
+				width: 54px
+				display: inline-block
+				float: left
+
+			.testimonial-name
+				font: 19px $gpbol !important
+				display: inline-block
+				float: left
+				padding-top: 20px
+				padding: 25px 10px 0
+				span
+					font: 16px $gplig
+					padding-left: 10px
+					color: #a7a9ab
+					border-left: 1px solid #a7a9ab
+					margin-left: 15px
+			.testimonial-text
+				float: left
+				margin-top: 10px
+			.read-more-testimonial
+				float: left
+				h5
+					float: left
+					margin: 0
+				img
+					width: 7px
+					margin-top: -3px
+					margin-left: 5px
+					transform: none
+		.testimonial-form-wrapper
+			width: 67%
+			float: left
+			margin-top: 50px
+			h1
+				margin-bottom: 0
+				padding-bottom: 0 !important
+			h5
+				margin-top: 10px !important
+			.testimonial-login
+				width: 100%
+				float: left
+				min-height: 64px
+				border-radius: 3px
+				background: #f1f2f2
+				padding: 12px 15px
+				p
+					font: 13px $gplig
+					float: left
+					width: 86%
+					margin-bottom: 0
+					padding: 0
+				.button-login
+					width: 78px
+					height: 35px
+					float: right
+					background: #ed193a
+					border-radius: 5px
+					text-align: center
+					a
+						padding-top: 10px
+						color: #fff 
+						font: 14px $gpnarbol
+						width: 100% 
+						height: 100%
+						display: block
+			form
+				width: 100%
+				float: left
+				p
+					font: 14px $gpmed
+					span
+						color: #009aa5
+						padding-left: 5px
+				input
+					width: 100%
+					max-width: 320px 
+					height: 30px
+					border: 1px solid #a7a9ac
+					margin-bottom: 20px
+				textarea
+					width: 100%
+					margin-bottom: 20px
+				.button-post-testimonial
+					float: left
+					background: #ed193a
+					border-radius: 3px
+					text-align: center
+					padding: 15px 30px
+
+					a
+						color: #fff 
+						font: 14px $gpnarbol
+						width: 100% 
+						height: 100%
+						display: block
+.layer-testimonial-white
+	position: fixed
+	display: none
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.59)
+	z-index: 100
+	.testimonial-success-wrapper
+		width: 460px
+		min-height: 260px
+		margin-top: 15%
+		margin: 0 auto
+		background: #fff
+		text-align: center
+		border: 1px solid #a7a9ac
+		padding-bottom: 25px
+		.testimonial-success
+			position: relative
+			padding: 60px 80px 0
+			h1
+				font: 26px $gplig
+				padding-top: 0
+			p
+				font: 14px $gpmed
+			.button-testimonial-to-main
+				margin: 0 auto
+				display: block
+				background: #ed193a
+				border-radius: 3px
+				width: 140px
+				text-align: center
+				padding: 15px 30px
+				margin-top: 30px
+
+				a
+					color: #fff 
+					font: 14px $gpnarbol
+					width: 100% 
+					height: 100%
+					display: block
+			.close-test
+				position: absolute
+				top: 20px
+				right: 20px
+				width: 17px
+				cursor: pointer
+				img
+					width: 100%

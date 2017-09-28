@@ -1,0 +1,5077 @@
+/*  =========== color variables ===========  */
+/*  =========== fonts ===========  */
+@font-face {
+  font-family: GothaProBol;
+  src: url(../vendor/fonts/GothaProBol.otf); }
+
+@font-face {
+  font-family: GothaProLig;
+  src: url(../vendor/fonts/GothaProLig.otf); }
+
+@font-face {
+  font-family: GothaProMed;
+  src: url(../vendor/fonts/GothaProMed.otf); }
+
+@font-face {
+  font-family: GothaProNarBol;
+  src: url(../vendor/fonts/GothaProNarBol.otf); }
+
+@font-face {
+  font-family: GothaProReg;
+  src: url(../vendor/fonts/GothaProReg.otf); }
+
+@font-face {
+  font-family: MinionPro-Medium;
+  src: url(../vendor/fonts/MinionPro-Medium.otf); }
+
+@font-face {
+  font-family: MinionPro-Regular;
+  src: url(../vendor/fonts/MinionPro-Regular.otf); }
+
+html, body {
+  height: 100%; }
+
+.col-md-3,
+.col-md-6,
+.col-md-12 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+body {
+  width: 100%;
+  font-family: "GothaProLig";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+
+.container {
+  max-width: 940px;
+  padding: 0; }
+
+a {
+  cursor: pointer; }
+
+a:active, a:visited, a:focus {
+  text-decoration: none;
+  border: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font: 26px "GothaProReg";
+  padding: 25px 0px;
+  margin: 0; }
+
+.col-md-4 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.col-md-8 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px; }
+
+.button-ask {
+  float: right; }
+  .button-ask a {
+    color: #fff;
+    background: #ec1a3b;
+    padding: 15px 20px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: 14px "GothaProNarBol";
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    .button-ask a:hover {
+      background: #92001c !important;
+      text-decoration: none !important; }
+
+.button-go-to-shop:hover {
+  text-decoration: none !important;
+  background: #92001c !important; }
+
+.button-buy {
+  width: 83px;
+  height: 25px;
+  background: #ed1a3b;
+  float: right;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #fff;
+  margin-top: 10px;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease; }
+  .button-buy:hover {
+    background: #92001c !important;
+    cursor: pointer !important;
+    text-decoration: none; }
+    .button-buy:hover a {
+      text-decoration: none; }
+  .button-buy img {
+    float: left;
+    width: 10px; }
+  .button-buy a {
+    float: right;
+    font: 12px "GothaProNarBol";
+    padding-top: 1px;
+    color: #fff; }
+
+.top-flag {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 5px;
+  left: -7px;
+  background: url(../img/flag.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .top-flag p {
+    font: 11px "GothaProMed";
+    color: #fff;
+    padding: 5px;
+    line-height: 14px; }
+
+.circle-to-action {
+  position: absolute;
+  top: -2px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffb500;
+  text-align: center;
+  padding-top: 8px; }
+  .circle-to-action img {
+    width: 20px; }
+  .circle-to-action p {
+    font: 15px "GothaProMed";
+    color: #000; }
+
+.dotted-border {
+  border: 1px dotted #dadada;
+  margin: 10px 0px;
+  float: left;
+  width: 100%; }
+
+input[type="radio"] {
+  display: none; }
+
+input[type=radio] + label {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  font: 16px "GothaProMed";
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  input[type=radio] + label:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #dadada; }
+
+input[type=radio] + label {
+  color: #a6a8ab; }
+
+input[type=radio]:checked + label {
+  color: #000; }
+
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #0099a8;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 15px; }
+
+input:focus {
+  outline-color: #0099a8; }
+
+.top-nav {
+  width: 100%;
+  height: 30px;
+  background: #272727; }
+  .top-nav img {
+    float: left;
+    width: 12px;
+    padding-top: 8px; }
+  .top-nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    margin-top: -1px; }
+    .top-nav ul li {
+      float: left;
+      padding: 5px 9px 5px 12px;
+      list-style: none;
+      position: relative; }
+      .top-nav ul li:last-child {
+        margin-left: 15px; }
+      .top-nav ul li a {
+        color: #fff;
+        text-decoration: underline;
+        -webkit-text-decoration-style: dashed;
+        text-decoration-style: dashed;
+        font-family: "GothaProLig";
+        font-size: 12px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .top-nav ul li a:hover {
+          color: #0099a8; }
+    .top-nav ul .has-child {
+      position: relative;
+      float: left;
+      padding: 5px 8px 5px 12px;
+      list-style: none;
+      position: relative; }
+      .top-nav ul .has-child:hover li:last-child {
+        margin-left: 0px; }
+      .top-nav ul .has-child:hover li a {
+        color: #000;
+        text-decoration: none;
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .top-nav ul .has-child:hover li a:hover {
+          color: #0099a8; }
+      .top-nav ul .has-child a {
+        color: #fff;
+        text-decoration: underline;
+        -webkit-text-decoration-style: dashed;
+        text-decoration-style: dashed;
+        font-family: "GothaProLig";
+        font-size: 12px;
+        cursor: pointer;
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .top-nav ul .has-child a:hover {
+          color: #0099a8; }
+      .top-nav ul .has-child ul {
+        display: none; }
+        .top-nav ul .has-child ul li {
+          display: block; }
+      .top-nav ul .has-child:hover ul {
+        position: absolute;
+        background: #fff;
+        top: 30px;
+        left: 0;
+        display: block;
+        z-index: 20;
+        min-width: 180px;
+        padding: 15px;
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #a7a9ac; }
+        .top-nav ul .has-child:hover ul li a {
+          color: #000;
+          text-decoration: none; }
+      .top-nav ul .has-child:hover:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        pointer-events: none;
+        left: 4px;
+        z-index: 111;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #fff; }
+    .top-nav ul .has-child:after {
+      content: '';
+      position: absolute;
+      background: url(../img/arrow-down.png);
+      background-size: cover;
+      width: 10px;
+      height: 8px;
+      top: 47%;
+      right: -9px; }
+  .top-nav .phone-number {
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    font-family: "GothaProMed";
+    margin-top: 2px; }
+
+.topnav-mobile {
+  display: none;
+  z-index: 1111; }
+  .topnav-mobile img {
+    width: 30px;
+    top: 10px;
+    left: 10px;
+    position: fixed; }
+  .topnav-mobile ul {
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.77); }
+    .topnav-mobile ul li {
+      text-align: center;
+      padding-top: 20px; }
+      .topnav-mobile ul li a {
+        font-size: 1.8em;
+        width: 100%;
+        color: #fff;
+        cursor: pointer; }
+
+header .container {
+  position: relative; }
+  header .container .logo {
+    width: 78px;
+    margin-top: -5px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  header .container .logoname {
+    width: 213px;
+    margin: 9px 0px 7px 80px; }
+  header .container .search-wrapper {
+    display: inline-block;
+    position: relative;
+    margin: 23px 28px 14px 45px; }
+    header .container .search-wrapper .search-input {
+      width: 258px;
+      height: 34px;
+      padding: 13px;
+      border: 1px solid #a7a9ac;
+      font: 12px "GothaProLig"; }
+  header .container .search-wrapper:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/search.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+    top: 9px;
+    right: 11px; }
+  header .container .login {
+    color: #272727;
+    font-size: 12px;
+    display: inline; }
+    header .container .login a {
+      padding: 0px 7px 0px 8px; }
+      header .container .login a:hover {
+        text-decoration: none;
+        color: #0097a7; }
+    header .container .login a:first-child {
+      border-right: 1px solid #a7a9ac; }
+  header .container .wishlist {
+    display: inline;
+    margin-left: 30px;
+    position: relative; }
+    header .container .wishlist img {
+      width: 24px;
+      margin-top: 3px; }
+    header .container .wishlist .red-circle {
+      width: 16px;
+      height: 16px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: red;
+      position: absolute;
+      top: 8px;
+      right: -1px; }
+      header .container .wishlist .red-circle p {
+        text-align: center;
+        color: #fff;
+        font: 10px "GothaProMed";
+        padding-top: 3px; }
+  header .container .to-cart {
+    display: inline;
+    margin-left: 15px;
+    position: relative;
+    margin-top: -5px; }
+    header .container .to-cart a {
+      font-size: 12px; }
+      header .container .to-cart a:hover {
+        text-decoration: none;
+        color: #0097a7; }
+    header .container .to-cart img {
+      width: 21px;
+      margin-left: 8px;
+      margin-top: -1px; }
+    header .container .to-cart .red-circle {
+      width: 16px;
+      height: 16px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: red;
+      position: absolute;
+      top: 9px;
+      right: -8px; }
+      header .container .to-cart .red-circle p {
+        text-align: center;
+        color: #fff;
+        font: 10px "GothaProMed";
+        padding-top: 3px; }
+
+.nav-mobile {
+  position: relative;
+  display: none; }
+  .nav-mobile .nav-burger {
+    padding: 10px; }
+    .nav-mobile .nav-burger img {
+      width: 50px;
+      float: left;
+      margin-right: 20px; }
+    .nav-mobile .nav-burger p {
+      text-transform: uppercase;
+      font-size: 24px;
+      padding-top: 10px; }
+  .nav-mobile ul {
+    position: absolute;
+    padding: 30px;
+    top: 50px;
+    left: 0;
+    display: none;
+    z-index: 1111;
+    background: rgba(0, 0, 0, 0.77); }
+    .nav-mobile ul li {
+      text-align: center;
+      padding-top: 20px; }
+      .nav-mobile ul li a {
+        font-size: 1.8em;
+        width: 100%;
+        color: #fff;
+        cursor: pointer; }
+
+.categories {
+  width: 100%;
+  height: 50px;
+  background: #e6e7e8; }
+  .categories ul {
+    height: 40px;
+    font: 12px "GothaProMed";
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    .categories ul li {
+      list-style: none;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      vertical-align: middle;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 10px 0;
+      border-right: 1px dotted #a7a9ac; }
+      .categories ul li:hover a {
+        color: #0099a8;
+        text-decoration: none; }
+      .categories ul li a {
+        text-align: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        padding: 0px 7px;
+        font: 12px "GothaProMed";
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
+  .categories .special {
+    color: #fff !important;
+    background: #ed1a3b;
+    margin: 0;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    .categories .special:hover {
+      background: #92001c;
+      cursor: pointer;
+      color: #fff; }
+    .categories .special a {
+      color: #fff !important; }
+  .categories .categories-has-child {
+    position: relative; }
+    .categories .categories-has-child:hover:before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      z-index: 111;
+      left: 30%;
+      width: 13px;
+      height: 19px;
+      background: url("../img/pick.png");
+      background-size: 100%;
+      background-repeat: no-repeat; }
+
+.sub-categories-menus {
+  position: relative; }
+  .sub-categories-menus .sub-categories-menu {
+    display: none;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    height: auto;
+    z-index: 10;
+    padding: 40px 0;
+    border-top: 1px solid #272727;
+    border-bottom: 2px solid #b1b1b1; }
+    .sub-categories-menus .sub-categories-menu .col-md-3 {
+      border-left: 1px dotted #a7a9ac;
+      min-height: 375px; }
+      .sub-categories-menus .sub-categories-menu .col-md-3:first-child {
+        border: none; }
+      .sub-categories-menus .sub-categories-menu .col-md-3 ul {
+        padding: 0 15px;
+        height: 100%; }
+        .sub-categories-menus .sub-categories-menu .col-md-3 ul li {
+          display: block;
+          padding: 5px 0; }
+        .sub-categories-menus .sub-categories-menu .col-md-3 ul a {
+          font: 12px "GothaProLig";
+          line-height: 17px;
+          display: inline-block; }
+          .sub-categories-menus .sub-categories-menu .col-md-3 ul a:hover {
+            color: #0099a8;
+            text-decoration: none; }
+        .sub-categories-menus .sub-categories-menu .col-md-3 ul .subcategory-title {
+          font: 13px "GothaProBol" !important;
+          margin-bottom: 20px;
+          display: block;
+          text-transform: uppercase; }
+      .sub-categories-menus .sub-categories-menu .col-md-3 .see-all-categories {
+        margin-top: 50px;
+        display: block;
+        font: 12px "GothaProMed";
+        margin-left: 20px; }
+        .sub-categories-menus .sub-categories-menu .col-md-3 .see-all-categories img {
+          width: 7px;
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+          padding-top: 17px; }
+      .sub-categories-menus .sub-categories-menu .col-md-3 .to-color img {
+        width: 9px;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        margin-left: 10px;
+        margin-top: -4px; }
+
+main .special-row {
+  width: 100%;
+  height: 370px;
+  background: #f1f2f2; }
+  main .special-row .main-special-slider {
+    min-height: 370px;
+    padding: 90px 0px; }
+    main .special-row .main-special-slider .slider-text {
+      width: 40%;
+      float: left; }
+      main .special-row .main-special-slider .slider-text p {
+        font: 34px "GothaProLig";
+        color: #000; }
+      main .special-row .main-special-slider .slider-text .special-percent {
+        font: 50px "GothaProMed";
+        color: #009aa5;
+        text-transform: uppercase; }
+    main .special-row .main-special-slider .slider-image {
+      width: 60%;
+      float: left; }
+      main .special-row .main-special-slider .slider-image img {
+        width: 100%; }
+
+main .main-posts-slider {
+  float: left;
+  width: 100%;
+  padding-top: 30px; }
+  main .main-posts-slider .main-product-slider-item,
+  main .main-posts-slider .main-post-slider-item {
+    width: 100%;
+    min-height: 330px;
+    border: 1px solid #ececec;
+    padding: 20px; }
+  main .main-posts-slider .main-product-slider-item,
+  main .main-posts-slider .main-post-slider-item {
+    position: relative; }
+    main .main-posts-slider .main-product-slider-item .top-flag,
+    main .main-posts-slider .main-post-slider-item .top-flag {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 5px;
+      left: -8px;
+      background: url(../img/flag.png);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      main .main-posts-slider .main-product-slider-item .top-flag p,
+      main .main-posts-slider .main-post-slider-item .top-flag p {
+        font: 11px "GothaProMed";
+        color: #fff;
+        padding: 5px;
+        line-height: 14px; }
+  main .main-posts-slider .image-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 150px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main .main-posts-slider .image-wrapper img {
+      width: 80%;
+      margin: 0 auto; }
+  main .main-posts-slider .text-wrapper {
+    height: 100px;
+    padding-top: 7px; }
+  main .main-posts-slider .slider-product-name {
+    font: 14px "GothaProMed";
+    color: #000;
+    line-height: 17px;
+    margin-bottom: 3px; }
+  main .main-posts-slider .slider-product-description {
+    font: 12px "GothaProLig";
+    color: #000;
+    line-height: 15px; }
+  main .main-posts-slider .action-block {
+    border-top: 1px dotted #b2b2b1;
+    padding-top: 10px;
+    bottom: 0;
+    height: 40px; }
+    main .main-posts-slider .action-block .prices {
+      float: left; }
+      main .main-posts-slider .action-block .prices .old-price {
+        position: relative;
+        float: left;
+        margin-bottom: -7px; }
+        main .main-posts-slider .action-block .prices .old-price p {
+          font: 13px "GothaProReg";
+          color: #a7a9ac;
+          margin: 0px; }
+        main .main-posts-slider .action-block .prices .old-price span {
+          font: 12px "GothaProMed";
+          margin-left: -2px; }
+          main .main-posts-slider .action-block .prices .old-price span img {
+            width: 7px;
+            margin-top: -2px;
+            display: inline-block; }
+      main .main-posts-slider .action-block .prices .old-price:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background: #ed1a3b; }
+      main .main-posts-slider .action-block .prices .new-price {
+        font: 21px "GothaProMed"; }
+        main .main-posts-slider .action-block .prices .new-price span {
+          font: 12px "GothaProMed";
+          margin-left: 2px; }
+          main .main-posts-slider .action-block .prices .new-price span img {
+            width: 8px;
+            margin-top: -5px;
+            display: inline-block;
+            margin-left: -1px; }
+    main .main-posts-slider .action-block .button-buy {
+      width: 83px;
+      height: 25px;
+      background: #ed1a3b;
+      float: right;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 10px;
+      color: #fff;
+      margin-top: 2px;
+      -webkit-transition: .2s all ease;
+      transition: .2s all ease; }
+      main .main-posts-slider .action-block .button-buy:hover {
+        background: #92001c;
+        cursor: pointer; }
+        main .main-posts-slider .action-block .button-buy:hover a {
+          text-decoration: none; }
+      main .main-posts-slider .action-block .button-buy img {
+        float: left;
+        width: 10px; }
+      main .main-posts-slider .action-block .button-buy p {
+        float: right;
+        font: 12px "GothaProNarBol";
+        padding-top: 1px; }
+    main .main-posts-slider .action-block .to-post-button {
+      width: 140px;
+      height: 25px;
+      background: #ed1a3b;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 10px;
+      color: #fff;
+      margin: 0 auto;
+      margin-top: 2px;
+      display: inherit;
+      -webkit-transition: .2s all ease;
+      transition: .2s all ease; }
+      main .main-posts-slider .action-block .to-post-button:hover {
+        background: #92001c;
+        cursor: pointer; }
+        main .main-posts-slider .action-block .to-post-button:hover a {
+          text-decoration: none; }
+      main .main-posts-slider .action-block .to-post-button img {
+        float: left;
+        width: 10px; }
+      main .main-posts-slider .action-block .to-post-button a {
+        float: right;
+        font: 12px "GothaProNarBol";
+        padding-top: 1px;
+        color: #fff; }
+
+main .main-posts-slider {
+  position: relative; }
+  main .main-posts-slider .previous-post {
+    width: 44px;
+    height: 44px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: -60px;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    main .main-posts-slider .previous-post img {
+      width: 22%;
+      margin: 0 auto;
+      display: block;
+      margin-left: 15px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+  main .main-posts-slider .next-post {
+    width: 44px;
+    height: 44px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: -60px;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    main .main-posts-slider .next-post img {
+      width: 22%;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin: 0 auto;
+      display: block;
+      margin-top: 13px;
+      margin-left: 17px; }
+
+main .brands {
+  float: left;
+  width: 100%;
+  padding: 19px 0px; }
+  main .brands h1 {
+    font: 26px "GothaProReg";
+    padding: 40px 0px 33px; }
+  main .brands .prev-brands, main .brands .next-brands {
+    float: left;
+    width: 30px;
+    height: 20px;
+    margin: 15px;
+    margin-top: 10px;
+    margin-right: 0px;
+    cursor: pointer;
+    margin-left: 10px; }
+    main .brands .prev-brands img, main .brands .next-brands img {
+      width: 100%; }
+  main .brands .next-brands {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    float: right;
+    margin-top: 21px;
+    margin-left: 0px;
+    margin-right: 7px; }
+  main .brands .to-all-brands {
+    float: right;
+    height: 50px;
+    width: 13%;
+    border-left: 1px dotted #a7a9ac;
+    padding: 15px 0px 12px 21px;
+    margin-left: 10px; }
+    main .brands .to-all-brands a {
+      font: 12px "GothaProLig";
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      -webkit-transition: .2s all ease;
+      transition: .2s all ease; }
+      main .brands .to-all-brands a:hover {
+        text-decoration: none;
+        color: #0099a8; }
+      main .brands .to-all-brands a:after {
+        content: '';
+        position: absolute;
+        background: url(../img/arrow-down.png);
+        background-size: cover;
+        width: 9px;
+        height: 8px;
+        top: 30%;
+        right: -21px;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg); }
+  main .brands .slider-wrapper {
+    width: 85%;
+    float: left; }
+  main .brands .slick-list.draggable {
+    padding-top: 0px; }
+  main .brands .slick-track img {
+    height: 100%;
+    padding: 0 19px; }
+  main .brands .brands-item {
+    height: 47px; }
+
+main .may-like {
+  float: left;
+  width: 100%; }
+  main .may-like h1 {
+    font: 26px "GothaProReg";
+    padding: 27px 0px 36px; }
+  main .may-like .main-product-slider-item,
+  main .may-like .main-post-slider-item {
+    width: 100%;
+    min-height: 310px;
+    border: 1px solid #b2b2b1;
+    padding: 20px; }
+  main .may-like .main-product-slider-item,
+  main .may-like .main-post-slider-item {
+    position: relative; }
+  main .may-like .image-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 137px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main .may-like .image-wrapper img {
+      width: 82%;
+      margin: 0 auto; }
+  main .may-like .text-wrapper {
+    height: 92px; }
+  main .may-like .slider-product-name {
+    font: 14px "GothaProMed";
+    color: #000;
+    line-height: 17px;
+    margin-bottom: 3px; }
+  main .may-like .slider-product-description {
+    font: 12px "GothaProLig";
+    color: #000;
+    line-height: 15px; }
+  main .may-like .action-block {
+    border-top: 1px dotted #a7a9ac;
+    padding-top: 15px;
+    bottom: 0;
+    height: 40px; }
+    main .may-like .action-block .prices {
+      float: left; }
+      main .may-like .action-block .prices .new-price {
+        font: 21px "GothaProMed"; }
+        main .may-like .action-block .prices .new-price span {
+          font: 12px "GothaProMed";
+          margin-left: 2px; }
+          main .may-like .action-block .prices .new-price span img {
+            width: 8px;
+            margin-top: -5px;
+            display: inline-block;
+            margin-left: -1px; }
+    main .may-like .action-block .button-buy {
+      width: 83px;
+      height: 25px;
+      background: #ed1a3b;
+      float: right;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 10px;
+      color: #fff;
+      margin-top: -2px;
+      -webkit-transition: .2s all ease;
+      transition: .2s all ease; }
+      main .may-like .action-block .button-buy:hover {
+        background: #92001c;
+        cursor: pointer; }
+        main .may-like .action-block .button-buy:hover a {
+          text-decoration: none; }
+      main .may-like .action-block .button-buy img {
+        float: left;
+        width: 12px;
+        margin-left: 2px; }
+      main .may-like .action-block .button-buy a {
+        float: right;
+        font: 12px "GothaProNarBol";
+        padding-top: 1px;
+        color: #fff; }
+
+main .main-banner-special {
+  min-height: 180px;
+  width: 100%;
+  float: left;
+  padding: 46px 0px 44px; }
+  main .main-banner-special .blue-banner {
+    background: #009aa5;
+    min-height: 180px;
+    width: 100%;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    main .main-banner-special .blue-banner .blue-banner-text {
+      width: 58%;
+      padding: 18px 22px;
+      float: left;
+      line-height: 33px; }
+      main .main-banner-special .blue-banner .blue-banner-text p {
+        font: 29px "GothaProLig";
+        color: #fff;
+        margin-bottom: 0px; }
+      main .main-banner-special .blue-banner .blue-banner-text .special-percent {
+        font: 54px "GothaProMed";
+        color: #fff;
+        text-transform: uppercase; }
+    main .main-banner-special .blue-banner .blue-banner-image {
+      width: 41%;
+      float: left; }
+      main .main-banner-special .blue-banner .blue-banner-image img {
+        width: 100%; }
+
+main .hot-sell {
+  width: 100%;
+  float: left;
+  background: #e6e7e8;
+  padding-bottom: 40px;
+  border: 1px solid #dadada;
+  -webkit-box-shadow: inset 0 5px 10px 0px #dadada;
+  box-shadow: inset 0 5px 10px 0px #dadada; }
+  main .hot-sell h1 {
+    font: 26px "GothaProReg";
+    padding-top: 37px;
+    padding-bottom: 35px;
+    padding-left: 10px; }
+  main .hot-sell .col-md-3,
+  main .hot-sell .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  main .hot-sell .hot-sell-layer-big {
+    background: #fff;
+    min-height: 436px;
+    padding: 20px;
+    position: relative;
+    outline: 1px solid #c6c6c6; }
+    main .hot-sell .hot-sell-layer-big .circle-to-action {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 125px;
+      height: 125px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #ffb500;
+      text-align: center;
+      padding-top: 20px; }
+      main .hot-sell .hot-sell-layer-big .circle-to-action img {
+        width: 25px; }
+      main .hot-sell .hot-sell-layer-big .circle-to-action p {
+        font: 20px "GothaProMed";
+        color: #000;
+        padding-top: 10px; }
+    main .hot-sell .hot-sell-layer-big .product-image-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px; }
+      main .hot-sell .hot-sell-layer-big .product-image-wrapper img {
+        width: 84%;
+        margin: 0 auto; }
+    main .hot-sell .hot-sell-layer-big .text-wrapper {
+      float: left;
+      width: 50%;
+      border-bottom: 1px dotted #dadada; }
+    main .hot-sell .hot-sell-layer-big .slider-product-name {
+      font: 14px "GothaProMed";
+      color: #000;
+      line-height: 17px;
+      margin-bottom: 3px; }
+    main .hot-sell .hot-sell-layer-big .slider-product-description {
+      font: 12px "GothaProLig";
+      color: #000;
+      line-height: 15px; }
+    main .hot-sell .hot-sell-layer-big .special-timer-wrapper {
+      border-bottom: 1px dotted #dadada;
+      padding-top: 10px; }
+    main .hot-sell .hot-sell-layer-big .action-block {
+      padding-top: 15px;
+      bottom: 0;
+      height: 40px; }
+      main .hot-sell .hot-sell-layer-big .action-block .prices {
+        float: left; }
+        main .hot-sell .hot-sell-layer-big .action-block .prices .old-price {
+          position: relative;
+          font: 13px "GothaProReg";
+          color: #a7a9ac;
+          margin: 0px;
+          margin-right: 10px; }
+          main .hot-sell .hot-sell-layer-big .action-block .prices .old-price img {
+            width: 7px  !important;
+            margin-top: -2px !important;
+            display: inline-block !important;
+            margin-left: 2px !important; }
+        main .hot-sell .hot-sell-layer-big .action-block .prices .old-price:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          height: 1px;
+          width: 100%;
+          background: #ed1a3b; }
+          main .hot-sell .hot-sell-layer-big .action-block .prices .old-price:after span {
+            margin-left: 2px;
+            font-size: 9px; }
+        main .hot-sell .hot-sell-layer-big .action-block .prices .new-price {
+          font: 21px "GothaProMed";
+          padding: 9px 13px; }
+          main .hot-sell .hot-sell-layer-big .action-block .prices .new-price span {
+            font-size: 13px;
+            margin-left: 2px; }
+            main .hot-sell .hot-sell-layer-big .action-block .prices .new-price span img {
+              width: 8px;
+              margin-top: -5px;
+              display: inline-block;
+              margin-left: -1px; }
+    main .hot-sell .hot-sell-layer-big .economy {
+      margin-top: 11px;
+      width: 29%;
+      float: left;
+      padding: 5px 3px;
+      color: #fff;
+      border-right: 1px dotted #dadada; }
+      main .hot-sell .hot-sell-layer-big .economy span {
+        font-size: 9px; }
+      main .hot-sell .hot-sell-layer-big .economy .economy-sum {
+        padding: 0px 1px;
+        line-height: 13px;
+        background: #faa61a;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        float: left;
+        font-family: "GothaProMed"; }
+      main .hot-sell .hot-sell-layer-big .economy .economy-call {
+        float: left;
+        color: #a7a9ac;
+        font: 9px "GothaProMed";
+        padding: 4px; }
+    main .hot-sell .hot-sell-layer-big .special-timer-wrapper {
+      width: 50%;
+      float: left;
+      margin-top: 20px;
+      padding-top: 12px;
+      height: 58px; }
+      main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer {
+        width: 100%;
+        max-width: 177px;
+        height: 31px;
+        background: #f1f2f2;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        float: right; }
+        main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .icon-wrapper {
+          width: 30px;
+          background: #272727;
+          height: 100%;
+          padding-top: 6px;
+          -webkit-border-radius: 3px 0px 0px 3px;
+          border-radius: 3px 0px 0px 3px;
+          float: left; }
+          main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .icon-wrapper img {
+            width: 14px;
+            margin: 0 auto;
+            display: inherit; }
+        main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered {
+          width: 147px;
+          float: left;
+          height: 100%;
+          border: 1px solid #a7a9ac;
+          -webkit-border-radius: 0px 3px 3px 0px;
+          border-radius: 0px 3px 3px 0px; }
+          main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details {
+            float: left;
+            height: 100%;
+            background: #f1f2f2;
+            width: 98px; }
+            main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details .divide {
+              display: inline-block;
+              padding-top: 4px;
+              height: 25px;
+              width: 1px; }
+              main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details .divide p {
+                display: inline-block;
+                float: left; }
+            main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item {
+              display: inline-block;
+              width: 26px;
+              height: 100%;
+              text-align: center;
+              padding-top: 3px; }
+              main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item p {
+                color: #000;
+                font: 13px "GothaProMed";
+                margin: 0;
+                text-align: center; }
+              main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item span {
+                color: #a7a9ac;
+                font: 9px "GothaProLig";
+                display: block; }
+          main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .timer-items {
+            float: left;
+            width: 47px;
+            height: 100%;
+            background: #fff;
+            border-left: 1px solid #a7a9ac;
+            text-align: center; }
+            main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .timer-items p {
+              color: #faa519;
+              font: 13px "GothaProMed";
+              margin: 4px 0 0 0; }
+            main .hot-sell .hot-sell-layer-big .special-timer-wrapper .special-timer .timer-bordered .timer-items span {
+              font: 9px "GothaProLig";
+              display: block; }
+    main .hot-sell .hot-sell-layer-big .button-buy img {
+      width: 12px;
+      margin-left: 1px; }
+  main .hot-sell .hot-sell-layer {
+    background: #fff;
+    min-height: 436px;
+    padding: 20px;
+    position: relative;
+    outline: 1px solid #c6c6c6; }
+    main .hot-sell .hot-sell-layer .circle-to-action {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #ffb500;
+      text-align: center;
+      padding-top: 8px; }
+      main .hot-sell .hot-sell-layer .circle-to-action img {
+        width: 20px; }
+      main .hot-sell .hot-sell-layer .circle-to-action p {
+        font: 15px "GothaProMed";
+        color: #000; }
+    main .hot-sell .hot-sell-layer .product-image-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px; }
+      main .hot-sell .hot-sell-layer .product-image-wrapper img {
+        width: 90%;
+        margin: 0 auto; }
+    main .hot-sell .hot-sell-layer .text-wrapper {
+      height: 97px;
+      padding-top: 4px; }
+    main .hot-sell .hot-sell-layer .slider-product-name {
+      font: 14px "GothaProMed";
+      color: #000;
+      line-height: 17px;
+      margin-bottom: 4px; }
+    main .hot-sell .hot-sell-layer .slider-product-description {
+      font: 12px "GothaProLig";
+      color: #000;
+      line-height: 14px; }
+    main .hot-sell .hot-sell-layer .action-block {
+      border-top: 1px dotted #a7a9ac;
+      padding-top: 4px;
+      bottom: 0;
+      height: 40px; }
+      main .hot-sell .hot-sell-layer .action-block .prices {
+        float: left; }
+        main .hot-sell .hot-sell-layer .action-block .prices .old-price {
+          position: relative;
+          float: left; }
+          main .hot-sell .hot-sell-layer .action-block .prices .old-price p {
+            font: 13px "GothaProReg";
+            color: #a7a9ac;
+            margin: 0px; }
+            main .hot-sell .hot-sell-layer .action-block .prices .old-price p span {
+              margin-left: 2px;
+              font-size: 9px; }
+              main .hot-sell .hot-sell-layer .action-block .prices .old-price p span img {
+                width: 7px;
+                margin-top: -4px;
+                display: inline-block;
+                margin-left: -4px; }
+        main .hot-sell .hot-sell-layer .action-block .prices .old-price:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          height: 1px;
+          width: 100%;
+          background: #ed1a3b; }
+        main .hot-sell .hot-sell-layer .action-block .prices .new-price {
+          font: 21px "GothaProMed"; }
+          main .hot-sell .hot-sell-layer .action-block .prices .new-price span {
+            font-size: 12px;
+            margin-left: 2px; }
+            main .hot-sell .hot-sell-layer .action-block .prices .new-price span img {
+              width: 8px;
+              margin-top: -5px;
+              display: inline-block;
+              margin-left: -1px; }
+    main .hot-sell .hot-sell-layer .economy {
+      margin-top: -6px;
+      width: 100%;
+      float: left;
+      color: #fff;
+      padding-top: 3px; }
+      main .hot-sell .hot-sell-layer .economy .economy-sum {
+        padding: 0px 1px;
+        line-height: 12px;
+        background: #faa61a;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        float: left; }
+        main .hot-sell .hot-sell-layer .economy .economy-sum span {
+          font-size: 9px; }
+      main .hot-sell .hot-sell-layer .economy .economy-call {
+        float: left;
+        color: #a7a9ac;
+        font: 9px "GothaProMed";
+        padding: 5px; }
+    main .hot-sell .hot-sell-layer .special-timer-wrapper {
+      width: 100%;
+      float: left;
+      border-top: 1px dotted #a7a9ac;
+      padding-top: 13px;
+      height: 90px;
+      margin-top: 5px; }
+      main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer {
+        width: 100%;
+        max-width: 180px;
+        height: 33px;
+        background: #f1f2f2;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
+        main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .icon-wrapper {
+          width: 29px;
+          background: #272727;
+          height: 100%;
+          padding-top: 8px;
+          -webkit-border-radius: 3px 0px 0px 3px;
+          border-radius: 3px 0px 0px 3px;
+          float: left; }
+          main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .icon-wrapper img {
+            width: 14px;
+            margin: 0 auto;
+            display: inherit; }
+        main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered {
+          width: 150px;
+          float: left;
+          height: 100%;
+          border: 1px solid #a7a9ac;
+          -webkit-border-radius: 0px 3px 3px 0px;
+          border-radius: 0px 3px 3px 0px; }
+          main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details {
+            float: left;
+            height: 100%;
+            background: #f1f2f2;
+            width: 101px; }
+            main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details .divide {
+              display: inline-block;
+              padding-top: 4px;
+              height: 25px;
+              width: 1px; }
+              main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details .divide p {
+                display: inline-block;
+                float: left; }
+            main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item {
+              display: inline-block;
+              width: 26px;
+              height: 100%;
+              text-align: center;
+              padding-top: 4px; }
+              main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item p {
+                color: #000;
+                font: 13px "GothaProMed";
+                margin: 0; }
+              main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .time-details .time-details-item span {
+                color: #a7a9ac;
+                font: 9px "GothaProLig";
+                display: block; }
+          main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .timer-items {
+            float: left;
+            width: 47px;
+            height: 100%;
+            background: #fff;
+            border-left: 1px solid #a7a9ac;
+            text-align: center; }
+            main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .timer-items p {
+              color: #faa519;
+              font: 13px "GothaProMed";
+              margin: 4px 0 0 0; }
+            main .hot-sell .hot-sell-layer .special-timer-wrapper .special-timer .timer-bordered .timer-items span {
+              font: 9px "GothaProLig";
+              display: block; }
+
+main .recomended {
+  width: 100%;
+  float: left;
+  padding-bottom: 44px;
+  position: relative; }
+  main .recomended h1 {
+    padding: 40px 0 35px; }
+  main .recomended .container .previous-recomended {
+    width: 44px;
+    height: 44px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    left: -11px;
+    background: #fff;
+    z-index: 100;
+    display: none; }
+    main .recomended .container .previous-recomended:hover {
+      background: url(../img/arrow-left-hover.png) #fff;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: 44% 50%; }
+      main .recomended .container .previous-recomended:hover img {
+        display: none; }
+    main .recomended .container .previous-recomended img {
+      width: 22%;
+      margin: 0 auto;
+      display: block;
+      margin-left: 15px; }
+  main .recomended .container .next-recomended {
+    width: 44px;
+    height: 44px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    right: -11px;
+    background: #fff;
+    z-index: 100;
+    display: none; }
+    main .recomended .container .next-recomended:hover {
+      background: url(../img/arrow-left-hover.png) #fff;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: 44% 50%;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+      main .recomended .container .next-recomended:hover img {
+        display: none; }
+    main .recomended .container .next-recomended img {
+      width: 22%;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin: 0 auto;
+      display: block;
+      margin-left: 17px; }
+  main .recomended .container .previous-recomended.slick-arrow,
+  main .recomended .container .next-recomended.slick-arrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  main .recomended .recomended-slider .recomended-slider-wrapper {
+    width: 100%;
+    min-height: 235px;
+    height: 230px;
+    border: 1px solid #dadada; }
+    main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block {
+      float: left;
+      width: 53%;
+      padding: 45px 30px 45px 49px; }
+      main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block h2 {
+        font: 14px "GothaProMed";
+        margin-top: 0;
+        line-height: 17px; }
+      main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block p {
+        font: 12px "GothaProLig";
+        line-height: 14px; }
+      main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block a {
+        font: 12px "GothaProMed";
+        margin-top: 40px;
+        display: block;
+        position: relative; }
+        main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block a:hover {
+          color: #0097a7;
+          text-decoration: none; }
+        main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block a:after {
+          content: '';
+          position: absolute;
+          background: url(../img/arrow-down.png);
+          background-size: cover;
+          width: 9px;
+          height: 8px;
+          top: 30%;
+          right: 30%;
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+    main .recomended .recomended-slider .recomended-slider-wrapper .recomended-image-block {
+      float: right;
+      width: 47%;
+      height: 100%;
+      background: -webkit-gradient(linear, left bottom, left top, from(#0098a6), to(#51b89f));
+      background: -webkit-linear-gradient(bottom, #0098a6, #51b89f);
+      background: linear-gradient(to top, #0098a6, #51b89f);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0px 25px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      main .recomended .recomended-slider .recomended-slider-wrapper .recomended-image-block img {
+        width: 82%;
+        margin: 0 auto; }
+  main .recomended .slick-dots {
+    padding-top: 23px; }
+    main .recomended .slick-dots button {
+      padding: 6px;
+      width: 11px;
+      height: 11px; }
+  main .recomended .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px; }
+
+footer {
+  width: 100%;
+  float: left;
+  background: #272727;
+  padding: 0 20px 33px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+  footer .logo {
+    float: right;
+    width: 106px;
+    margin-top: -7px;
+    margin-right: 6%; }
+  footer .logo-footer {
+    width: 211px;
+    float: left;
+    padding: 46px 0 37px; }
+  footer .footer-phone-number {
+    font: 20px "GothaProMed";
+    color: #fff;
+    text-align: right; }
+  footer .row h3 {
+    margin: 0;
+    font: 12px "GothaProMed";
+    color: #a7a9ac;
+    margin-bottom: 14px;
+    margin-top: 5px; }
+  footer .row ul li {
+    list-style: none;
+    margin-bottom: 5px; }
+    footer .row ul li a {
+      font: 12px "GothaProMed";
+      color: #fff;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      footer .row ul li a:hover {
+        text-decoration: none;
+        color: #0099a8; }
+
+.blue-footer {
+  width: 100%;
+  float: left;
+  background: #009aa5;
+  height: 20px;
+  border-top: 1px solid #003e42;
+  border-bottom: 1px solid #bfcecf;
+  padding: 6px 0; }
+
+.fork-color-banner {
+  width: 100%;
+  float: left;
+  background: url(../img/fork-color-banner.png);
+  background-size: cover;
+  padding-top: 26px;
+  padding-bottom: 81px; }
+  .fork-color-banner h1 {
+    font: 54px "GothaProLig";
+    width: 50%;
+    line-height: 63px; }
+  .fork-color-banner .fork-color-button {
+    width: 195px;
+    height: 35px;
+    display: inline-block;
+    background: #0099a8;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 11px;
+    font: 12px "GothaProMed";
+    margin-top: 21px;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    .fork-color-banner .fork-color-button:hover {
+      text-decoration: none;
+      background: #0b6e78; }
+
+.breadcrumbs {
+  width: 100%;
+  float: left;
+  position: relative; }
+  .breadcrumbs .breads {
+    width: 100%;
+    border-bottom: 1px dotted #a7a9ac; }
+    .breadcrumbs .breads:before {
+      content: '';
+      width: 11px;
+      height: 11px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #b0b0b0;
+      position: absolute;
+      top: 40%;
+      left: 10px;
+      background-image: url(../img/breads-arrow.png);
+      background-size: 4px;
+      background-repeat: no-repeat;
+      background-position: 40% 50%; }
+    .breadcrumbs .breads ul {
+      padding-left: 15px; }
+      .breadcrumbs .breads ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 0px; }
+        .breadcrumbs .breads ul li:last-child a {
+          color: #a7a9ac;
+          text-decoration: none; }
+        .breadcrumbs .breads ul li a {
+          font: 12px "GothaProLig";
+          text-decoration: none; }
+          .breadcrumbs .breads ul li a:hover {
+            cursor: pointer;
+            color: #0097a7; }
+
+.category-top {
+  float: left;
+  width: 100%; }
+  .category-top h1 {
+    float: left;
+    padding: 40px 0 33px; }
+    .category-top h1 span {
+      font: 10px "GothaProReg";
+      padding-left: 5px;
+      color: #a7a9ac; }
+  .category-top .mobile-filter {
+    float: left;
+    display: none; }
+    .category-top .mobile-filter p {
+      display: block;
+      padding: 10px 20px;
+      background: #e6e7e8; }
+  .category-top .to-color {
+    width: 150px;
+    padding: 10px 20px;
+    background: #e6e7e8;
+    height: 40px;
+    float: right;
+    margin-top: 38px; }
+    .category-top .to-color:hover a {
+      color: #0097a7;
+      text-decoration: none; }
+    .category-top .to-color a {
+      text-transform: uppercase;
+      font: 13px "GothaProMed"; }
+    .category-top .to-color img {
+      float: right;
+      width: 9px;
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      margin-top: 6px; }
+
+.category-products-wrapper {
+  float: left;
+  width: 700px; }
+
+.category-wrapper {
+  width: 100%;
+  float: left;
+  height: auto;
+  min-height: 1000px; }
+  .category-wrapper .filter-wrapper {
+    background: #f1f2f2;
+    height: auto;
+    width: 100%;
+    border: 1px solid #e6e7e8;
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    padding: 20px; }
+    .category-wrapper .filter-wrapper .remove-filters {
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      border: 1px solid #e6e7e8;
+      text-align: center;
+      padding-top: 12px;
+      cursor: pointer;
+      float: left; }
+      .category-wrapper .filter-wrapper .remove-filters p {
+        font: 12px "GothaProMed";
+        color: #a7a9ac; }
+    .category-wrapper .filter-wrapper .remove-filters.active {
+      border-color: #a7a9ac; }
+      .category-wrapper .filter-wrapper .remove-filters.active p {
+        color: #000; }
+    .category-wrapper .filter-wrapper .remove-bottom {
+      margin-top: 30px; }
+    .category-wrapper .filter-wrapper .filters {
+      float: left; }
+    .category-wrapper .filter-wrapper .filters-wrapper {
+      height: 157px;
+      overflow: hidden; }
+    .category-wrapper .filter-wrapper .type-filter {
+      border-bottom: 1px dotted #a7a9ac;
+      margin-top: 9px;
+      padding: 10px 0;
+      float: left;
+      width: 100%;
+      cursor: pointer;
+      position: relative; }
+      .category-wrapper .filter-wrapper .type-filter:after {
+        content: '';
+        right: 0;
+        top: 33%;
+        width: 15px;
+        height: 18px;
+        position: absolute;
+        background-size: cover;
+        background-image: url(../img/stop.png);
+        background-repeat: no-repeat; }
+      .category-wrapper .filter-wrapper .type-filter p {
+        font: 12px "GothaProMed";
+        display: inline; }
+      .category-wrapper .filter-wrapper .type-filter img {
+        width: 15px;
+        padding-top: 3px;
+        float: right; }
+    .category-wrapper .filter-wrapper .type-filter.collapsed:after {
+      background-image: url(../img/blue-plus.png); }
+    .category-wrapper .filter-wrapper .type-checkbox {
+      width: 15px;
+      height: 15px;
+      background: #fff; }
+    .category-wrapper .filter-wrapper .more-filters-button {
+      float: right;
+      width: 100%;
+      text-align: right; }
+      .category-wrapper .filter-wrapper .more-filters-button p {
+        font: 12px "GothaProLig"; }
+        .category-wrapper .filter-wrapper .more-filters-button p span {
+          color: #0097a7;
+          margin-right: 2px; }
+        .category-wrapper .filter-wrapper .more-filters-button p a {
+          text-decoration: underline; }
+          .category-wrapper .filter-wrapper .more-filters-button p a:hover {
+            color: #0097a7; }
+    .category-wrapper .filter-wrapper .filter-price.collapse {
+      display: none; }
+    .category-wrapper .filter-wrapper .row-type-filter {
+      padding-top: 15px;
+      margin-bottom: 8px; }
+    .category-wrapper .filter-wrapper label span {
+      color: #a6a8ab; }
+    .category-wrapper .filter-wrapper input[type=checkbox] {
+      display: none !important; }
+    .category-wrapper .filter-wrapper input[type=checkbox] + label {
+      float: left;
+      font: 12px "GothaProLig";
+      margin: 0;
+      position: relative;
+      padding: 10px 0 0 30px;
+      line-height: 17px; }
+      .category-wrapper .filter-wrapper input[type=checkbox] + label span {
+        color: #a6a8ab; }
+      .category-wrapper .filter-wrapper input[type=checkbox] + label:before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        height: 15px;
+        width: 15px;
+        background-size: 100%;
+        border: 1px solid #a7a9ac;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        top: 10px;
+        left: 0; }
+    .category-wrapper .filter-wrapper input[type=checkbox]:checked + label:before {
+      content: "";
+      color: #0099a8;
+      background: url(../img/galka.svg) #fff;
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: 50% 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 10px; }
+    .category-wrapper .filter-wrapper .type-category {
+      font: 12px "GothaProLig";
+      padding: 0 0 0 30px;
+      margin: 0;
+      float: left; }
+    .category-wrapper .filter-wrapper .filter-price {
+      width: 100%;
+      float: left;
+      height: 130px;
+      padding: 20px 0px 0px 0px;
+      margin: 0 auto;
+      display: inherit; }
+      .category-wrapper .filter-wrapper .filter-price .row {
+        margin-left: 0;
+        margin-right: 0; }
+        .category-wrapper .filter-wrapper .filter-price .row p {
+          color: #33485e;
+          font-size: 17.0px;
+          float: left;
+          padding-top: 4px; }
+        .category-wrapper .filter-wrapper .filter-price .row .time-rent {
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          float: right;
+          width: 150px;
+          height: 36px;
+          background: #c7dbf9; }
+          .category-wrapper .filter-wrapper .filter-price .row .time-rent .active {
+            background: #71A2EA;
+            color: #fff; }
+          .category-wrapper .filter-wrapper .filter-price .row .time-rent .rent-day {
+            text-align: center;
+            font-size: 16px;
+            float: left;
+            padding: 5px;
+            width: 50%;
+            height: 100%;
+            cursor: pointer;
+            -webkit-border-radius: 5px 0px 0px 5px;
+            border-radius: 5px 0px 0px 5px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
+          .category-wrapper .filter-wrapper .filter-price .row .time-rent .rent-week {
+            text-align: center;
+            font-size: 16px;
+            float: left;
+            height: 100%;
+            padding: 5px;
+            width: 50%;
+            -webkit-border-radius: 0px 5px 5px 0px;
+            border-radius: 0px 5px 5px 0px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
+      .category-wrapper .filter-wrapper .filter-price .price-interval {
+        display: block;
+        margin-top: 20px; }
+        .category-wrapper .filter-wrapper .filter-price .price-interval input {
+          border: 1px solid #a7a9ac;
+          width: 78px;
+          height: 32px;
+          background: #ffffff;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          display: block; }
+        .category-wrapper .filter-wrapper .filter-price .price-interval #minCost {
+          float: left;
+          font: 12px "GothaProReg";
+          text-align: center; }
+        .category-wrapper .filter-wrapper .filter-price .price-interval span {
+          padding-left: 6px;
+          display: inline-block;
+          font-size: 19px;
+          margin-top: -5px;
+          float: left;
+          margin-left: -2px;
+          font-family: "GothaProLig"; }
+        .category-wrapper .filter-wrapper .filter-price .price-interval .filtered-items {
+          font: 12px "GothaProLig";
+          padding-top: 0; }
+        .category-wrapper .filter-wrapper .filter-price .price-interval #maxCost {
+          float: right;
+          font: 12px "GothaProReg";
+          text-align: center; }
+      .category-wrapper .filter-wrapper .filter-price #slider-range {
+        margin-top: 15px; }
+
+.category-product-item {
+  width: 100%;
+  min-height: 313px;
+  border: 1px solid #b2b2b1;
+  padding: 15px 20px 15px; }
+
+.category-product-item {
+  position: relative;
+  margin-bottom: 20px; }
+  .category-product-item:hover a {
+    text-decoration: none; }
+  .category-product-item a:hover {
+    text-decoration: none; }
+  .category-product-item .image-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 144px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .category-product-item .image-wrapper img {
+      width: 80%;
+      margin: 0 auto; }
+  .category-product-item .text-wrapper {
+    height: 92px; }
+  .category-product-item .slider-product-name {
+    font: 14px "GothaProMed";
+    color: #000; }
+  .category-product-item .slider-product-description {
+    font: 12px "GothaProLig";
+    color: #000; }
+  .category-product-item .action-block {
+    border-top: 1px dotted #a7a9ac;
+    padding-top: 6px;
+    bottom: 0;
+    height: 40px; }
+    .category-product-item .action-block .prices {
+      margin-top: 12px;
+      float: left; }
+      .category-product-item .action-block .prices .new-price {
+        font: 21px "GothaProMed"; }
+        .category-product-item .action-block .prices .new-price span {
+          font: 12px "GothaProMed";
+          margin-left: 2px; }
+          .category-product-item .action-block .prices .new-price span img {
+            width: 8px;
+            margin-top: -5px;
+            display: inline-block;
+            margin-left: -1px; }
+    .category-product-item .action-block .button-buy {
+      width: 83px;
+      height: 25px;
+      background: #ed1a3b;
+      float: right;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 10px;
+      color: #fff;
+      margin-top: 10px; }
+      .category-product-item .action-block .button-buy img {
+        float: left;
+        width: 10px; }
+      .category-product-item .action-block .button-buy p {
+        float: right;
+        font: 12px "GothaProNarBol";
+        padding-top: 1px;
+        padding-left: 5px; }
+
+a.more-products {
+  width: 100%;
+  float: left;
+  height: 45px;
+  background: #e6e7e8;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-top: 14px; }
+  a.more-products:hover {
+    text-decoration: none;
+    color: #0097a7; }
+  a.more-products p {
+    text-align: center;
+    font: 13px "GothaProBol";
+    text-transform: uppercase;
+    padding-top: 15px; }
+    a.more-products p span {
+      position: relative; }
+      a.more-products p span:after {
+        content: '';
+        position: absolute;
+        background: url(../img/arrow-down.png);
+        background-size: cover;
+        width: 9px;
+        height: 8px;
+        top: 16%;
+        right: -25px; }
+  a.more-products img {
+    float: right;
+    width: 7px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    padding-top: 12px; }
+
+.category-pages {
+  padding: 41px 0px 50px;
+  width: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .category-pages .pages-wrapper .pages-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #a7a9ac;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    margin-left: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .category-pages .pages-wrapper .pages-button a {
+      padding-top: 7px;
+      width: 100%;
+      height: 100%;
+      font: 12px "GothaProLig";
+      display: block;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      .category-pages .pages-wrapper .pages-button a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #a7a9ac; }
+        .category-pages .pages-wrapper .pages-button a:hover img {
+          -webkit-filter: brightness(400);
+          filter: brightness(400); }
+  .category-pages .pages-wrapper .prev-page img {
+    width: 9px;
+    margin-top: -2px;
+    margin-left: 2px; }
+  .category-pages .pages-wrapper .next-page img {
+    width: 9px;
+    margin-top: -2px;
+    margin-left: -1px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.category-you-saw {
+  width: 100%;
+  float: right;
+  padding-bottom: 64px; }
+  .category-you-saw .container {
+    border-top: 1px dotted #a7a9ac; }
+  .category-you-saw h1 {
+    text-align: center;
+    padding: 37px 0px 36px !important; }
+
+.fork-banner {
+  width: 100%;
+  background: url(../img/banner-room.png);
+  background-size: 100%;
+  background-position: 19% 47%;
+  min-height: 340px;
+  padding-top: 25px;
+  float: left; }
+  .fork-banner h1 {
+    font: 54px "GothaProLig";
+    color: #fff;
+    width: 50%;
+    line-height: 63px; }
+
+.fork-nav {
+  min-height: 60px;
+  width: 100%;
+  float: left;
+  background: #e6e7e8; }
+  .fork-nav ul {
+    float: left; }
+    .fork-nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 42px;
+      height: 60px; }
+      .fork-nav ul li a {
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase;
+        font: 13px "GothaProBol";
+        padding-top: 23px;
+        display: block;
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .fork-nav ul li a:hover {
+          text-decoration: none;
+          color: #0097a7; }
+  .fork-nav .to-color {
+    background: #e6e7e8;
+    float: right; }
+    .fork-nav .to-color:hover a {
+      text-decoration: none;
+      color: #0097a7; }
+    .fork-nav .to-color a {
+      text-transform: uppercase;
+      font: 13px "GothaProMed";
+      padding: 23px 10px;
+      display: block;
+      float: left; }
+    .fork-nav .to-color img {
+      width: 9px;
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      margin-top: 26px; }
+
+.fork-content {
+  float: left;
+  width: 100%;
+  padding-top: 86px;
+  padding-bottom: 67px; }
+  .fork-content .fork-item {
+    width: 99%;
+    margin-bottom: 60px;
+    float: left; }
+    .fork-content .fork-item .fork-image-wrapper {
+      width: 28%;
+      height: auto;
+      float: left; }
+      .fork-content .fork-item .fork-image-wrapper img {
+        width: 100%; }
+    .fork-content .fork-item .fork-text-wrapper {
+      width: 72%;
+      padding: 16px 0px 25px 57px;
+      float: left; }
+      .fork-content .fork-item .fork-text-wrapper h1 {
+        width: 70%;
+        font: 34px "GothaProLig"; }
+      .fork-content .fork-item .fork-text-wrapper p {
+        padding-top: 6px;
+        line-height: 21px; }
+        .fork-content .fork-item .fork-text-wrapper p span {
+          list-style: none; }
+          .fork-content .fork-item .fork-text-wrapper p span a {
+            border-bottom: 1px dashed #000;
+            font: 14px "GothaProLig";
+            padding-top: 5px;
+            display: inline-block; }
+            .fork-content .fork-item .fork-text-wrapper p span a:hover {
+              text-decoration: none;
+              color: #0097a7;
+              border-bottom: 1px dashed #0097a7; }
+        .fork-content .fork-item .fork-text-wrapper p span:after {
+          content: '/';
+          color: #009aa5;
+          padding-left: 10px;
+          padding-right: 10px; }
+        .fork-content .fork-item .fork-text-wrapper p span:last-child:after {
+          content: ""; }
+
+.sign-top {
+  background: #fff;
+  width: 100%;
+  float: left; }
+  .sign-top .row {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .sign-top .row .col-md-6 {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .sign-top .row .col-md-6 h1 {
+        font: 26px "GothaProReg";
+        margin-right: -2px;
+        padding-top: 40px;
+        padding-left: 5px; }
+
+.sign-content {
+  width: 100%;
+  float: left;
+  padding: 20px 0 89px;
+  background: #f1f2f2; }
+  .sign-content .registration-form {
+    padding: 7px 70px 30px;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    outline: 1px solid #b2b2b1; }
+    .sign-content .registration-form form {
+      width: 100%; }
+      .sign-content .registration-form form p {
+        font: 14px "GothaProMed"; }
+        .sign-content .registration-form form p span {
+          color: #009aa5;
+          padding-left: 5px; }
+      .sign-content .registration-form form .dotted-border {
+        border: 1px dotted #dadada;
+        margin: 5px 0px; }
+      .sign-content .registration-form form input {
+        width: 100%;
+        max-width: 320px;
+        height: 30px;
+        border: 1px solid #a7a9ac;
+        margin-bottom: 18px; }
+      .sign-content .registration-form form input[type=checkbox] {
+        display: none !important; }
+      .sign-content .registration-form form input[type=checkbox] + label {
+        padding: 0 0 0 0px;
+        background: #fff;
+        height: 21px;
+        width: 21px;
+        background-size: 100%;
+        border: 1px solid #a7a9ac;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        float: left;
+        margin-top: 10px; }
+      .sign-content .registration-form form input[type=checkbox]:checked + label:before {
+        content: "";
+        color: #0099a8;
+        background: url(../img/galka.svg) #fff;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 50% 50%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 10px; }
+      .sign-content .registration-form form .checkbox-wrapper p {
+        font: 12px "GothaProLig";
+        padding-right: 50px;
+        padding-left: 30px;
+        margin: 27px 0 22px;
+        padding-top: 10px; }
+      .sign-content .registration-form form .password-check {
+        width: 100%;
+        height: 10px;
+        max-width: 320px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 4px 0 13px; }
+        .sign-content .registration-form form .password-check .password-bad {
+          background: #ed1a3b;
+          width: 33.33%;
+          float: left;
+          height: 100%; }
+        .sign-content .registration-form form .password-check .password-normal {
+          background: #ffb500;
+          width: 33.33%;
+          height: 100%;
+          float: left; }
+        .sign-content .registration-form form .password-check .password-good {
+          background: #009aa5;
+          width: 33.33%;
+          height: 100%;
+          float: left; }
+      .sign-content .registration-form form .password-des {
+        font: 13px "GothaProLig";
+        text-align: center;
+        margin-bottom: 17px; }
+      .sign-content .registration-form form p.sign-rules {
+        padding-right: 0; }
+      .sign-content .registration-form form .sign-up-button {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        height: 47px;
+        background: #ed1a3b;
+        margin-top: 25px;
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .sign-content .registration-form form .sign-up-button:hover {
+          background: #92001c;
+          text-decoration: none; }
+          .sign-content .registration-form form .sign-up-button:hover a {
+            text-decoration: none; }
+        .sign-content .registration-form form .sign-up-button a {
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          width: 100%;
+          height: 47px;
+          display: block; }
+          .sign-content .registration-form form .sign-up-button a p {
+            padding-top: 15px; }
+  .sign-content .sign-up-socials {
+    background: #fff;
+    padding: 30px 40px;
+    outline: 1px solid #b2b2b1; }
+    .sign-content .sign-up-socials a img {
+      width: 50px;
+      margin-right: 16px; }
+    .sign-content .sign-up-socials a:last-child img {
+      margin-right: 0px; }
+
+.sign-in-top {
+  background: #fff;
+  width: 100%;
+  float: left; }
+  .sign-in-top h1 {
+    font: 26px "GothaProReg";
+    padding: 41px 0 25px; }
+
+.sign-in-content {
+  width: 100%;
+  float: left;
+  padding: 21px 0 109px;
+  background: #f1f2f2; }
+  .sign-in-content h2 {
+    font: 18px "GothaProMed";
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 80%; }
+  .sign-in-content .sign-up-button {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    height: 47px;
+    background: #ed1a3b;
+    margin-top: 23px;
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    .sign-in-content .sign-up-button:hover {
+      background: #92001c;
+      text-decoration: none; }
+    .sign-in-content .sign-up-button a {
+      color: #fff;
+      font: 14px "GothaProNarBol";
+      width: 100%;
+      height: 47px;
+      display: block;
+      text-decoration: none; }
+      .sign-in-content .sign-up-button a p {
+        padding-top: 15px; }
+  .sign-in-content .registration-form {
+    border: 1px solid #b2b2b1;
+    padding: 25px 70px 49px;
+    width: 100%;
+    background: #fff;
+    height: 100%; }
+    .sign-in-content .registration-form form {
+      width: 100%;
+      margin-top: 0px; }
+      .sign-in-content .registration-form form p {
+        font: 14px "GothaProMed"; }
+        .sign-in-content .registration-form form p span {
+          color: #009aa5;
+          padding-left: 5px; }
+      .sign-in-content .registration-form form .error-text {
+        font: 12px "GothaProLig";
+        color: #a7a9ab;
+        margin-bottom: 15px; }
+      .sign-in-content .registration-form form .forget-pas {
+        display: block;
+        margin-top: 13px;
+        font: 13px "GothaProLig";
+        color: #272726; }
+      .sign-in-content .registration-form form .dotted-border {
+        border: 1px dotted #a7a9ac;
+        margin: 10px 0px; }
+      .sign-in-content .registration-form form input {
+        width: 100%;
+        max-width: 320px;
+        height: 30px;
+        border: 1px solid #a7a9ac;
+        margin-bottom: 10px; }
+  .sign-in-content .sign-up-socials {
+    border: 1px solid #b2b2b1;
+    background: #fff;
+    padding: 27px 33px 22px 72px;
+    margin-bottom: 20px; }
+    .sign-in-content .sign-up-socials h2 {
+      width: 100%; }
+    .sign-in-content .sign-up-socials a img {
+      width: 40px;
+      margin-right: 15px; }
+    .sign-in-content .sign-up-socials a:last-child img {
+      margin-right: 0px; }
+
+.to-sign-up {
+  padding: 23px 69px 29px !important; }
+  .to-sign-up .sign-up-button {
+    margin-top: 43px; }
+
+.special-wrapper .filter-wrapper {
+  background: #fff;
+  padding: 0;
+  border: none; }
+
+.special-wrapper .type-filter {
+  margin-top: 0; }
+
+.special-wrapper .filter-categories {
+  background: #f1f2f2;
+  margin-top: 0 !important;
+  margin-bottom: 4px;
+  padding: 13px 20px !important;
+  border-bottom: none !important;
+  border: 1px solid #e6e7e8; }
+  .special-wrapper .filter-categories:after {
+    right: 20px !important; }
+  .special-wrapper .filter-categories p {
+    text-transform: uppercase; }
+
+.special-wrapper .hidden-filters {
+  background: #f1f2f2;
+  padding: 0 20px 20px 20px;
+  float: left;
+  border: 1px solid #e6e7e8;
+  margin-bottom: 4px; }
+
+.special-wrapper .circle-to-action {
+  top: 15px; }
+
+.special-wrapper .old-price {
+  position: relative;
+  float: left;
+  margin-bottom: -4px; }
+  .special-wrapper .old-price p {
+    font: 13px "GothaProReg";
+    color: #a7a9ac;
+    margin: 0px; }
+  .special-wrapper .old-price span {
+    font: 12px "GothaProMed";
+    margin-left: -2px; }
+    .special-wrapper .old-price span img {
+      width: 7px;
+      margin-top: -2px;
+      display: inline-block; }
+
+.special-wrapper .old-price:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  background: #ed1a3b; }
+
+.special-wrapper .main-banner-special {
+  padding-top: 0; }
+  .special-wrapper .main-banner-special .blue-banner {
+    min-height: 145px !important; }
+    .special-wrapper .main-banner-special .blue-banner .blue-banner-text {
+      width: 55% !important; }
+      .special-wrapper .main-banner-special .blue-banner .blue-banner-text p {
+        font: 20px "GothaProLig" !important; }
+      .special-wrapper .main-banner-special .blue-banner .blue-banner-text .special-percent {
+        font: 44px "GothaProMed" !important; }
+    .special-wrapper .main-banner-special .blue-banner .blue-banner-image {
+      width: 45% !important; }
+
+.product-top {
+  padding-top: 40px;
+  width: 100%;
+  float: left;
+  padding-bottom: 30px; }
+  .product-top .product-top-wrapper {
+    border: 1px solid #a7a9ac;
+    padding: 25px 30px;
+    float: left; }
+    .product-top .product-top-wrapper .product-name {
+      font: 26px "GothaProReg";
+      width: 80%;
+      float: left; }
+    .product-top .product-top-wrapper .product-logo {
+      float: right;
+      width: 50px; }
+    .product-top .product-top-wrapper .product-sertification {
+      float: left;
+      font: 13px "GothaProLig";
+      color: #a6a8ab; }
+      .product-top .product-top-wrapper .product-sertification:before {
+        content: '';
+        background: url(../img/sertificated.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        float: left; }
+    .product-top .product-top-wrapper .product-image {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      padding-top: 20px; }
+    .product-top .product-top-wrapper .product-to-color {
+      padding: 25px 20px;
+      height: 40px;
+      float: right;
+      margin-top: 30px; }
+      .product-top .product-top-wrapper .product-to-color a {
+        font: 13px "GothaProMed"; }
+      .product-top .product-top-wrapper .product-to-color img {
+        float: right;
+        width: 7px;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        padding-top: 17px; }
+  .product-top .price-buy-wrapper {
+    border: 1px solid #a7a9ac;
+    width: 100%;
+    float: left;
+    padding: 25px 20px;
+    width: 100%; }
+    .product-top .price-buy-wrapper p {
+      float: left; }
+    .product-top .price-buy-wrapper h5 {
+      float: left;
+      font: 12px "GothaProMed"; }
+    .product-top .price-buy-wrapper .product-price-wrapper h5 {
+      padding-top: 20px; }
+    .product-top .price-buy-wrapper .product-price-wrapper .prices {
+      float: right; }
+      .product-top .price-buy-wrapper .product-price-wrapper .prices .old-price {
+        position: relative;
+        float: right; }
+        .product-top .price-buy-wrapper .product-price-wrapper .prices .old-price p {
+          font: 14px "GothaProReg";
+          color: #a7a9ac;
+          margin: 0px; }
+      .product-top .price-buy-wrapper .product-price-wrapper .prices .old-price:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background: #ed1a3b; }
+      .product-top .price-buy-wrapper .product-price-wrapper .prices .new-price {
+        font: 30px "GothaProMed"; }
+    .product-top .price-buy-wrapper .product-economy {
+      width: 100%;
+      float: left; }
+      .product-top .price-buy-wrapper .product-economy h5 {
+        margin: 0; }
+      .product-top .price-buy-wrapper .product-economy .economy {
+        width: 43px;
+        float: right;
+        color: #fff;
+        height: 15px; }
+        .product-top .price-buy-wrapper .product-economy .economy span.economy-sum {
+          padding: 2px 3px;
+          background: #faa61a;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          float: left;
+          font: 13px "GothaProMed"; }
+    .product-top .price-buy-wrapper .button-buy {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 40px; }
+      .product-top .price-buy-wrapper .button-buy a {
+        margin: 0 auto;
+        display: inline-block;
+        float: none; }
+      .product-top .price-buy-wrapper .button-buy p {
+        margin: 0;
+        padding-left: 5px; }
+    .product-top .price-buy-wrapper .to-favor {
+      text-align: center;
+      float: left;
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 15%; }
+      .product-top .price-buy-wrapper .to-favor a {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+        .product-top .price-buy-wrapper .to-favor a:hover {
+          color: #0099a8; }
+        .product-top .price-buy-wrapper .to-favor a img {
+          width: 18px;
+          display: inline-block;
+          float: left;
+          margin-top: 2px;
+          margin-right: 5px; }
+
+#product-tabs .product-tabs-buttons {
+  width: 100%;
+  background: #e6e7e8;
+  float: left; }
+  #product-tabs .product-tabs-buttons .nav.nav-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    #product-tabs .product-tabs-buttons .nav.nav-tabs li:hover a {
+      color: #0099a8;
+      text-decoration: none; }
+    #product-tabs .product-tabs-buttons .nav.nav-tabs li a {
+      padding: 20px 33px;
+      border: 0px solid transparent;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      font: 13px "GothaProBol";
+      text-transform: uppercase; }
+      #product-tabs .product-tabs-buttons .nav.nav-tabs li a span {
+        color: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #808080;
+        margin-left: 5px;
+        padding: 1px 7px; }
+    #product-tabs .product-tabs-buttons .nav.nav-tabs li.active a {
+      background: #f1f2f2;
+      color: #0099a8; }
+
+#product-tabs .tab-content .tab-pane {
+  float: left;
+  width: 100%;
+  padding-bottom: 40px; }
+  #product-tabs .tab-content .tab-pane .tab-pane-wrapper {
+    height: 720px;
+    overflow: hidden; }
+    #product-tabs .tab-content .tab-pane .tab-pane-wrapper ul {
+      margin-left: 15px; }
+    #product-tabs .tab-content .tab-pane .tab-pane-wrapper h1 {
+      font-size: 28px;
+      padding: 60px 0 40px; }
+    #product-tabs .tab-content .tab-pane .tab-pane-wrapper p {
+      padding-bottom: 10px;
+      font-size: 14px; }
+    #product-tabs .tab-content .tab-pane .tab-pane-wrapper h5 {
+      font: 14px "GothaProMed";
+      margin-top: 30px; }
+    #product-tabs .tab-content .tab-pane .tab-pane-wrapper .specifications-wrapper {
+      width: 100%;
+      padding-right: 33%;
+      float: left;
+      margin-bottom: 40px; }
+      #product-tabs .tab-content .tab-pane .tab-pane-wrapper .specifications-wrapper .specifications-item {
+        border-bottom: 1px solid #e6e7e8;
+        float: left;
+        width: 100%; }
+        #product-tabs .tab-content .tab-pane .tab-pane-wrapper .specifications-wrapper .specifications-item h5 {
+          float: left;
+          width: 40%;
+          margin: 0;
+          padding: 10px 0 0; }
+        #product-tabs .tab-content .tab-pane .tab-pane-wrapper .specifications-wrapper .specifications-item p {
+          float: left;
+          margin: 0;
+          padding: 10px 0 0; }
+  #product-tabs .tab-content .tab-pane .read-more h5 {
+    float: left;
+    margin: 0; }
+  #product-tabs .tab-content .tab-pane .read-more img {
+    width: 7px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    padding-top: 0px;
+    margin-left: 5px; }
+
+#product-tabs .tab-content .testimonials-wrapper {
+  height: auto !important; }
+
+#product-tabs .tab-content .testimonial-wrapper {
+  float: left;
+  margin-bottom: 40px; }
+  #product-tabs .tab-content .testimonial-wrapper .testimonial-image {
+    width: 54px;
+    display: inline-block;
+    float: left; }
+  #product-tabs .tab-content .testimonial-wrapper .testimonial-name {
+    font: 19px "GothaProBol" !important;
+    display: inline-block;
+    float: left;
+    padding-top: 20px;
+    padding: 25px 10px 0; }
+    #product-tabs .tab-content .testimonial-wrapper .testimonial-name span {
+      font: 16px "GothaProLig";
+      padding-left: 10px;
+      color: #a7a9ab;
+      border-left: 1px solid #a7a9ab;
+      margin-left: 15px; }
+  #product-tabs .tab-content .testimonial-wrapper .testimonial-text {
+    float: left;
+    margin-top: 10px; }
+  #product-tabs .tab-content .testimonial-wrapper .read-more-testimonial {
+    float: left; }
+    #product-tabs .tab-content .testimonial-wrapper .read-more-testimonial h5 {
+      float: left;
+      margin: 0; }
+    #product-tabs .tab-content .testimonial-wrapper .read-more-testimonial img {
+      width: 7px;
+      margin-top: -3px;
+      margin-left: 5px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+
+#product-tabs .tab-content .testimonial-form-wrapper {
+  width: 67%;
+  float: left;
+  margin-top: 50px; }
+  #product-tabs .tab-content .testimonial-form-wrapper h1 {
+    margin-bottom: 0;
+    padding-bottom: 0 !important; }
+  #product-tabs .tab-content .testimonial-form-wrapper h5 {
+    margin-top: 10px !important; }
+  #product-tabs .tab-content .testimonial-form-wrapper .testimonial-login {
+    width: 100%;
+    float: left;
+    min-height: 64px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #f1f2f2;
+    padding: 12px 15px; }
+    #product-tabs .tab-content .testimonial-form-wrapper .testimonial-login p {
+      font: 13px "GothaProLig";
+      float: left;
+      width: 86%;
+      margin-bottom: 0;
+      padding: 0; }
+    #product-tabs .tab-content .testimonial-form-wrapper .testimonial-login .button-login {
+      width: 78px;
+      height: 35px;
+      float: right;
+      background: #ed193a;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      text-align: center; }
+      #product-tabs .tab-content .testimonial-form-wrapper .testimonial-login .button-login a {
+        padding-top: 10px;
+        color: #fff;
+        font: 14px "GothaProNarBol";
+        width: 100%;
+        height: 100%;
+        display: block; }
+  #product-tabs .tab-content .testimonial-form-wrapper form {
+    width: 100%;
+    float: left; }
+    #product-tabs .tab-content .testimonial-form-wrapper form p {
+      font: 14px "GothaProMed"; }
+      #product-tabs .tab-content .testimonial-form-wrapper form p span {
+        color: #009aa5;
+        padding-left: 5px; }
+    #product-tabs .tab-content .testimonial-form-wrapper form input {
+      width: 100%;
+      max-width: 320px;
+      height: 30px;
+      border: 1px solid #a7a9ac;
+      margin-bottom: 20px; }
+    #product-tabs .tab-content .testimonial-form-wrapper form textarea {
+      width: 100%;
+      margin-bottom: 20px; }
+    #product-tabs .tab-content .testimonial-form-wrapper form .button-post-testimonial {
+      float: left;
+      background: #ed193a;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      padding: 15px 30px; }
+      #product-tabs .tab-content .testimonial-form-wrapper form .button-post-testimonial a {
+        color: #fff;
+        font: 14px "GothaProNarBol";
+        width: 100%;
+        height: 100%;
+        display: block; }
+
+.layer-testimonial-white {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.59);
+  z-index: 100; }
+  .layer-testimonial-white .testimonial-success-wrapper {
+    width: 460px;
+    min-height: 260px;
+    margin-top: 15%;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #a7a9ac;
+    padding-bottom: 25px; }
+    .layer-testimonial-white .testimonial-success-wrapper .testimonial-success {
+      position: relative;
+      padding: 60px 80px 0; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success h1 {
+        font: 26px "GothaProLig";
+        padding-top: 0; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success p {
+        font: 14px "GothaProMed"; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main {
+        margin: 0 auto;
+        display: block;
+        background: #ed193a;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        width: 140px;
+        text-align: center;
+        padding: 15px 30px;
+        margin-top: 30px; }
+        .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main a {
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .close-test {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 17px;
+        cursor: pointer; }
+        .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .close-test img {
+          width: 100%; }
+
+.faq-wrapper {
+  width: 100%;
+  float: left;
+  padding-bottom: 100px; }
+  .faq-wrapper h1 {
+    padding: 34px 0 12px;
+    font: 26px "GothaProReg"; }
+  .faq-wrapper h5 {
+    color: #272726;
+    font: 14px "GothaProMed";
+    margin-bottom: 2px; }
+  .faq-wrapper .question-category {
+    font: 20px "GothaProBol";
+    margin-top: 62px; }
+  .faq-wrapper .faq-header {
+    line-height: 19px; }
+    .faq-wrapper .faq-header a {
+      text-decoration: dashed;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      padding-right: 18px; }
+      .faq-wrapper .faq-header a:hover {
+        color: #0099a8; }
+  .faq-wrapper #accordion {
+    margin-top: 20px; }
+    .faq-wrapper #accordion .panel-default {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background: #fff;
+      border: 1px solid #e6e7e8; }
+      .faq-wrapper #accordion .panel-default .panel-heading {
+        padding: 15px 15px; }
+      .faq-wrapper #accordion .panel-default .panel-title {
+        display: inline-block; }
+        .faq-wrapper #accordion .panel-default .panel-title a {
+          font: 16px "GothaProMed"; }
+      .faq-wrapper #accordion .panel-default img {
+        width: 15px;
+        float: right;
+        margin-bottom: 15px; }
+    .faq-wrapper #accordion .panel-body {
+      font: 12px "GothaProLig"; }
+
+.ask-wrapper {
+  width: 100%;
+  float: left;
+  padding-bottom: 100px; }
+  .ask-wrapper h1 {
+    padding: 35px 0 13px;
+    font: 26px "GothaProReg"; }
+  .ask-wrapper h5 {
+    color: #272726;
+    font: 16px "GothaProMed"; }
+  .ask-wrapper .ask-send {
+    width: 100%;
+    max-width: 700px;
+    float: left;
+    min-height: 64px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #f1f2f2;
+    padding: 15px 20px;
+    margin-top: 27px; }
+    .ask-wrapper .ask-send p {
+      font: 12px "GothaProLig";
+      float: left;
+      width: 81%;
+      margin-bottom: 0;
+      padding: 0;
+      line-height: 18px; }
+    .ask-wrapper .ask-send .button-ask {
+      float: right;
+      background: #ed193a;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 9px; }
+      .ask-wrapper .ask-send .button-ask a {
+        color: #fff;
+        padding: 10px 10px;
+        font: 14px "GothaProNarBol";
+        width: 100%;
+        height: 100%;
+        display: block; }
+  .ask-wrapper .phones-to-ask {
+    width: 100%;
+    float: left;
+    margin-top: 36px; }
+    .ask-wrapper .phones-to-ask .phones-ask-wrapper {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 26px; }
+      .ask-wrapper .phones-to-ask .phones-ask-wrapper .phone-ask-item {
+        width: 100%;
+        float: left;
+        margin-bottom: -5px; }
+        .ask-wrapper .phones-to-ask .phones-ask-wrapper .phone-ask-item .phone-name {
+          width: 50%;
+          float: left; }
+          .ask-wrapper .phones-to-ask .phones-ask-wrapper .phone-ask-item .phone-name p {
+            font: 15px "GothaProLig"; }
+
+.layer-testimonial-white,
+.layer-ask-form {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.59);
+  z-index: 100; }
+  .layer-testimonial-white .testimonial-success-wrapper,
+  .layer-testimonial-white .ask-form-wrapper,
+  .layer-ask-form .testimonial-success-wrapper,
+  .layer-ask-form .ask-form-wrapper {
+    width: 460px;
+    min-height: 260px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #a7a9ac; }
+    .layer-testimonial-white .testimonial-success-wrapper .testimonial-success,
+    .layer-testimonial-white .ask-form-wrapper .testimonial-success,
+    .layer-ask-form .testimonial-success-wrapper .testimonial-success,
+    .layer-ask-form .ask-form-wrapper .testimonial-success {
+      position: relative;
+      padding: 60px 80px 0; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success h1,
+      .layer-testimonial-white .ask-form-wrapper .testimonial-success h1,
+      .layer-ask-form .testimonial-success-wrapper .testimonial-success h1,
+      .layer-ask-form .ask-form-wrapper .testimonial-success h1 {
+        font: 26px "GothaProLig";
+        padding-top: 0; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success p,
+      .layer-testimonial-white .ask-form-wrapper .testimonial-success p,
+      .layer-ask-form .testimonial-success-wrapper .testimonial-success p,
+      .layer-ask-form .ask-form-wrapper .testimonial-success p {
+        font: 14px "GothaProMed"; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main,
+      .layer-testimonial-white .ask-form-wrapper .testimonial-success .button-testimonial-to-main,
+      .layer-ask-form .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main,
+      .layer-ask-form .ask-form-wrapper .testimonial-success .button-testimonial-to-main {
+        margin: 0 auto;
+        display: block;
+        background: #ed193a;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        width: 140px;
+        text-align: center;
+        padding: 15px 30px;
+        margin-top: 30px; }
+        .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main a,
+        .layer-testimonial-white .ask-form-wrapper .testimonial-success .button-testimonial-to-main a,
+        .layer-ask-form .testimonial-success-wrapper .testimonial-success .button-testimonial-to-main a,
+        .layer-ask-form .ask-form-wrapper .testimonial-success .button-testimonial-to-main a {
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .close-test,
+      .layer-testimonial-white .ask-form-wrapper .testimonial-success .close-test,
+      .layer-ask-form .testimonial-success-wrapper .testimonial-success .close-test,
+      .layer-ask-form .ask-form-wrapper .testimonial-success .close-test {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 17px;
+        cursor: pointer; }
+        .layer-testimonial-white .testimonial-success-wrapper .testimonial-success .close-test img,
+        .layer-testimonial-white .ask-form-wrapper .testimonial-success .close-test img,
+        .layer-ask-form .testimonial-success-wrapper .testimonial-success .close-test img,
+        .layer-ask-form .ask-form-wrapper .testimonial-success .close-test img {
+          width: 100%; }
+    .layer-testimonial-white .testimonial-success-wrapper .title-ask-form,
+    .layer-testimonial-white .ask-form-wrapper .title-ask-form,
+    .layer-ask-form .testimonial-success-wrapper .title-ask-form,
+    .layer-ask-form .ask-form-wrapper .title-ask-form {
+      width: 100%;
+      padding: 25px 70px;
+      float: left;
+      background: #e6e7e8; }
+      .layer-testimonial-white .testimonial-success-wrapper .title-ask-form h3,
+      .layer-testimonial-white .ask-form-wrapper .title-ask-form h3,
+      .layer-ask-form .testimonial-success-wrapper .title-ask-form h3,
+      .layer-ask-form .ask-form-wrapper .title-ask-form h3 {
+        font: 13px "GothaProBol";
+        text-transform: uppercase;
+        text-align: left;
+        padding: 0;
+        margin: 0; }
+    .layer-testimonial-white .testimonial-success-wrapper form,
+    .layer-testimonial-white .ask-form-wrapper form,
+    .layer-ask-form .testimonial-success-wrapper form,
+    .layer-ask-form .ask-form-wrapper form {
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding: 20px 70px;
+      margin-top: 0; }
+      .layer-testimonial-white .testimonial-success-wrapper form h5,
+      .layer-testimonial-white .ask-form-wrapper form h5,
+      .layer-ask-form .testimonial-success-wrapper form h5,
+      .layer-ask-form .ask-form-wrapper form h5 {
+        font: 14px "GothaProMed"; }
+      .layer-testimonial-white .testimonial-success-wrapper form p,
+      .layer-testimonial-white .ask-form-wrapper form p,
+      .layer-ask-form .testimonial-success-wrapper form p,
+      .layer-ask-form .ask-form-wrapper form p {
+        font: 14px "GothaProMed"; }
+        .layer-testimonial-white .testimonial-success-wrapper form p span,
+        .layer-testimonial-white .ask-form-wrapper form p span,
+        .layer-ask-form .testimonial-success-wrapper form p span,
+        .layer-ask-form .ask-form-wrapper form p span {
+          color: #009aa5;
+          padding-left: 5px; }
+      .layer-testimonial-white .testimonial-success-wrapper form input,
+      .layer-testimonial-white .ask-form-wrapper form input,
+      .layer-ask-form .testimonial-success-wrapper form input,
+      .layer-ask-form .ask-form-wrapper form input {
+        width: 100%;
+        max-width: 320px;
+        height: 30px;
+        border: 1px solid #a7a9ac;
+        margin-bottom: 20px; }
+      .layer-testimonial-white .testimonial-success-wrapper form textarea,
+      .layer-testimonial-white .ask-form-wrapper form textarea,
+      .layer-ask-form .testimonial-success-wrapper form textarea,
+      .layer-ask-form .ask-form-wrapper form textarea {
+        width: 100%;
+        margin-bottom: 20px; }
+      .layer-testimonial-white .testimonial-success-wrapper form .button-post-testimonial,
+      .layer-testimonial-white .ask-form-wrapper form .button-post-testimonial,
+      .layer-ask-form .testimonial-success-wrapper form .button-post-testimonial,
+      .layer-ask-form .ask-form-wrapper form .button-post-testimonial {
+        float: left;
+        background: #ed193a;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        padding: 15px 30px; }
+        .layer-testimonial-white .testimonial-success-wrapper form .button-post-testimonial a,
+        .layer-testimonial-white .ask-form-wrapper form .button-post-testimonial a,
+        .layer-ask-form .testimonial-success-wrapper form .button-post-testimonial a,
+        .layer-ask-form .ask-form-wrapper form .button-post-testimonial a {
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .layer-testimonial-white .testimonial-success-wrapper form input[type=checkbox],
+      .layer-testimonial-white .ask-form-wrapper form input[type=checkbox],
+      .layer-ask-form .testimonial-success-wrapper form input[type=checkbox],
+      .layer-ask-form .ask-form-wrapper form input[type=checkbox] {
+        display: none !important; }
+      .layer-testimonial-white .testimonial-success-wrapper form input[type=checkbox] + label,
+      .layer-testimonial-white .ask-form-wrapper form input[type=checkbox] + label,
+      .layer-ask-form .testimonial-success-wrapper form input[type=checkbox] + label,
+      .layer-ask-form .ask-form-wrapper form input[type=checkbox] + label {
+        padding: 0 0 0 0px;
+        background: #fff;
+        height: 21px;
+        width: 21px;
+        background-size: 100%;
+        border: 1px solid #a7a9ac;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        float: left; }
+      .layer-testimonial-white .testimonial-success-wrapper form input[type=checkbox]:checked + label,
+      .layer-testimonial-white .ask-form-wrapper form input[type=checkbox]:checked + label,
+      .layer-ask-form .testimonial-success-wrapper form input[type=checkbox]:checked + label,
+      .layer-ask-form .ask-form-wrapper form input[type=checkbox]:checked + label {
+        padding: 0 0 0 0px;
+        background: #fff;
+        height: 21px;
+        width: 21px;
+        background-size: 100%;
+        border: 3px solid #a7a9ac;
+        float: left; }
+      .layer-testimonial-white .testimonial-success-wrapper form .checkbox-wrapper p,
+      .layer-testimonial-white .ask-form-wrapper form .checkbox-wrapper p,
+      .layer-ask-form .testimonial-success-wrapper form .checkbox-wrapper p,
+      .layer-ask-form .ask-form-wrapper form .checkbox-wrapper p {
+        font: 12px "GothaProLig";
+        padding-right: 50px;
+        padding-left: 30px;
+        margin: 10px 0; }
+      .layer-testimonial-white .testimonial-success-wrapper form .sign-up-button,
+      .layer-testimonial-white .ask-form-wrapper form .sign-up-button,
+      .layer-ask-form .testimonial-success-wrapper form .sign-up-button,
+      .layer-ask-form .ask-form-wrapper form .sign-up-button {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        height: 47px;
+        background: #ed1a3b;
+        margin-top: 25px; }
+        .layer-testimonial-white .testimonial-success-wrapper form .sign-up-button a,
+        .layer-testimonial-white .ask-form-wrapper form .sign-up-button a,
+        .layer-ask-form .testimonial-success-wrapper form .sign-up-button a,
+        .layer-ask-form .ask-form-wrapper form .sign-up-button a {
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          width: 100%;
+          height: 47px;
+          display: block; }
+          .layer-testimonial-white .testimonial-success-wrapper form .sign-up-button a p,
+          .layer-testimonial-white .ask-form-wrapper form .sign-up-button a p,
+          .layer-ask-form .testimonial-success-wrapper form .sign-up-button a p,
+          .layer-ask-form .ask-form-wrapper form .sign-up-button a p {
+            padding-top: 15px; }
+
+.ask-form-wrapper {
+  height: 800px !important;
+  position: relative;
+  margin-top: 2% !important; }
+  .ask-form-wrapper .close-ask-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    cursor: pointer; }
+    .ask-form-wrapper .close-ask-form img {
+      width: 100%; }
+
+.payment-wrapper h1 {
+  float: left; }
+
+.payment-wrapper #payment-tabs .payment-tabs-buttons {
+  width: 100%;
+  background: #e6e7e8;
+  float: left; }
+  .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li a {
+      padding: 20px 33px;
+      border: 0px solid transparent;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      font: 13px "GothaProBol";
+      text-transform: uppercase; }
+      .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li a span {
+        color: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #808080;
+        margin-left: 5px;
+        padding: 1px 7px; }
+    .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li.active a {
+      background: #f1f2f2;
+      color: #0099a8; }
+    .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li:hover a {
+      color: #0099a8; }
+
+.payment-wrapper #payment-tabs .tab-content .tab-pane {
+  float: left;
+  width: 100%;
+  padding-bottom: 40px;
+  padding: 20px 0 40px;
+  border-bottom: 1px dotted #a7a9ac; }
+  .payment-wrapper #payment-tabs .tab-content .tab-pane p {
+    padding-bottom: 10px;
+    font-size: 14px; }
+  .payment-wrapper #payment-tabs .tab-content .tab-pane h5 {
+    font: 14px "GothaProMed";
+    margin-top: 30px; }
+
+.payment-wrapper .ask-wrapper {
+  margin-top: 50px; }
+  .payment-wrapper .ask-wrapper p span {
+    font: 13px "GothaProMed"; }
+
+.payment-wrapper .ask-wrapper .ask-send .button-ask {
+  margin-top: 0; }
+
+.payment-wrapper .go-to-shop {
+  width: 100%;
+  float: left;
+  padding: 0 0 80px; }
+
+.payment-wrapper .button-go-to-shop {
+  background: #ed1a3b;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 70px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease; }
+  .payment-wrapper .button-go-to-shop a {
+    color: #fff;
+    padding: 20px 50px;
+    display: block;
+    font: 14px "GothaProNarBol";
+    width: 100%;
+    height: 100%; }
+    .payment-wrapper .button-go-to-shop a:hover {
+      text-decoration: none; }
+
+.payment-wrapper .delivery-tab-item {
+  float: left;
+  width: 100%; }
+  .payment-wrapper .delivery-tab-item p span {
+    float: right;
+    color: #009aa5;
+    font: 14px "GothaProMed"; }
+
+.shops-header h1 {
+  padding: 39px 0px 44px; }
+  .shops-header h1 span {
+    border-bottom: 1px dashed #dadada;
+    cursor: pointer;
+    position: relative; }
+    .shops-header h1 span:after {
+      content: '';
+      position: absolute;
+      background: url(../img/arrow-down.png);
+      background-size: cover;
+      width: 12px;
+      height: 10px;
+      top: 40%; }
+  .shops-header h1 ul {
+    display: none; }
+
+.shops-header .how-display-shops {
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-top: 51px; }
+  .shops-header .how-display-shops p {
+    font: 12px "GothaProMed"; }
+  .shops-header .how-display-shops img {
+    float: left;
+    width: 17px;
+    margin-left: 15px; }
+  .shops-header .how-display-shops .target-icon {
+    margin-top: -3px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: 0.6;
+    margin-left: 17px; }
+
+.shops-list {
+  padding-bottom: 150px; }
+  .shops-list .shops-single {
+    border-bottom: 1px dotted #dadada; }
+    .shops-list .shops-single:first-child {
+      border-top: 1px dotted #dadada; }
+    .shops-list .shops-single .row .col-md-4 {
+      min-height: 68px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .shops-list .shops-single .row .col-md-4 p {
+        font: 15px "GothaProLig";
+        color: #272726;
+        margin-bottom: 0px; }
+        .shops-list .shops-single .row .col-md-4 p span {
+          width: 19px;
+          height: 19px;
+          display: inline-block;
+          text-align: center;
+          margin-right: 7px; }
+      .shops-list .shops-single .row .col-md-4 .to-single-shop-button {
+        width: 100%;
+        float: right; }
+        .shops-list .shops-single .row .col-md-4 .to-single-shop-button .to-single-shop {
+          float: right;
+          margin-right: 20px;
+          position: relative; }
+          .shops-list .shops-single .row .col-md-4 .to-single-shop-button .to-single-shop h5 {
+            margin: 0;
+            font: 12px "GothaProMed"; }
+          .shops-list .shops-single .row .col-md-4 .to-single-shop-button .to-single-shop:hover {
+            text-decoration: none;
+            color: #0097a7; }
+          .shops-list .shops-single .row .col-md-4 .to-single-shop-button .to-single-shop:after {
+            content: '';
+            position: absolute;
+            background: url(../img/arrow-down.png);
+            background-size: cover;
+            width: 9px;
+            height: 8px;
+            top: 17%;
+            right: -20px; }
+
+.shops-map {
+  height: 0px; }
+
+#map {
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  opacity: 0; }
+
+.shop-single-wrapper {
+  float: left;
+  width: 100%; }
+  .shop-single-wrapper h1 {
+    float: left;
+    padding: 33px 0 35px; }
+  .shop-single-wrapper .shop-slider-wrapper {
+    width: 100%;
+    float: left;
+    height: 396px; }
+    .shop-single-wrapper .shop-slider-wrapper .shop-slider {
+      padding-bottom: 50px; }
+      .shop-single-wrapper .shop-slider-wrapper .shop-slider .slick-list .draggable {
+        height: 302px; }
+      .shop-single-wrapper .shop-slider-wrapper .shop-slider .slick-dots {
+        padding: 7px 0 16px;
+        background: #f1f2f2; }
+  .shop-single-wrapper .shop-top {
+    border-bottom: 1px dotted #a7a9ac;
+    padding: 0px 0px 19px;
+    width: 100%;
+    float: left; }
+    .shop-single-wrapper .shop-top h3 {
+      float: left;
+      margin-top: 14px;
+      font: 20px "GothaProBol"; }
+    .shop-single-wrapper .shop-top .button-ask {
+      float: right; }
+      .shop-single-wrapper .shop-top .button-ask a {
+        color: #fff;
+        background: #ec1a3b;
+        padding: 10px 22px;
+        height: 100%;
+        margin-top: 8px;
+        width: 100%;
+        display: block;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font: 14px "GothaProNarBol";
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .shop-single-wrapper .shop-top .button-ask a:hover {
+          background: #92001c;
+          text-decoration: none; }
+  .shop-single-wrapper .shop-information {
+    padding: 18px 0 11px;
+    border-bottom: 1px dotted #a7a9ac;
+    width: 100%;
+    float: left; }
+    .shop-single-wrapper .shop-information img {
+      float: left;
+      width: 45px;
+      margin-right: 15px;
+      padding-bottom: 25px; }
+    .shop-single-wrapper .shop-information h5 {
+      font: 15px "GothaProMed";
+      padding-top: 0;
+      margin-top: 0px;
+      margin-bottom: 6px; }
+    .shop-single-wrapper .shop-information p {
+      color: #272726;
+      margin-bottom: 0; }
+  .shop-single-wrapper .shop-text {
+    float: left;
+    width: 100%;
+    padding: 24px 0 46px; }
+  .shop-single-wrapper .shop-ways {
+    float: left;
+    width: 100%;
+    border-bottom: 1px dotted #a7a9ac;
+    margin-bottom: 71px;
+    padding-bottom: 12px;
+    padding-top: 12px; }
+    .shop-single-wrapper .shop-ways h5 {
+      font: 15px "GothaProMed";
+      padding-top: 0;
+      margin: 6px 0px 8px; }
+      .shop-single-wrapper .shop-ways h5 span {
+        font: 15px "GothaProLig";
+        padding-left: 5px; }
+
+.shop-map {
+  height: auto; }
+  .shop-map #map {
+    opacity: 1; }
+
+.cabinet-wrapper .category-you-saw .container {
+  border: none; }
+
+.cabinet-wrapper #payment-tabs .payment-tabs-buttons {
+  width: 100%;
+  background: #e6e7e8;
+  float: left;
+  margin-bottom: 40px; }
+  .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li a {
+      padding: 20px 33px;
+      border: 0px solid transparent;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      font: 13px "GothaProBol";
+      text-transform: uppercase; }
+      .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li a span {
+        color: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #808080;
+        margin-left: 5px;
+        padding: 1px 7px; }
+    .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li.active a {
+      background: #f1f2f2;
+      color: #0099a8; }
+  .cabinet-wrapper #payment-tabs .payment-tabs-buttons .tab-pane {
+    border: none; }
+
+.cabinet-wrapper .main-product-slider-item,
+.cabinet-wrapper .main-post-slider-item {
+  width: 100%;
+  min-height: 330px;
+  border: 2px solid #ececec;
+  padding: 20px; }
+
+.cabinet-wrapper .main-product-slider-item,
+.cabinet-wrapper .main-post-slider-item {
+  position: relative; }
+  .cabinet-wrapper .main-product-slider-item .image-wrapper,
+  .cabinet-wrapper .main-post-slider-item .image-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 150px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .cabinet-wrapper .main-product-slider-item .image-wrapper img,
+    .cabinet-wrapper .main-post-slider-item .image-wrapper img {
+      width: 80%;
+      margin: 0 auto; }
+  .cabinet-wrapper .main-product-slider-item .text-wrapper,
+  .cabinet-wrapper .main-post-slider-item .text-wrapper {
+    height: 100px; }
+  .cabinet-wrapper .main-product-slider-item .slider-product-name,
+  .cabinet-wrapper .main-post-slider-item .slider-product-name {
+    font: 14px "GothaProMed";
+    color: #000; }
+  .cabinet-wrapper .main-product-slider-item .slider-product-description,
+  .cabinet-wrapper .main-post-slider-item .slider-product-description {
+    font: 12px "GothaProLig";
+    color: #000; }
+  .cabinet-wrapper .main-product-slider-item .action-block,
+  .cabinet-wrapper .main-post-slider-item .action-block {
+    border-top: 1px dotted #a7a9ac;
+    padding-top: 10px;
+    bottom: 0;
+    height: 40px; }
+    .cabinet-wrapper .main-product-slider-item .action-block .prices,
+    .cabinet-wrapper .main-post-slider-item .action-block .prices {
+      float: left; }
+      .cabinet-wrapper .main-product-slider-item .action-block .prices .old-price,
+      .cabinet-wrapper .main-post-slider-item .action-block .prices .old-price {
+        position: relative;
+        float: left; }
+        .cabinet-wrapper .main-product-slider-item .action-block .prices .old-price p,
+        .cabinet-wrapper .main-post-slider-item .action-block .prices .old-price p {
+          font: 13px "GothaProReg";
+          color: #a7a9ac;
+          margin: 0px; }
+      .cabinet-wrapper .main-product-slider-item .action-block .prices .old-price:after,
+      .cabinet-wrapper .main-post-slider-item .action-block .prices .old-price:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        height: 1px;
+        width: 100%;
+        background: #ed1a3b; }
+      .cabinet-wrapper .main-product-slider-item .action-block .prices .new-price,
+      .cabinet-wrapper .main-post-slider-item .action-block .prices .new-price {
+        font: 21px "GothaProMed"; }
+    .cabinet-wrapper .main-product-slider-item .action-block .button-buy,
+    .cabinet-wrapper .main-post-slider-item .action-block .button-buy {
+      width: 83px;
+      height: 25px;
+      background: #ed1a3b;
+      float: right;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      padding: 5px 10px;
+      color: #fff;
+      margin-top: 10px; }
+      .cabinet-wrapper .main-product-slider-item .action-block .button-buy img,
+      .cabinet-wrapper .main-post-slider-item .action-block .button-buy img {
+        float: left;
+        width: 10px; }
+      .cabinet-wrapper .main-product-slider-item .action-block .button-buy p,
+      .cabinet-wrapper .main-post-slider-item .action-block .button-buy p {
+        float: right;
+        font: 12px "GothaProNarBol";
+        padding-top: 1px; }
+
+#cart-collapse-products,
+#cart-collapse-delivery {
+  float: right;
+  position: relative;
+  margin-right: 20px;
+  font: 12px "GothaProMed";
+  display: none;
+  margin-bottom: 0; }
+  #cart-collapse-products:after,
+  #cart-collapse-delivery:after {
+    content: '';
+    position: absolute;
+    background: url(../img/arrow-down.png);
+    background-size: cover;
+    width: 9px;
+    height: 8px;
+    top: 20%;
+    right: -15px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+#cart-show-products,
+#cart-show-delivery {
+  float: right;
+  position: relative;
+  margin-right: 20px;
+  font: 12px "GothaProMed";
+  margin-bottom: 0; }
+  #cart-show-products:after,
+  #cart-show-delivery:after {
+    content: '';
+    position: absolute;
+    background: url(../img/arrow-down.png);
+    background-size: cover;
+    width: 9px;
+    height: 8px;
+    top: 20%;
+    right: -15px; }
+
+#cart-show-delivery {
+  margin-top: 5px; }
+
+.cart1-wrapper {
+  width: 100%;
+  float: left; }
+  .cart1-wrapper p {
+    margin: 0; }
+  .cart1-wrapper .cart-position {
+    float: left;
+    width: 100%;
+    padding: 32px 0 16px; }
+    .cart1-wrapper .cart-position .next-step {
+      opacity: 0.4; }
+    .cart1-wrapper .cart-position .cart-pos-item {
+      float: left;
+      max-width: 118px; }
+      .cart1-wrapper .cart-position .cart-pos-item .cart-pos-icon {
+        width: 38px;
+        height: 38px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #a7a9ac;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        float: left;
+        margin: 0 8px 10px 0px; }
+        .cart1-wrapper .cart-position .cart-pos-item .cart-pos-icon img {
+          width: 60%;
+          margin: 0 auto; }
+      .cart1-wrapper .cart-position .cart-pos-item h5 {
+        height: 100%;
+        float: left;
+        width: 50%;
+        font: 15px "GothaProMed";
+        margin: 0;
+        padding: 0;
+        padding-top: 3px; }
+    .cart1-wrapper .cart-position .cart-dotted-border {
+      float: left;
+      margin: 20px 0;
+      border-bottom: 1px dotted #dadada;
+      width: 15%; }
+  .cart1-wrapper .cart-content {
+    width: 100%;
+    float: left;
+    background: #f1f2f2;
+    padding: 20px 0 35px; }
+    .cart1-wrapper .cart-content .row {
+      margin-left: -15px;
+      margin-right: -15px; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper {
+      width: 100%;
+      min-height: 145px;
+      background: #fff;
+      padding-top: 20px;
+      outline: 1px solid #dadada;
+      margin-bottom: 14px;
+      float: left; }
+      .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-image {
+        float: left;
+        width: 150px;
+        padding: 0px 15px 25px; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-image img {
+          width: 100%; }
+      .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-text {
+        width: 255px;
+        float: left; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-text .cart-product-name {
+          padding: 7px 11px;
+          font: 15px "GothaProReg";
+          line-height: 18px; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-text a {
+          color: #a7a9ab;
+          font: 12px "GothaProMed";
+          text-decoration: dashed;
+          -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+          padding: 0 0 0 10px; }
+      .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper,
+      .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper,
+      .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper {
+        float: left;
+        width: 97px;
+        text-align: center; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper select,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper select,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper select {
+          -webkit-border-radius: 0px;
+          border-radius: 0px;
+          width: 55px;
+          margin: 0 auto;
+          border: 1px solid #dadada; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper .cart-product-price,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper .cart-product-price,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper .cart-product-price {
+          font: 18px "GothaProMed";
+          padding-top: 8px; }
+          .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper .cart-product-price span,
+          .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper .cart-product-price span,
+          .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper .cart-product-price span {
+            font-size: 13px;
+            padding-top: 0; }
+            .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper .cart-product-price span img,
+            .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper .cart-product-price span img,
+            .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper .cart-product-price span img {
+              width: 8px; }
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper span,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper span,
+        .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper span {
+          padding-top: 10px;
+          display: inline-block;
+          color: #afafaf;
+          font-size: 12px; }
+    .cart1-wrapper .cart-content .col-md-3 .cart-sum {
+      width: 100%;
+      float: left;
+      padding: 28px 16px 39px;
+      background: #fff;
+      outline: 1px solid #dadada; }
+      .cart1-wrapper .cart-content .col-md-3 .cart-sum h5 {
+        font: 12px "GothaProMed";
+        float: left;
+        padding: 0;
+        margin: 0; }
+      .cart1-wrapper .cart-content .col-md-3 .cart-sum .total-cart-wrapper {
+        float: left;
+        width: 100%;
+        margin-top: -5px;
+        margin-bottom: -7px; }
+        .cart1-wrapper .cart-content .col-md-3 .cart-sum .total-cart-wrapper h5 {
+          margin-top: 16px; }
+        .cart1-wrapper .cart-content .col-md-3 .cart-sum .total-cart-wrapper .total-cart-sum {
+          bottom: 0;
+          float: right;
+          font: 30px "GothaProMed";
+          padding: 0;
+          margin: 0;
+          padding-right: 11px; }
+      .cart1-wrapper .cart-content .col-md-3 .cart-sum .button-cart-buy {
+        width: 178px;
+        text-align: center;
+        float: left;
+        margin-top: 23px; }
+        .cart1-wrapper .cart-content .col-md-3 .cart-sum .button-cart-buy a {
+          display: block;
+          padding: 15px 30px;
+          background: #ed193a;
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          -webkit-transition: .2s all ease;
+          transition: .2s all ease; }
+          .cart1-wrapper .cart-content .col-md-3 .cart-sum .button-cart-buy a:hover {
+            background: #92001c;
+            text-decoration: none; }
+  .cart1-wrapper .category-you-saw {
+    padding-bottom: 66px; }
+    .cart1-wrapper .category-you-saw .container {
+      border: none; }
+      .cart1-wrapper .category-you-saw .container h1 {
+        padding: 57px 0 35px  !important; }
+
+.cart2-wrapper .done {
+  background: #009aa5 !important; }
+  .cart2-wrapper .done img {
+    width: 40% !important; }
+
+.cart2-wrapper .cart-content {
+  padding: 20px 0 49px; }
+  .cart2-wrapper .cart-content .cart-prev-choosen-products {
+    background: #fff;
+    padding: 18px;
+    float: left;
+    width: 100%;
+    border: 1px solid #dadada; }
+    .cart2-wrapper .cart-content .cart-prev-choosen-products p.your-choose {
+      font: 15px "GothaProLig";
+      margin: 0;
+      float: left; }
+      .cart2-wrapper .cart-content .cart-prev-choosen-products p.your-choose span {
+        font: 15px "GothaProMed";
+        padding-left: 5px; }
+    .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-collapse-products,
+    .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-collapse-delivery {
+      float: right;
+      position: relative;
+      margin-right: 20px;
+      font: 12px "GothaProMed";
+      display: none;
+      margin-bottom: 0; }
+      .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-collapse-products:after,
+      .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-collapse-delivery:after {
+        content: '';
+        position: absolute;
+        background: url(../img/arrow-down.png);
+        background-size: cover;
+        width: 9px;
+        height: 8px;
+        top: 20%;
+        right: -15px;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-show-products,
+    .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-show-delivery {
+      float: right;
+      position: relative;
+      margin-right: 20px;
+      font: 12px "GothaProMed";
+      margin-bottom: 0; }
+      .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-show-products:after,
+      .cart2-wrapper .cart-content .cart-prev-choosen-products #cart-show-delivery:after {
+        content: '';
+        position: absolute;
+        background: url(../img/arrow-down.png);
+        background-size: cover;
+        width: 9px;
+        height: 8px;
+        top: 20%;
+        right: -15px; }
+  .cart2-wrapper .cart-content .cart-product-collapse {
+    width: 100%;
+    float: left; }
+    .cart2-wrapper .cart-content .cart-product-collapse .cart-product-wrapper {
+      margin: 0; }
+  .cart2-wrapper .cart-content .cart-delivery-collapse {
+    border: 1px solid #dadada;
+    margin-top: 20px;
+    background: #fff;
+    padding: 13px 14px 14px 20px;
+    float: left;
+    width: 100%; }
+    .cart2-wrapper .cart-content .cart-delivery-collapse .collapse-delivery-name {
+      font: 20px "GothaProBol";
+      float: left; }
+  .cart2-wrapper .cart-content .cart-delivery-method {
+    padding: 18px 28px 0px;
+    float: left;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dadada; }
+    .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-shop {
+      float: left;
+      width: 100%;
+      background: #fff;
+      cursor: pointer; }
+      .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-shop p {
+        padding-left: 25px; }
+    .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse {
+      width: 100%;
+      float: left;
+      padding: 0 0 0 20px; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .title-margin {
+        margin-top: 40px; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse h5 {
+        font: 18px "GothaProMed";
+        margin-top: 0px; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse h5 span {
+          color: #009aa5; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse p {
+        font: 14px "GothaProReg"; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-date,
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-time {
+        float: left;
+        width: 170px;
+        margin-top: 20px; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-date h5,
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-time h5 {
+          margin-top: 0;
+          font: 14px "GothaProMed"; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-date select,
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-time select {
+          -webkit-border-radius: 0px;
+          border-radius: 0px;
+          width: auto;
+          border: 1px solid #dadada;
+          float: left;
+          margin-right: 5px;
+          min-width: 30px;
+          padding-right: 30px; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-date span,
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .cart-delivery-time span {
+          float: left;
+          font: 15px "GothaProReg";
+          line-height: 34px;
+          padding: 0 5px 0 0; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .next-cart-wrapper {
+        float: left;
+        width: 100%;
+        margin: 35px 0 65px; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .next-cart-wrapper .next-cart {
+          float: left;
+          width: 177px;
+          background: #ed193a; }
+          .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .next-cart-wrapper .next-cart a {
+            padding: 16px 62px;
+            display: block;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            color: #fff;
+            font: 14px "GothaProNarBol"; }
+          .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .next-cart-wrapper .next-cart:hover {
+            background: #92001c; }
+            .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-shop-collapse .next-cart-wrapper .next-cart:hover a {
+              text-decoration: none; }
+    .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car {
+      width: 100%;
+      float: left; }
+      .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper {
+        display: none; }
+        .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge {
+          padding-left: 15px; }
+        .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .price-delivery {
+          color: #009aa5 !important;
+          font: 26px "GothaProLig" !important;
+          padding: 0 !important; }
+        .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge,
+        .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign {
+          width: 50%;
+          float: left; }
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge h5,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign h5 {
+            font: 16px "GothaProMed"; }
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge h5 span,
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign h5 span {
+              font: 16px "GothaProReg";
+              padding-left: 10px;
+              text-decoration: dashed;
+              -webkit-text-decoration-line: underline;
+              text-decoration-line: underline; }
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .login-button,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .signup-button,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .login-button,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .signup-button {
+            float: left; }
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .login-button a,
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .signup-button a,
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .login-button a,
+            .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .signup-button a {
+              background: #ed1a3b;
+              display: block;
+              padding: 15px 23px;
+              color: #fff;
+              -webkit-border-radius: 3px;
+              border-radius: 3px;
+              font: 14px "GothaProNarBol"; }
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .signup-button a,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .signup-button a {
+            background: #a7a9ab; }
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge p,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign p {
+            float: left;
+            color: #a7a9ab;
+            font: 15px "GothaProLig";
+            padding: 15px 7px; }
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-edge .under-buttons,
+          .cart2-wrapper .cart-content .cart-delivery-method .cart-delivery-car .active-wrapper .active-wrapper-sign .under-buttons {
+            font-size: 12px;
+            padding: 15px 0; }
+    .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse {
+      padding-left: 10px;
+      float: left;
+      width: 100%; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse h5 {
+        font: 14px "GothaProMed"; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse h5 span {
+          padding-left: 5px;
+          color: #009aa5; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #a7a9ac;
+        margin-bottom: 10px; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse textarea {
+        width: 100%; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse .row .col-md-3 {
+        width: 25%; }
+        .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse .row .col-md-3 input {
+          width: 100%; }
+      .cart2-wrapper .cart-content .cart-delivery-method #cart-delivery-carcollapse .car-delivery-dating {
+        padding-left: 5px;
+        border-top: 1px solid #dadada;
+        margin-top: 30px;
+        padding-top: 30px; }
+
+input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #a7a9ac;
+  margin-bottom: 10px;
+  padding-left: 10px; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../img/select-down.png") !important;
+  background-size: 9px;
+  background-position: 90% 50%;
+  background-repeat: no-repeat; }
+
+.cart-delivery-date,
+.cart-delivery-time {
+  float: left;
+  width: 170px;
+  margin-top: 20px; }
+  .cart-delivery-date h5,
+  .cart-delivery-time h5 {
+    margin-top: 0;
+    font: 14px "GothaProMed"; }
+  .cart-delivery-date select,
+  .cart-delivery-time select {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    width: auto;
+    border: 1px solid #dadada;
+    float: left;
+    margin-right: 5px;
+    min-width: 30px;
+    padding-right: 30px; }
+  .cart-delivery-date span,
+  .cart-delivery-time span {
+    font: 15px "GothaProReg";
+    line-height: 34px;
+    padding: 0 5px 0 0; }
+  .cart-delivery-date .dot2,
+  .cart-delivery-time .dot2 {
+    float: left; }
+
+.next-cart-wrapper {
+  float: left;
+  width: 100%;
+  margin: 40px 0; }
+  .next-cart-wrapper .next-cart {
+    float: left;
+    width: 177px;
+    background: #ed193a; }
+    .next-cart-wrapper .next-cart a {
+      padding: 20px 60px;
+      display: block;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      color: #fff;
+      font: 14px "GothaProNarBol"; }
+    .next-cart-wrapper .next-cart:hover {
+      background: #92001c; }
+      .next-cart-wrapper .next-cart:hover a {
+        text-decoration: none; }
+
+.cart3-wrapper {
+  width: 100%;
+  float: left; }
+  .cart3-wrapper .cart-payment-wrapper {
+    width: 100%;
+    float: left;
+    border: 1px solid #dadada;
+    margin-top: 14px; }
+    .cart3-wrapper .cart-payment-wrapper .cart-payment-header {
+      width: 100%;
+      float: left;
+      padding: 14px 14px 14px 20px;
+      background: #fff;
+      border-bottom: 1px solid #dadada; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-header h3 {
+        font: 20px "GothaProBol";
+        margin: 0; }
+    .cart3-wrapper .cart-payment-wrapper .cart-payment-ways {
+      padding: 20px 20px;
+      float: left;
+      width: 100%;
+      background: #fff; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways .radio-wrapper {
+        float: left;
+        width: 100%; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse h1 {
+        font: 18px "GothaProMed"; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse h5 {
+        font: 14px "GothaProMed"; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .cart-number {
+        width: 100%; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-usage input {
+        width: 60px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-usage span {
+        font: 13px "GothaProLig";
+        padding-left: 5px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-secure input {
+        width: 60px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-secure span {
+        font: 13px "GothaProLig";
+        color: #a7a9ab;
+        text-decoration: underline;
+        padding-left: 5px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="checkbox"] {
+        display: none; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="checkbox"] + label {
+        padding-left: 30px;
+        position: relative; }
+        .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="checkbox"] + label:before {
+          content: "";
+          position: absolute;
+          top: 1px;
+          left: 0;
+          width: 21px;
+          height: 21px;
+          background: #fff;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          border: 1px solid #dadada; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="checkbox"] {
+        display: none; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="checkbox"]:checked + label:before {
+        content: "";
+        color: #0099a8;
+        background: url(../img/galka.svg) #fff;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 50% 50%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 10px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse input[type="radio"] + label {
+        padding-bottom: 20px; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-wrapper {
+        width: 100%;
+        float: left; }
+        .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .card-wrapper img {
+          float: left;
+          width: 40px;
+          cursor: pointer; }
+      .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .pay-now-button {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+        text-align: center;
+        margin: 40px 0 30px; }
+        .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .pay-now-button a {
+          background: #ed1a3b;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          padding: 20px;
+          display: block;
+          font: 14px "GothaProNarBol";
+          color: #fff;
+          -webkit-transition: all .2s ease;
+          transition: all .2s ease; }
+          .cart3-wrapper .cart-payment-wrapper .cart-payment-ways #payment-online-collapse .pay-now-button a:hover {
+            background: #92001c;
+            text-decoration: none; }
+
+.color-content {
+  background: #f1f2f2;
+  float: left;
+  width: 100%; }
+  .color-content .color1-top {
+    float: left;
+    width: 100%;
+    border-bottom: 1px dotted #dadada; }
+    .color-content .color1-top .color-settings {
+      float: left;
+      padding-right: 20px;
+      margin-right: 20px;
+      position: relative; }
+      .color-content .color1-top .color-settings a {
+        font: 12px "GothaProMed";
+        display: block;
+        padding: 20px 0;
+        float: left; }
+        .color-content .color1-top .color-settings a:hover {
+          color: #0097a7;
+          text-decoration: none; }
+        .color-content .color1-top .color-settings a:before {
+          content: '';
+          position: absolute;
+          background: url(../img/arrow-down.png);
+          background-size: cover;
+          width: 9px;
+          height: 8px;
+          top: 40%;
+          right: 2px; }
+        .color-content .color1-top .color-settings a:hover + .color-settings-radio {
+          display: block; }
+      .color-content .color1-top .color-settings .color-settings-radio:hover {
+        display: block; }
+      .color-content .color1-top .color-settings .color-settings-radio {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: none;
+        background: #fff;
+        border: 1px solid #dadada;
+        z-index: 10;
+        padding: 15px; }
+        .color-content .color1-top .color-settings .color-settings-radio label {
+          margin: 0;
+          font: 12px "GothaProLig";
+          padding-top: 3px;
+          padding-bottom: 10px;
+          color: #000; }
+        .color-content .color1-top .color-settings .color-settings-radio:before {
+          content: "";
+          border: 10px solid transparent;
+          border-bottom: 10px solid #fff;
+          position: absolute;
+          top: -18px;
+          left: 10px;
+          z-index: 30;
+          pointer-events: none; }
+    .color-content .color1-top input {
+      float: right;
+      width: 240px;
+      font: 12px "GothaProLig";
+      margin-top: 15px; }
+    .color-content .color1-top .search-color {
+      float: right;
+      margin-top: 15px; }
+      .color-content .color1-top .search-color a {
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        display: block;
+        padding: 7px 25px;
+        text-align: center;
+        background: #009aa5;
+        font: 14px "GothaProNarBol";
+        color: #fff;
+        margin-left: 20px;
+        -webkit-transition: .2s all ease;
+        transition: .2s all ease; }
+        .color-content .color1-top .search-color a:hover {
+          text-decoration: none;
+          background: #00727a; }
+  .color-content .picker-slider-wrapper {
+    width: 100%;
+    float: left;
+    padding: 15px 0 70px; }
+    .color-content .picker-slider-wrapper .container {
+      position: relative; }
+      .color-content .picker-slider-wrapper .container .picker-slider {
+        width: 100%;
+        float: left; }
+        .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item {
+          margin-top: 3px;
+          background: #54ada6;
+          width: 33px;
+          height: 33px;
+          position: relative;
+          cursor: pointer; }
+          .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item:hover .picker-item-hidden {
+            display: block; }
+          .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item .picker-item-hidden {
+            padding: 15px;
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            border: 1px solid #dadada;
+            display: none;
+            z-index: 20;
+            background: #fff;
+            -webkit-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            width: 170px;
+            pointer-events: none; }
+            .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item .picker-item-hidden:after {
+              content: "";
+              border: 10px solid transparent;
+              border-bottom: 10px solid #fff;
+              position: absolute;
+              top: -20px;
+              left: 20px;
+              z-index: 20; }
+            .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item .picker-item-hidden h5 {
+              font: 12px "GothaProMed"; }
+            .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item .picker-item-hidden span {
+              font: 12px "GothaProLig";
+              color: #a7a9ab; }
+            .color-content .picker-slider-wrapper .container .picker-slider .picker-column .picker-item .picker-item-hidden p {
+              font: 12px "GothaProLig"; }
+      .color-content .picker-slider-wrapper .container .previous-picker {
+        width: 44px;
+        height: 44px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: -60px; }
+        .color-content .picker-slider-wrapper .container .previous-picker img {
+          width: 22%;
+          margin: 0 auto;
+          display: block; }
+      .color-content .picker-slider-wrapper .container .next-picker {
+        width: 44px;
+        height: 44px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: -60px; }
+        .color-content .picker-slider-wrapper .container .next-picker img {
+          width: 22%;
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          margin: 0 auto;
+          display: block; }
+  .color-content .choosen-color-wrapper {
+    line-height: 1.5;
+    float: left;
+    width: 100%;
+    background: #fff; }
+    .color-content .choosen-color-wrapper h1 {
+      font: 20px "GothaProBol"; }
+    .color-content .choosen-color-wrapper .color-information {
+      padding-bottom: 25px;
+      position: relative; }
+      .color-content .choosen-color-wrapper .color-information:before {
+        content: "";
+        width: 35px;
+        height: 35px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        position: absolute;
+        background: #f1f2f2;
+        top: -18px;
+        left: 50%;
+        z-index: 20; }
+      .color-content .choosen-color-wrapper .color-information .color-presentation {
+        width: 42%;
+        float: left;
+        background: #1f858f;
+        height: 160px; }
+      .color-content .choosen-color-wrapper .color-information .color-settings {
+        width: 23%;
+        float: left;
+        font: 12px "GothaProLig";
+        padding-left: 25px;
+        border-right: 1px dotted #dadada; }
+        .color-content .choosen-color-wrapper .color-information .color-settings span {
+          font: 12px "GothaProMed";
+          padding-left: 5px; }
+        .color-content .choosen-color-wrapper .color-information .color-settings a {
+          text-decoration: underline;
+          -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+          color: #009aa5;
+          padding-left: 5px; }
+      .color-content .choosen-color-wrapper .color-information .color-description {
+        float: left;
+        width: 35%;
+        padding-left: 30px; }
+        .color-content .choosen-color-wrapper .color-information .color-description h5 {
+          font: 12px "GothaProMed"; }
+        .color-content .choosen-color-wrapper .color-information .color-description p {
+          font: 12px "GothaProLig";
+          line-height: 1.5; }
+    .color-content .choosen-color-wrapper .color-product {
+      padding-top: 25px;
+      padding-bottom: 40px;
+      border-bottom: 1px dotted #dadada; }
+      .color-content .choosen-color-wrapper .color-product .color-product-text {
+        width: 65%;
+        float: left;
+        padding-right: 5%; }
+        .color-content .choosen-color-wrapper .color-product .color-product-text p {
+          font: 12px "GothaProLig"; }
+      .color-content .choosen-color-wrapper .color-product .button-to-cprosuct {
+        width: 35%;
+        float: left;
+        max-width: 320px; }
+        .color-content .choosen-color-wrapper .color-product .button-to-cprosuct a {
+          display: block;
+          color: #fff;
+          font: 14px "GothaProNarBol";
+          padding: 20px 20px;
+          background: #ed193a;
+          -webkit-transition: .2s all ease;
+          transition: .2s all ease; }
+          .color-content .choosen-color-wrapper .color-product .button-to-cprosuct a:hover {
+            background: #92001c;
+            text-decoration: none; }
+    .color-content .choosen-color-wrapper .other-colors {
+      padding: 20px 0 100px; }
+      .color-content .choosen-color-wrapper .other-colors h1 {
+        float: left;
+        width: 100%; }
+      .color-content .choosen-color-wrapper .other-colors .color-box {
+        width: 55px;
+        height: 86px;
+        float: left;
+        margin-right: 3px; }
+      .color-content .choosen-color-wrapper .other-colors .same-color1 {
+        background: #1e7a94; }
+      .color-content .choosen-color-wrapper .other-colors .same-color2 {
+        background: #1e8b85; }
+      .color-content .choosen-color-wrapper .other-colors .same-color3 {
+        background: #1e8187; }
+      .color-content .choosen-color-wrapper .other-colors .same-color4 {
+        background: #1e788d; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor1 {
+        background: #87dddb; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor2 {
+        background: #45bfbb; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor3 {
+        background: #2aaaa8; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor4 {
+        background: #1f858f; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor5 {
+        background: #1e6e7c; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor6 {
+        background: #1e5e6f; }
+      .color-content .choosen-color-wrapper .other-colors .subcolor7 {
+        background: #1e5e6f; }
+
+#color-tabs .color-tabs-buttons {
+  width: 100%;
+  background: #e6e7e8;
+  float: left; }
+  #color-tabs .color-tabs-buttons .nav.nav-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit; }
+    #color-tabs .color-tabs-buttons .nav.nav-tabs li:hover a {
+      color: #009aa5; }
+    #color-tabs .color-tabs-buttons .nav.nav-tabs li a {
+      padding: 20px 33px;
+      border: 0px solid transparent;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      font: 13px "GothaProBol";
+      text-transform: uppercase; }
+      #color-tabs .color-tabs-buttons .nav.nav-tabs li a span {
+        color: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #808080;
+        margin-left: 5px;
+        padding: 1px 7px; }
+    #color-tabs .color-tabs-buttons .nav.nav-tabs li.active a {
+      background: #f1f2f2;
+      color: #0099a8; }
+
+.choosen-color .color-chname {
+  float: left;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .choosen-color .color-chname h5 {
+    float: left;
+    font: 20px "GothaProBol"; }
+  .choosen-color .color-chname .choosen-color-rgb {
+    background: #1e848e;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px; }
+  .choosen-color .color-chname span {
+    font: 20px "GothaProBol"; }
+
+#color-tabs .tab-pane {
+  background: #f1f2f2;
+  height: 100%; }
+  #color-tabs .tab-pane .color-filter-wrapper {
+    width: 100%;
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    height: 100%;
+    position: relative; }
+    #color-tabs .tab-pane .color-filter-wrapper:after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      position: absolute;
+      background: #f1f2f2;
+      bottom: -15px;
+      left: 50%;
+      z-index: 20; }
+    #color-tabs .tab-pane .color-filter-wrapper .color-brands,
+    #color-tabs .tab-pane .color-filter-wrapper .color-usage,
+    #color-tabs .tab-pane .color-filter-wrapper .color-price {
+      float: left;
+      width: 33%;
+      padding: 0 30px;
+      height: 100% !important; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-brands h5,
+      #color-tabs .tab-pane .color-filter-wrapper .color-usage h5,
+      #color-tabs .tab-pane .color-filter-wrapper .color-price h5 {
+        margin: 0 0 15px 0;
+        font: 12px "GothaProMed"; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-brands input[type="checkbox"],
+      #color-tabs .tab-pane .color-filter-wrapper .color-usage input[type="checkbox"],
+      #color-tabs .tab-pane .color-filter-wrapper .color-price input[type="checkbox"] {
+        display: none; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-brands label,
+      #color-tabs .tab-pane .color-filter-wrapper .color-usage label,
+      #color-tabs .tab-pane .color-filter-wrapper .color-price label {
+        margin: 0;
+        font: 13px "GothaProLig";
+        padding-top: 1px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        color: #000;
+        position: relative;
+        display: block; }
+        #color-tabs .tab-pane .color-filter-wrapper .color-brands label:before,
+        #color-tabs .tab-pane .color-filter-wrapper .color-usage label:before,
+        #color-tabs .tab-pane .color-filter-wrapper .color-price label:before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          border: 1px solid #dadada;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          z-index: 30;
+          -webkit-border-radius: 2px;
+          border-radius: 2px;
+          background: #fff; }
+        #color-tabs .tab-pane .color-filter-wrapper .color-brands label span,
+        #color-tabs .tab-pane .color-filter-wrapper .color-usage label span,
+        #color-tabs .tab-pane .color-filter-wrapper .color-price label span {
+          color: #a7a9ab;
+          padding-left: 5px; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-brands input[type="checkbox"]:checked + label:before,
+      #color-tabs .tab-pane .color-filter-wrapper .color-usage input[type="checkbox"]:checked + label:before,
+      #color-tabs .tab-pane .color-filter-wrapper .color-price input[type="checkbox"]:checked + label:before {
+        content: "";
+        color: #0099a8;
+        background: url(../img/galka.svg) #fff;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 50% 50%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 10px; }
+    #color-tabs .tab-pane .color-filter-wrapper .color-usage {
+      width: 40%;
+      border-right: 1px dotted #dadada;
+      border-left: 1px dotted #dadada; }
+    #color-tabs .tab-pane .color-filter-wrapper .color-price {
+      width: 27%;
+      float: right;
+      position: relative;
+      border: none; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-price .filter-price .price-interval {
+        margin-top: 25px; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-price .filter-price input {
+        width: 39%;
+        float: left;
+        height: 32px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        color: #000;
+        font: 12px "GothaProReg";
+        text-align: center;
+        padding-left: 0; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-price .filter-price span {
+        float: left;
+        line-height: 26px;
+        padding: 0px 5px;
+        font: 30px "GothaProLig"; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-price .filter-price .rubl {
+        font-size: 20px;
+        padding: 0 0 0 5px; }
+        #color-tabs .tab-pane .color-filter-wrapper .color-price .filter-price .rubl img {
+          width: 10px;
+          margin-top: 6px; }
+      #color-tabs .tab-pane .color-filter-wrapper .color-price .filtered-items {
+        font: 14px "GothaProLig";
+        color: #0099a8;
+        margin-top: 200px; }
+
+.color-products {
+  padding-top: 35px; }
+  .color-products .category-you-saw {
+    padding-bottom: 20px; }
+    .color-products .category-you-saw .more-products {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      float: none;
+      margin-top: 30px; }
+    .color-products .category-you-saw .pages-button {
+      padding: 0; }
+      .color-products .category-you-saw .pages-button a {
+        display: block;
+        padding: 7px 5px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .color-products .category-you-saw .pages-button:hover a {
+        color: #fff;
+        background: #a7a9ac; }
+
+.colored-product .product-to-color .color-round {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #1e848e;
+  float: left;
+  margin-right: 7px; }
+
+.colored-product .product-color-wrapper {
+  width: 100%;
+  display: left; }
+  .colored-product .product-color-wrapper .color-info {
+    float: left; }
+    .colored-product .product-color-wrapper .color-info .color-round-wrapper {
+      float: left;
+      width: 40px; }
+      .colored-product .product-color-wrapper .color-info .color-round-wrapper .color-round {
+        width: 34px;
+        height: 34px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #1e848e;
+        float: left;
+        margin-right: 7px; }
+    .colored-product .product-color-wrapper .color-info .color-info-text {
+      float: left;
+      width: 70%; }
+      .colored-product .product-color-wrapper .color-info .color-info-text h5 {
+        font: 16px "GothaProMed"; }
+      .colored-product .product-color-wrapper .color-info .color-info-text span {
+        font: 12px "GothaProLig";
+        color: #a7a9ab; }
+      .colored-product .product-color-wrapper .color-info .color-info-text p {
+        font: 12px "GothaProLig"; }
+      .colored-product .product-color-wrapper .color-info .color-info-text a {
+        font: 12px "GothaProMed";
+        text-decoration: underline;
+        -webkit-text-decoration-style: dashed;
+        text-decoration-style: dashed;
+        color: #a7a9ab;
+        display: block;
+        margin-top: 20px; }
+
+.colored-product .color-price {
+  margin-top: 15px; }
+
+.colored-product .price-with-color .prices-text {
+  width: 50%;
+  float: left; }
+  .colored-product .price-with-color .prices-text h5 {
+    padding-top: 0; }
+  .colored-product .price-with-color .prices-text p {
+    font: 12px "GothaProLig";
+    color: #a7a9ab; }
+
+.colored-product .price-with-color .old-price:after {
+  background: transparent !important; }
+
+.colored-product .button-buy {
+  margin-top: 30px !important; }
+  .colored-product .button-buy a {
+    -webkit-transition: .2s all ease;
+    transition: .2s all ease; }
+    .colored-product .button-buy a:hover {
+      background: #92001c;
+      text-decoration: none; }
+
+@media screen and (max-width: 480px) {
+  .topnav-mobile {
+    display: block; }
+  .nav-mobile {
+    display: block; }
+  .top-nav {
+    display: none; }
+  nav.categories {
+    display: none; }
+  main {
+    padding: 0 10px; }
+  header {
+    padding-bottom: 20px; }
+    header .search-wrapper {
+      width: 100% !important; }
+      header .search-wrapper input {
+        width: 100% !important; }
+  header .container .search-wrapper {
+    margin: 20px 0; }
+  .sign-content .registration-form {
+    padding: 0; }
+  main .special-row .main-special-slider {
+    padding: 20px 0; }
+  .special-row {
+    height: auto !important; }
+  main .special-row .main-special-slider .slider-image {
+    width: 100%; }
+    main .special-row .main-special-slider .slider-image img {
+      width: 100%; }
+  main .special-row .main-special-slider .slider-text {
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2em; }
+  main .special-row .main-special-slider .slider-text .special-percent {
+    font-size: 2em;
+    text-align: center; }
+  main .main-posts-slider .main-product-slider-item, main .main-posts-slider .main-post-slider-item {
+    height: 500px;
+    min-height: px !important; }
+    main .main-posts-slider .main-product-slider-item .image-wrapper, main .main-posts-slider .main-post-slider-item .image-wrapper {
+      height: auto; }
+      main .main-posts-slider .main-product-slider-item .image-wrapper img, main .main-posts-slider .main-post-slider-item .image-wrapper img {
+        width: 60%; }
+    main .main-posts-slider .main-product-slider-item .text-wrapper, main .main-posts-slider .main-post-slider-item .text-wrapper {
+      padding-top: 20px; }
+      main .main-posts-slider .main-product-slider-item .text-wrapper .slider-product-name, main .main-posts-slider .main-post-slider-item .text-wrapper .slider-product-name {
+        font-size: 2em; }
+  main .main-posts-slider .slider-product-name {
+    font-size: 1.5em;
+    text-align: center; }
+  main .main-posts-slider .slider-product-description {
+    font-size: 1.2em; }
+  main .main-posts-slider .next-post,
+  main .main-posts-slider .prev-post {
+    display: none; }
+  main .main-posts-slider .action-block .to-post-button {
+    margin-top: 50px; }
+  main .main-posts-slider .action-block {
+    margin-top: 50px; }
+  .cabinet-wrapper .main-product-slider-item .image-wrapper, .cabinet-wrapper .main-post-slider-item .image-wrapper {
+    height: auto !important; }
+  main .may-like .main-product-slider-item, main .may-like .main-post-slider-item4 {
+    margin-bottom: 20px; }
+    main .may-like .main-product-slider-item .slider-product-name, main .may-like .main-post-slider-item4 .slider-product-name {
+      font-size: 1.5em;
+      text-align: center; }
+    main .may-like .main-product-slider-item .slider-product-description, main .may-like .main-post-slider-item4 .slider-product-description {
+      font-size: 1.2em; }
+  .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  .cart1-wrapper .cart-position .cart-pos-item {
+    max-width: 23%; }
+  .cart1-wrapper .cart-position .cart-dotted-border {
+    margin: 0;
+    margin-top: 20px; }
+  .category-products-wrapper {
+    width: 100%; }
+  .category-wrapper .filter-wrapper {
+    display: none;
+    width: 100%; }
+  .category-product-item .image-wrapper {
+    height: auto !important; }
+  .category-product-item .slider-product-name {
+    font-size: 1.5em;
+    text-align: center; }
+  .category-product-item .slider-product-description {
+    font-size: 1.5em; }
+  .category-product-item .action-block .prices .new-price p {
+    font-size: 1.5em; }
+  main .may-like .image-wrapper {
+    height: auto !important; }
+  .category-top .to-color {
+    margin-top: 0px; }
+  .category-top .mobile-filter {
+    display: block; }
+  .color-content .color1-top {
+    padding: 10px; }
+  .color-content .color1-top input {
+    width: 100%; }
+  .color-content .choosen-color-wrapper .color-information .color-settings {
+    width: 50%; }
+  .color-content .choosen-color-wrapper .color-information .color-description {
+    width: 100%; }
+  #color-tabs .color-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    #color-tabs .color-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  #color-tabs .tab-pane .color-filter-wrapper > div {
+    display: block;
+    width: 100% !important; }
+  .choosen-color .color-chname .choosen-color-rgb {
+    height: 20px; }
+  .product-top .price-buy-wrapper {
+    margin-top: 20px; }
+  #product-tabs .product-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    #product-tabs .product-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  #product-tabs .tab-content .testimonial-form-wrapper {
+    width: 100%; }
+  main .main-banner-special .blue-banner .blue-banner-text {
+    width: 100%; }
+    main .main-banner-special .blue-banner .blue-banner-text p {
+      font-size: 1.3em; }
+  main .main-banner-special .blue-banner .blue-banner-image {
+    float: none !important;
+    width: 100%; }
+  main .main-banner-special .blue-banner .blue-banner-text .special-percent {
+    font-size: 30px; }
+  .shop-single-wrapper .shop-top .button-ask {
+    float: left; }
+  .shops-list {
+    padding-bottom: 100px; }
+  .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  .cart1-wrapper .cart-content .col-md-9 {
+    width: 100% !important; }
+  .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper {
+    padding: 10px; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-image {
+      width: 100%; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-text {
+      width: 100%; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper,
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper,
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper {
+      width: 33%;
+      padding-top: 30px; }
+  .cart1-wrapper .cart-content .col-md-3 {
+    width: 100%; }
+  .fork-content .fork-item .fork-image-wrapper,
+  .fork-content .fork-item .fork-text-wrapper {
+    width: 100%;
+    padding: 25px; }
+    .fork-content .fork-item .fork-image-wrapper h1,
+    .fork-content .fork-item .fork-text-wrapper h1 {
+      width: 100%; }
+  .fork-color-banner {
+    background: url(../img/fork-banner-mobile.png); } }
+
+@media screen and (max-width: 768px) {
+  .topnav-mobile {
+    display: block; }
+  .nav-mobile {
+    display: block; }
+  .top-nav {
+    display: none; }
+  .container {
+    width: 100%; }
+  nav.categories {
+    display: none; }
+  main {
+    padding: 0 10px; }
+  header {
+    padding-bottom: 20px; }
+    header .search-wrapper {
+      width: 100% !important; }
+      header .search-wrapper input {
+        width: 100% !important; }
+  header .container .search-wrapper {
+    margin: 20px 0; }
+  .sign-content .registration-form {
+    padding: 0; }
+  main .special-row .main-special-slider {
+    padding: 20px 0; }
+  .special-row {
+    height: auto !important; }
+  main .brands .slider-wrapper {
+    width: 70%; }
+  main .brands .to-all-brands {
+    width: 17%;
+    margin-left: 0; }
+  main .special-row .main-special-slider .slider-image {
+    width: 100%; }
+    main .special-row .main-special-slider .slider-image img {
+      width: 100%; }
+  main .special-row .main-special-slider .slider-text {
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2em; }
+  main .special-row .main-special-slider .slider-text .special-percent {
+    font-size: 2em;
+    text-align: center; }
+  main .main-posts-slider .main-product-slider-item, main .main-posts-slider .main-post-slider-item {
+    height: 376px;
+    min-height: px !important; }
+    main .main-posts-slider .main-product-slider-item .image-wrapper img, main .main-posts-slider .main-post-slider-item .image-wrapper img {
+      width: 60%; }
+    main .main-posts-slider .main-product-slider-item .text-wrapper, main .main-posts-slider .main-post-slider-item .text-wrapper {
+      padding-top: 20px; }
+  main .main-posts-slider .slider-product-name {
+    font-size: 1.5em;
+    text-align: center; }
+  main .main-posts-slider .slider-product-description {
+    font-size: 1.2em; }
+  main .main-posts-slider .next-post,
+  main .main-posts-slider .prev-post {
+    display: none; }
+  main .main-posts-slider .action-block {
+    margin-top: 50px; }
+  .cabinet-wrapper .main-product-slider-item .image-wrapper, .cabinet-wrapper .main-post-slider-item .image-wrapper {
+    height: auto !important; }
+  main .may-like .main-product-slider-item, main .may-like .main-post-slider-item4 {
+    margin-bottom: 20px; }
+    main .may-like .main-product-slider-item .slider-product-name, main .may-like .main-post-slider-item4 .slider-product-name {
+      font-size: 1.5em;
+      text-align: center; }
+    main .may-like .main-product-slider-item .slider-product-description, main .may-like .main-post-slider-item4 .slider-product-description {
+      font-size: 1.2em; }
+  main .hot-sell .hot-sell-layer-big {
+    min-height: 613px; }
+  main .hot-sell .hot-sell-layer {
+    min-height: 511px; }
+  main .recomended .recomended-slider .recomended-slider-wrapper .recomended-text-block a:after {
+    right: 60%; }
+  .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    .cabinet-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  .cart1-wrapper .cart-position .cart-pos-item {
+    max-width: 23%; }
+  .cart1-wrapper .cart-position .cart-dotted-border {
+    margin: 0;
+    margin-top: 20px; }
+  .topnav-mobile img {
+    width: 60px; }
+  .category-products-wrapper {
+    width: 100%; }
+  .category-wrapper .filter-wrapper {
+    display: none;
+    width: 100%; }
+  .category-product-item .image-wrapper {
+    height: auto !important; }
+  .category-product-item .slider-product-name {
+    font-size: 1.5em;
+    text-align: center; }
+  .category-product-item .slider-product-description {
+    font-size: 1.5em; }
+  .category-product-item .action-block .prices .new-price p {
+    font-size: 1.5em; }
+  main .may-like .image-wrapper {
+    height: auto !important; }
+  .category-top .to-color {
+    margin-top: 0px; }
+  .category-top .mobile-filter {
+    display: block; }
+  .color-content .choosen-color-wrapper .color-product .color-product-text {
+    width: 61%; }
+  .color-content .choosen-color-wrapper .color-product .button-to-cprosuct {
+    width: 37%; }
+  .color-content .color1-top {
+    padding: 10px; }
+  .color-content .color1-top input {
+    width: 100%; }
+  .color-content .choosen-color-wrapper .color-information .color-settings {
+    width: 50%; }
+  .color-content .choosen-color-wrapper .color-information .color-description {
+    width: 100%; }
+  #color-tabs .color-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    #color-tabs .color-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  #color-tabs .tab-pane .color-filter-wrapper > div {
+    display: block;
+    width: 100% !important; }
+  .choosen-color .color-chname .choosen-color-rgb {
+    height: 20px; }
+  .product-top .price-buy-wrapper {
+    margin-top: 20px; }
+  #product-tabs .product-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    #product-tabs .product-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  #product-tabs .tab-content .testimonial-form-wrapper {
+    width: 100%; }
+  main .main-banner-special .blue-banner .blue-banner-text {
+    width: 100%; }
+    main .main-banner-special .blue-banner .blue-banner-text p {
+      font-size: 1.3em; }
+  main .main-banner-special .blue-banner .blue-banner-image {
+    float: none !important;
+    width: 100%; }
+  main .main-banner-special .blue-banner .blue-banner-text .special-percent {
+    font-size: 30px; }
+  .shop-single-wrapper .shop-top .button-ask {
+    float: left; }
+  .shops-list {
+    padding-bottom: 100px; }
+  .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs {
+    display: block; }
+    .payment-wrapper #payment-tabs .payment-tabs-buttons .nav.nav-tabs li {
+      display: block;
+      width: 100%; }
+  .cart1-wrapper .cart-content .col-md-9 {
+    width: 100% !important; }
+  .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper {
+    padding: 10px; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-image {
+      width: 100%; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-text {
+      width: 100%; }
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-total-price-wrapper,
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-quantity-wrapper,
+    .cart1-wrapper .cart-content .col-md-9 .cart-product-wrapper .cart-product-price-wrapper {
+      width: 33%;
+      padding-top: 30px; }
+  .cart1-wrapper .cart-content .col-md-3 {
+    width: 100%; }
+  .fork-content .fork-item .fork-image-wrapper,
+  .fork-content .fork-item .fork-text-wrapper {
+    width: 100%;
+    padding: 25px; }
+    .fork-content .fork-item .fork-image-wrapper h1,
+    .fork-content .fork-item .fork-text-wrapper h1 {
+      width: 100%; }
+  .fork-color-banner {
+    background: url(../img/fork-banner-mobile.png); } }

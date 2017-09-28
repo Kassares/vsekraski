@@ -1,0 +1,104 @@
+.fork-banner
+	width: 100%
+	background: url(../img/banner-room.png)
+	background-size: 100% 
+	background-position: 19% 47%
+	min-height: 340px
+	padding-top: 25px
+	float: left
+	h1
+		font: 54px $gplig
+		color: #fff
+		width: 50%
+		line-height: 63px
+.fork-nav
+	min-height: 60px
+	width: 100%
+	float: left
+	background: #e6e7e8
+
+	ul
+		float: left
+		li
+			list-style: none
+			display: inline-block
+			padding-right: 42px
+			height: 60px
+			a
+				width: 100%
+				height: 100%
+				text-transform: uppercase
+				font: 13px $gpbol
+				padding-top: 23px
+				display: block
+				transition: .2s all ease
+				&:hover
+					// background: #dadada
+					text-decoration: none
+					color: 	#0097a7
+	.to-color
+		// width: 150px
+		
+		background: #e6e7e8
+		// height: 40px
+		float: right
+		&:hover
+			// background: #dadada
+			a
+				text-decoration: none
+				color: #0097a7
+		a
+			text-transform: uppercase
+			font: 13px $gpmed
+			padding: 23px 10px
+			display: block
+			float: left
+		img
+			// float: right
+			width: 	9px
+			transform: rotate(270deg)
+			margin-top: 26px
+.fork-content
+	float: left
+	width: 100%
+	padding-top: 86px
+	padding-bottom: 67px
+	.fork-item
+		width: 99%
+		margin-bottom: 60px
+		float: left
+		.fork-image-wrapper
+			width: 28%
+			height: auto
+			float: left
+			img
+				width: 100%
+		.fork-text-wrapper
+			width: 72%
+			padding: 16px 0px 25px 57px
+			float: left
+			h1
+				width: 70%
+				font: 34px $gplig
+			p
+				padding-top: 6px
+				line-height: 21px
+				span
+					list-style: none
+					 
+					a
+						border-bottom: 1px dashed #000
+						font: 14px $gplig
+						padding-top: 5px
+						display: inline-block
+						&:hover
+							text-decoration: none
+							color: #0097a7
+							border-bottom: 1px dashed #0097a7
+				span:after
+					content: '/'
+					color: #009aa5
+					padding-left: 10px
+					padding-right: 10px
+				span:last-child:after
+					content: ""

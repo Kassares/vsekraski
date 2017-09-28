@@ -1,0 +1,112 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Магазины
+	.shops-header
+		.container
+			.row
+				.col-md-8.col-sm-8
+					h1 
+						| Адреса магазинов 
+						| в Ярославле
+						ul
+							li Москва
+							li Омск
+							li Пенза
+				.col-md-4.col-sm-4
+					.how-display-shops
+						img.svg(type="svg" src="./img/shop-list.svg", alt="")
+						p Показать списком
+					.how-display-shops
+						img.target-icon(type="svg" src="./img/blue-target.svg", alt="")
+						p Показать на карте
+	.shops-list
+		.container
+			.shops-single
+				.row
+					.col-md-4.col-sm-4
+						p 
+							span
+								img(src="./img/one.svg", alt="")
+							| ул. Победы, 48 	
+					.col-md-4.col-sm-4
+						.shops-days
+							p Пн-Пт с 9:00 до 19:00
+							p Сб-Вс с 9:00 до 18:00	
+					.col-md-4.col-sm-4
+						.to-single-shop-button
+							a(href="./shop.html").to-single-shop
+								h5 Подробнее
+			.shops-single
+				.row
+					.col-md-4.col-sm-4
+						p 
+							span
+								img(src="./img/two.svg", alt="")
+							| ул. Вспольинское поле, 1	
+					.col-md-4.col-sm-4
+						.shops-days
+							p Пн-Пт с 9:00 до 19:00
+							p Сб-Вс с 9:00 до 18:00	
+					.col-md-4.col-sm-4
+						.to-single-shop-button
+							a(href="./shop.html").to-single-shop
+								h5 Подробнее
+			.shops-single
+				.row
+					.col-md-4.col-sm-4
+						p 
+							span
+								img(src="./img/three.svg", alt="")
+							|  ул. Вспольинское поле, 16	
+					.col-md-4.col-sm-4
+						.shops-days
+							p Пн-Пт с 9:00 до 19:00
+							p Сб-Вс с 9:00 до 18:00	
+					.col-md-4.col-sm-4
+						.to-single-shop-button
+							a(href="./shop.html").to-single-shop
+								h5 Подробнее
+	.shops-map
+		#map(style="width: 100%; height: 400px;")
+		script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDcmXiz60UvaAKD8YmrqE6T9oLkXTFIfmo&')
+		script.
+			var locations = [
+			    ["Название метки 1", 57.623582,39.867732, "./img/target1.png"],
+			    ["Название метки 2", 57.617353,39.845805, "./img/target2.png"],
+			    ["Название метки 3", 57.619911,39.837270, "./img/target3.png"],
+			];
+			var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 14,
+			    center: new google.maps.LatLng(57.623628,39.872079),
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+			 
+			var infowindow = new google.maps.InfoWindow();
+			var marker, i;
+			 
+			for (i = 0; i < locations.length; i++) {
+			    marker = new google.maps.Marker({
+			        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			        map: map,
+			        icon: {
+			            url: locations[i][3],
+			            scaledSize: new google.maps.Size(34, 38)
+			        }
+			    });
+			    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			        return function() {
+			            infowindow.setContent(locations[i][0]);
+			            infowindow.open(map, marker);
+			        }
+			    })(marker, i));
+			}
+include footer.jade 								

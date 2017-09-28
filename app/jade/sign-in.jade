@@ -1,0 +1,54 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li
+								a Главная >
+							li
+								a Войти
+	.sign-in-top
+		.container
+			h1 Войти
+	.sign-in-content
+		.container
+			.row
+				.col-md-6
+					.registration-form
+						form
+							h2 Авторизация на сайте
+							p Телефон или е-mail
+							input
+							p.error-text Для авторизации по номеру телефона введите его в формате: 7XXXXXXXXXX
+							p Пароль
+							input
+
+							.sign-up-button
+								a 
+									p Войти
+							a.forget-pas Забыли пароль?		
+				.col-md-6
+					.to-sign-up.sign-up-socials
+						h2 Регистрация нового пользователя
+						p Быстро, удобно, легко!
+						.sign-up-button
+							a 
+								p Зарегистрироваться
+					.sign-up-socials
+						h2 Войти, используя аккаунт соцсети
+						a
+							img(src="./img/facebook.png", alt="")
+						a
+							img(src="./img/twitter.png", alt="")
+						a
+							img(src="./img/linked.png", alt="")
+						a
+							img(src="./img/vk.png", alt="")
+						a
+							img(src="./img/od.png", alt="")
+						a
+							img(src="./img/insta.png", alt="")
+include footer.jade

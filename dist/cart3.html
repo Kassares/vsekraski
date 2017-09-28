@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ВСЕКРАСКИ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Comcdpatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./vendor/styles/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/styles/slick.css">
+    <link rel="stylesheet" href="./vendor/styles/slick-theme.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./vendor/styles/jquery-ui.css">
+    <link rel="stylesheet" href="./vendor/styles/jquery-ui.css">
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="container"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAACXBIWXMAABcRAAAXEQHKJvM/AAABQElEQVRIS62WwRmCMAyFOwIjOAIjMAIjdARHYASv3jh6ZISO4AiOwAaYYPSL0PSl6OFdNLw/pElKWJYlWArXWyRNpJm0bPQgjaSu6GEY92KwNbWUSC0EUFAjWSFDS9EEiPndYYI0WIBfMt8qfgHCq+booRpxU5w0oOZAvRpX7/BqRRTMCZxJnchbzoYBEwjig28yrdyG/HxoxQCC5py5gnQAMAYQcLHMFaTU2gkBOgfg8gugdwBKZwgBIzDn6S+dYfLMgFkm+m8Azw6eFcEZxkzmpdq/1desCX7TJEL9vya2JiMZoTId0aABnnVRo8+A6rr+8y3OH18FQGPvVfpqiMq2Q9rtrlxvo7Ytme8u/hzg6N2MvyoOQjhzc2dlf6woV7YsboBArIO/I3MXQCDcwnpOeEWbN101QCDvBRdRrNYT7KKJe/J3rQEAAAAASUVORK5CYII=" alt="" class="_idGenObjectAttribute-1">
+        <ul>
+          <li><a href="shops.html">Магазины</a></li>
+          <li><a href="./delivery.html">Получение						</a></li>
+          <li><a href="./payment.html">Оплата</a></li>
+          <li class="has-child"><a>Сервис</a>
+            <ul>
+              <li><a href="./faq.html">Вопросы и ответы</a></li>
+              <li><a href="./ask.html">Задать вопрос</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a>Компаниям</a>
+            <ul>
+              <li><a>Франшиза</a></li>
+              <li><a>Организациям					</a></li>
+              <li><a>Дизайнерам</a></li>
+              <li><a>Строителям							</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="phone-number"><span>+7 (4852) 648-648</span></div>
+      </div>
+    </div>
+    <div class="topnav-mobile">
+      <div class="burger-menu"><img src="./img/burger.png" alt=""></div>
+      <ul>
+        <li><a href="shops.html">Магазин</a></li>
+        <li><a href="./delivery.html">Получение						</a></li>
+        <li><a href="./payment.html">Оплата					</a></li>
+        <li><a>Франшиза</a></li>
+        <li><a>Организациям					</a></li>
+        <li><a>Дизайнерам</a></li>
+        <li><a>Строителям					</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="container"><img src="data:image/png;base64,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" alt="" class="logo _idGenObjectAttribute-1"><a href="./index.html"><img src="data:image/png;base64,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" alt="" class=" logoname _idGenObjectAttribute-1"></a>
+        <div class="search-wrapper">
+          <input type="text" placeholder="Поиск товара" class="search-input">
+        </div>
+        <div class="login"><a href="./sign-in.html">Войти</a><a href="./registration.html">Регистрация</a></div><a href="./cabinet.html" class="wishlist"><img class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAACXBIWXMAABcRAAAXEQHKJvM/AAACxElEQVRoQ92Z24GCQAxFKcES+MuvJViCJVACJViCJVgCJVCCJVCCHbDcBdwxZOYOb9yP87MkmRzmpW5S13Xyn6AB3wYNACJyasgaHg3PhlpRNRQNeUPK6jl10y6n6Grous9uTIx9YvWoUDcgCr6MwUKgwXOg7qWhjKjjgh5uTCwkk08Q0dzdBqSd6SIij4ll0UILDeqCZYOZPou9rKbyoELSylh7pO6awRu/GC8BzeaB3Jf4Z/spnr0n7dK8B3IHUrqANTMolltvw6KJvUrcTEBk8HI8NfGibzFSbpKV8Ltc2ICeBkLLFgdN1Kml6vqWbfYhJO0at2T0hoZ0fzqhsPck63IelgxrnNQ8GVKvvlffwAhInSKZ2Ou4imjArT1Lxql5Nnq5/Qp1xt4p7GT087c4G9yRWkTGqam3yKsXytWDyknCUvSdMO+3sgfSToTu7YoHevPmTpK1B7C3MGvB/bMF0h7pbm+PxLBMnQT97OOg2Btp7ym3vzLRM6AS9Oxc2SBbo3vUfyhDwRJ5EW7JWCF3yb3P+iPBhCoVjI8xZcfhlhtgQvURZ8GHDC/YKpHhF61DzoSFDO/QwjrLC1boKMjw60puTRvY/dJkyPAOAmn/UJuWrOCeiP1FtMSzPuBq2N5Z4b0Q+yPZBc/cIH04gIwV3xqPzHvfu4Gp2J+sMzbIVnhkKnGuGp1wPqqURwa9fhxgVuLhpGJlgK/AYaTGyIBQIet+2lRqrAxgBbO9pKbIgJjCm0tNlQG0eDfAZlJzZAANcAZaXWquDKABasDVpJaQATTAGHhxqaVkAA3wNLCY1JIygAYEGpkttbQMoAGkoclSa8gAGsCYIrWWDKABMYyRWlMG0IBYYqTWlgE0YAwhqS1kAA0YS0BqdRlAA6YQIbWKDKABUwlIrSYDaMAcpP3h5SZ//7XGPkpZ3hxowLdBA76NHx0QPRTUCiskAAAAAElFTkSuQmCC" alt="" />
+          <div class="red-circle">
+            <p>23</p>
+          </div></a>
+        <div class="to-cart"><a href="./cart1.html">Корзина</a><img class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAA4CAYAAABkHwH1AAAACXBIWXMAABcRAAAXEQHKJvM/AAACvklEQVRoQ+2ZwZWjMAyGU0JK4KYrJVDAHKYESkgJlJASKCElcJgCUgIlcNh7Bq3lGUVIyCZ45+0uh/+9SWxJn2XZMMrp8XiccgQAzax+1jDrQRrpu8azf0XuhCiCvDNAS7dZZ8/fFrkTCPSSAMl1LwHsTpiDXleAcKwDPeNXz3euPNB3BQJrtTLmTmLuYt4rWgM9K8H7NWfwXS5Yt60XPFdrgTsBevOckV2lfFdDOKBRm+p5LSjP6pQbgHYGFzyKRfNyqj0/LiytnjvuPEfCvoVlCVlqPX8erCyBynPEbPsEwE3ASbCeEwcUM4xXXKxXvDUGZY5bZrvBgn7N9RaEsrDOi7ELLOjX3CXT5u7F2QtWPo5Tr7mn7HrzLSd4mocozwk8P26T6o/sspISjZKcGwHPIqu9Z8Ns82DFFma/fMDyTn73bDzY+e8KwoHFcdxdLJcKB+TBwMHkTCuwjWdjwUJ4p7AeJv3JGJhSg+bC0nzczX4FTNNgwUZ1r8BCeIFpITwU7qDHSJULi8KtMcsClrCYsSHBr6aJbLE8sGb5AhewVyPQCOwNCcIN0JDTjwQISyP/rCSCsyxgO5okCz/qJgNkCLOEWcd6rbU4m2BpIm5DzgHgwgXdCMY8cLvB0uQK/IPxS3x+s+CKwjIjmTWs7ZYW04hxM5M/AduJsf8D1tMB+9fAltQBW0oHbCkdsKV0wJbSAVtKB2wpHbCl9E/BjqD83POnYCH8A9qC3mwZJH3URTjZHRZCV4e3Nb0exW/Y2pj41eN6FRae201bujrIV/P0a80M/K7OhYXntqbXJLG0aDfJIFfFSGa9Eza4GKvOUoWZ/mo3gdG11LLi9bii05Q60zSRbUexKm+nTFiWra3bJ4Vgsd2U9cNyEiwB46HoE2C4eJ01XvBcuRPA/oU7qc72lDsBBeG2uMCGOttTnwyNc3zju4AZAAAAAElFTkSuQmCC" alt="" />
+          <div class="red-circle">
+            <p>13</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="categories">
+      <div class="container">
+        <ul>
+          <li class="special"><a href="./special.html">Акции</a></li>
+          <li class="categories-has-child"><a href="./fork.html">Краски, эмали</a></li>
+          <li><a href="./categories.html">Лаки, Масла</a></li>
+          <li><a>Грунты</a></li>
+          <li><a>Декоративные покрытия</a></li>
+          <li><a>Монтажные пены</a></li>
+          <li><a>Клеи, герметики</a></li>
+          <li><a>Готовые шпатлёвки</a></li>
+          <li><a>Сухие смеси</a></li>
+          <li><a>Растворители, очистители</a></li>
+          <li><a>Инструмент</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <div class="container">
+        <div class="nav-burger"><img src="./img/burger.png" alt="">
+          <p>Разделы</p>
+        </div>
+        <ul>
+          <li class="special"><a href="./special.html">Акции</a></li>
+          <li class="categories-has-child"><a href="./fork.html">Краски, эмали</a></li>
+          <li><a href="./categories.html">Лаки, Масла</a></li>
+          <li><a>Грунты</a></li>
+          <li><a>Декоративные покрытия</a></li>
+          <li><a>Монтажные пены</a></li>
+          <li><a>Клеи, герметики</a></li>
+          <li><a>Готовые шпатлёвки</a></li>
+          <li><a>Сухие смеси</a></li>
+          <li><a>Растворители, очистители</a></li>
+          <li><a>Инструмент</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-categories-menus">
+      <div class="sub-categories-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">Для внутренних работ</a></li>
+                <li><a>Для потолков специализированные</a></li>
+                <li><a>Для стен и потолков универсальные</a></li>
+                <li><a>Для радиаторов</a></li>
+                <li><a>Красители для ручного колерования</a></li>
+                <li><a>Для кухонь и влажных помещений</a></li>
+                <li><a>Для пола</a></li>
+                <li><a>Специального назначения</a></li>
+              </ul><a class="see-all-categories">Показать все<img src="./img/arrow-down.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">ДЛЯ НАРУЖНЫХ РАБОТ</a></li>
+                <li><a>Для минеральных поверхностей</a></li>
+                <li><a>По металлу и ржавчине</a></li>
+                <li><a>Для деревянных поверхностей</a></li>
+                <li><a>Для кровли и шифера</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">УНИВЕРСАЛЬНЫЕ</a></li>
+                <li><a>Для окон и дверей</a></li>
+                <li><a>На водной основе</a></li>
+                <li><a>На основе растворителя</a></li>
+                <li><a>Аэрозольные</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title to-color">Колеровка<img src="./img/arrow-down.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breads">
+            <ul>
+              <li> <a>Главная ></a></li>
+              <li> <a>Магазины</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart1-wrapper cart2-wrapper cart3-wrapper">
+    <div class="cart-position">
+      <div class="container">
+        <div class="cart-pos-item">
+          <div class="cart-pos-icon done"><img src="./img/done.png" alt=""></div>
+          <h5>Ваша корзина</h5>
+        </div>
+        <div class="cart-dotted-border"></div>
+        <div class="cart-pos-item">
+          <div class="cart-pos-icon done"><img src="./img/done.png" alt=""></div>
+          <h5>Детали получения</h5>
+        </div>
+        <div class="cart-dotted-border"></div>
+        <div class="cart-pos-item">
+          <div class="cart-pos-icon"><img src="./img/payment.png" alt=""></div>
+          <h5>Способ оплаты</h5>
+        </div>
+      </div>
+    </div>
+    <div class="cart-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div data-toggle="collapse" data-target="#products-collapse" class="cart-prev-choosen-products">
+              <p class="your-choose">Ваш заказ:<span>2 товара</span></p>
+              <p id="cart-collapse-products">Свернуть список </p>
+              <p id="cart-show-products">Показать список</p>
+            </div>
+            <div id="products-collapse" class="cart-product-collapse collapse">
+              <div class="cart-product-wrapper">
+                <div class="cart-product-image"><img src="./img/banka.png" alt=""></div>
+                <div class="cart-product-text">
+                  <p class="cart-product-name">Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ</p><a>Удалить</a>
+                </div>
+                <div class="cart-product-price-wrapper">
+                  <p class="cart-product-price">2390<span>&#8381</span></p><span>Цена</span>
+                </div>
+                <div class="cart-product-quantity-wrapper">
+                  <select id="sel1" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select><span>Кол-во</span>
+                </div>
+                <div class="cart-product-total-price-wrapper">
+                  <p class="cart-product-price">2390<span>&#8381</span></p><span>Сумма</span>
+                </div>
+              </div>
+              <div class="cart-product-wrapper">
+                <div class="cart-product-image"><img src="./img/banka.png" alt=""></div>
+                <div class="cart-product-text">
+                  <p class="cart-product-name">Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ</p><a>Удалить</a>
+                </div>
+                <div class="cart-product-price-wrapper">
+                  <p class="cart-product-price">2390<span>&#8381</span></p><span>Цена</span>
+                </div>
+                <div class="cart-product-quantity-wrapper">
+                  <select id="sel1" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select><span>Кол-во</span>
+                </div>
+                <div class="cart-product-total-price-wrapper">
+                  <p class="cart-product-price">2390<span>&#8381</span></p><span>Сумма</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-payment-wrapper">
+              <div class="cart-payment-header">
+                <h3>Способ оплаты</h3>
+              </div>
+              <div class="cart-payment-ways">
+                <div class="radio-wrapper">
+                  <input type="radio" name="payment" id="payment-cash">
+                  <label for="payment-cash">Наличными при получении</label>
+                </div>
+                <div class="radio-wrapper">
+                  <input type="radio" name="payment" id="payment-card">
+                  <label for="payment-card">Картой при получении</label>
+                </div>
+                <div data-toggle="collapse" data-target="#payment-online-collapse" class="radio-wrapper">
+                  <input type="radio" name="payment" id="payment-online">
+                  <label for="payment-online">Картой он-лайн</label>
+                </div>
+                <div id="payment-online-collapse" class="collapse">
+                  <h1>Оплата картой</h1>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>Номер карты </h5>
+                      <input class="cart-number">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5>Срок действия</h5>
+                          <div class="card-usage">
+                            <input type="text" placeholder="MM"><span>/</span>
+                            <input type="text" placeholder="YY">
+                          </div>
+                        </div>
+                        <div class="col-md-6 card-secure">
+                          <h5>Код безопасности</h5>
+                          <input><span>Что это?</span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5>Имя владельца карты</h5>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" placeholder="YY">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" placeholder="YY">
+                        </div>
+                      </div>
+                      <div class="dotted-border"></div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <input type="checkbox" name="card" id="remember-card">
+                          <label for="remember-card">Запомнить данные карты</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="pay-now-button"><a>Оплатить сейчас</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h5>Тип карты</h5>
+                      <div class="card-wrapper"><img src="./img/visa.png" alt=""><img src="./img/maestro.png" alt=""><img src="./img/mastercard.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="cart-sum">
+              <h5>Товары (2)</h5>
+              <div class="dotted-border"></div>
+              <div class="total-cart-wrapper">
+                <h5>Всего (руб.)</h5>
+                <p class="total-cart-sum">12199</p>
+              </div>
+              <div class="dotted-border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><img src="data:image/png;base64,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" alt="" class="logo _idGenObjectAttribute-1"><img src="data:image/png;base64,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" alt="" class="logo-footer _idGenObjectAttribute-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-xs-6">
+        <h3>Доставка и оплата</h3>
+        <ul>
+          <li><a>Получение</a></li>
+          <li><a>Оплата</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-xs-6">
+        <h3>Компаниям</h3>
+        <ul>
+          <li><a>Франшиза</a></li>
+          <li><a>Организациям</a></li>
+          <li><a>Дизайнерам</a></li>
+          <li><a>Строителям</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-xs-6">
+        <h3>Сервис</h3>
+        <ul>
+          <li><a>Вопросы и ответы</a></li>
+          <li><a>Задать вопрос					</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <h3>Магазины</h3>
+        <ul>
+          <li><a>Ул. Победы, 48 </a></li>
+          <li><a>Ул. Вспольинское поле, 1</a></li>
+          <li><a>Ул. Вспольинское поле, 16</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-phone-number"><span>+7 (4852) 648-648</span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="blue-footer">		</div>
+<script src="./vendor/scripts/jquery.min.js"></script>
+<script src="./vendor/scripts/slick.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./vendor/scripts/jquery-ui.js"></script>
+<script src="./vendor/scripts/bootstrap.min.js"></script>

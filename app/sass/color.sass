@@ -1,0 +1,509 @@
+.color-content
+	background: #f1f2f2
+	float: left
+	width: 100%
+	.color1-top
+		float: left
+		width: 100%
+		border-bottom: 1px dotted #dadada
+		.color-settings
+			float: left
+			padding-right: 20px
+			margin-right: 20px
+			position: relative
+			a
+				font: 12px $gpmed
+				display: block
+				padding: 20px 0
+				float: left
+				&:hover
+					color: #0097a7
+					text-decoration: none
+				&:before
+					content: ''
+					position: absolute
+					background: url(../img/arrow-down.png)
+					background-size: cover
+					width: 9px
+					height: 8px
+					top: 40%
+					right: 2px
+
+				&:hover + .color-settings-radio
+					display: block
+			.color-settings-radio:hover
+				display: block
+			.color-settings-radio
+				position: absolute
+				top: 40px
+				left: 0
+				display: none
+				background: #fff
+				border: 1px solid #dadada
+				z-index: 10
+				padding: 15px
+				label
+					margin: 0
+					font: 12px $gplig
+					padding-top: 3px
+					padding-bottom: 10px
+					color: #000
+				&:before
+					content: ""
+					border: 10px solid transparent
+					border-bottom: 10px solid #fff
+					position: absolute 
+					top: -18px
+					left: 10px
+					z-index: 30
+					pointer-events: none
+		input
+			float: right
+			width: 240px
+			font: 12px $gplig
+			margin-top: 15px
+		.search-color
+			float: right
+			margin-top: 15px
+			a
+				border-radius: 3px
+				display: block
+				padding: 7px 25px
+				text-align: center
+				background: #009aa5
+				font: 14px $gpnarbol
+				color: #fff
+				margin-left: 20px
+				transition: .2s all ease
+				&:hover
+					text-decoration: none
+					background: #00727a
+	.picker-slider-wrapper
+		width: 100%
+		float: left
+		padding: 15px 0 70px
+		.container
+			position: relative
+			.picker-slider
+				width: 100%
+				float: left
+				.picker-column
+					.picker-item
+						margin-top: 3px
+						background: #54ada6
+						width: 33px
+						height: 33px
+						position: relative
+						cursor: pointer
+						&:hover .picker-item-hidden
+							display: block
+						.picker-item-hidden
+
+							padding: 15px
+							position: absolute
+							top: 30px
+							left: -20px
+							border: 1px solid #dadada
+							display: none
+							z-index: 20
+							background: #fff
+							border-radius: 0 0 3px 3px
+							width: 170px
+							pointer-events: none
+							&:after
+								content: ""
+								border: 10px solid transparent
+								border-bottom: 10px solid #fff
+								position: absolute
+								top: -20px
+								left: 20px
+								z-index: 20
+							h5
+								font: 12px $gpmed
+							span
+								font: 12px $gplig
+								color: #a7a9ab
+							p
+								font: 12px $gplig
+
+
+
+			.previous-picker
+				width: 44px
+				height: 44px
+				border-radius: 50%
+				border: 2px solid #dadada
+				display: flex
+				align-items: center
+				cursor: pointer
+				position: absolute
+				top: 50%
+				left: -60px
+				img
+					width: 22%
+					margin: 0 auto
+					display: block
+			.next-picker
+				width: 44px
+				height: 44px
+				border-radius: 50%
+				border: 2px solid #dadada
+				display: flex
+				align-items: center
+				cursor: pointer
+				position: absolute
+				top: 50%
+				right: -60px
+				img
+					width: 22%
+					transform: rotate(180deg)
+					margin: 0 auto
+					display: block
+	.choosen-color-wrapper
+		line-height: 1.5
+		float: left
+		width: 100%
+		background: #fff
+		h1
+			font: 20px $gpbol
+		.color-information
+			padding-bottom: 25px
+			position: relative
+			&:before
+				content: ""
+				width: 35px
+				height: 35px
+				transform: rotate(45deg)
+				border-radius: 5px
+				position: absolute
+				background: #f1f2f2
+				top: -18px
+				left: 50%
+				z-index: 20	
+			.color-presentation
+				width: 42%
+				float: left
+				background: #1f858f
+				height:  160px
+			.color-settings
+				width: 23%
+				float: left
+				font: 12px $gplig
+				padding-left: 25px
+				border-right: 1px dotted #dadada
+				span
+					font: 12px $gpmed
+					padding-left: 5px
+				a
+					text-decoration: underline
+					text-decoration-style: dashed
+					color: #009aa5
+					padding-left: 5px
+			.color-description
+				float: left
+				width: 35%
+				padding-left: 30px
+				h5
+					font: 12px $gpmed
+				p
+					font: 12px $gplig
+					line-height: 1.5
+		.color-product
+			padding-top: 25px
+			padding-bottom: 40px
+			border-bottom: 1px dotted #dadada
+			.color-product-text
+				width: 65%
+				float: left
+				padding-right: 5%
+				p
+					font: 12px $gplig
+			.button-to-cprosuct
+				width: 35%
+				float: left
+				max-width: 320px
+				a
+					display: block
+					color: #fff
+					font: 14px $gpnarbol
+					padding: 20px 20px 
+					background: #ed193a
+					transition: .2s all ease
+					&:hover
+						background: #92001c
+						text-decoration: none
+		.other-colors
+			padding: 20px 0 100px
+			h1
+				float: left
+				width: 100%
+			.color-box
+				width: 55px
+				height: 86px
+				float: left
+				margin-right: 3px
+			.same-color1
+				background: #1e7a94				
+			.same-color2
+				background: #1e8b85
+			.same-color3
+				background: #1e8187
+			.same-color4
+				background: #1e788d
+			.subcolor1
+				background: #87dddb		
+			.subcolor2
+				background: #45bfbb			
+			.subcolor3
+				background: #2aaaa8			
+			.subcolor4
+				background: #1f858f	 	
+			.subcolor5
+				background: #1e6e7c			
+			.subcolor6
+				background: #1e5e6f			
+			.subcolor7
+				background: #1e5e6f
+#color-tabs
+	.color-tabs-buttons
+		width: 100%
+		background: #e6e7e8
+		float: left
+		.nav.nav-tabs
+			display: flex
+			flex-wrap: inherit
+			li
+				&:hover
+					a
+						color: #009aa5
+				a
+					padding: 20px 33px
+					border: 0px solid transparent
+					border-radius: 0px
+					font: 13px $gpbol
+					text-transform: uppercase
+					span
+						color: #fff
+						border-radius: 10px
+						background: #808080
+						margin-left: 5px
+						padding: 1px 7px
+				&.active
+					a
+						background: #f1f2f2
+						color: #0099a8		
+.choosen-color
+	.color-chname
+		float: left
+		width: 100%
+		height: 100px
+		display: flex
+		align-items: center
+		h5
+			float: left
+			font: 20px $gpbol
+		.choosen-color-rgb
+			background: #1e848e
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			float: left
+			margin: 0 5px
+		span
+			font: 20px $gpbol
+
+#color-tabs
+	.tab-pane
+		background: #f1f2f2
+		height: 100%
+
+		.color-filter-wrapper
+			width: 100%
+			float: left
+			padding-top: 35px
+			padding-bottom: 40px
+			height: 100%
+			position: relative
+			&:after
+				content: ""
+				width: 35px
+				height: 35px
+				transform: rotate(45deg)
+				border-radius: 5px
+				position: absolute
+				background: #f1f2f2
+				bottom: -15px
+				left: 50%
+				z-index: 20	
+			.color-brands,
+			.color-usage,
+			.color-price
+				float: left
+				width: 33%
+				padding : 0 30px
+				height: 100% !important
+				
+				h5
+					margin: 0 0 15px 0
+					font: 12px $gpmed
+				input[type="checkbox"]
+					display: none
+
+				label
+					margin: 0
+					font: 13px $gplig
+					padding-top: 1px
+					padding-bottom: 10px
+					padding-left: 30px
+					color: #000
+					position: relative
+					display: block
+
+					&:before
+						content: ""
+						width: 16px
+						height: 16px
+						border: 1px solid #dadada
+						position: absolute 
+						top: 0
+						left: 0px
+						z-index: 30
+						border-radius: 2px
+						background: #fff
+					span
+						color: #a7a9ab
+						padding-left: 5px
+				input[type="checkbox"]:checked + label:before 
+					content: ""
+					color: #0099a8
+					background: url(../img/galka.svg) #fff
+					background-repeat: no-repeat
+					background-size: 90%
+					background-position: 50% 50%
+					text-align: center
+					margin: 0 auto
+					font-size: 20px
+					line-height: 10px
+			.color-usage
+				width: 40%
+				border-right: 1px dotted #dadada
+				border-left: 1px dotted #dadada
+			.color-price
+				width: 27%
+				float: right
+				position: relative
+				border: none
+				.filter-price
+					.price-interval
+						margin-top: 25px
+					input
+						width: 39%
+						float: left
+						height: 32px
+						border-radius: 2px
+						color: #000
+						font: 12px $gpreg
+						text-align: center
+						padding-left: 0
+					span
+						float: left
+						line-height: 26px
+						padding: 0px 5px
+						font: 30px $gplig
+					.rubl
+						font-size: 20px
+						padding: 0 0 0 5px
+						img
+							width: 10px
+							margin-top: 6px
+				.filtered-items
+					font: 14px $gplig
+					color: #0099a8
+					margin-top: 200px
+.color-products
+	padding-top: 35px
+	.category-you-saw
+		padding-bottom: 20px
+		.more-products
+			width: 80%
+			margin: 0 auto
+			display: block
+			float: none
+			margin-top: 30px
+		.pages-button
+			padding: 0
+			
+			a
+				display: block
+				padding: 7px 5px
+				transition: all 0.3s ease
+			&:hover a
+				color: #fff
+				background: #a7a9ac
+.colored-product
+	.product-to-color
+		.color-round
+			width: 20px 
+			height: 20px
+			border-radius: 50%
+			background: #1e848e
+			float: left
+			margin-right: 7px
+
+	.product-color-wrapper
+		width: 100%
+		display: left
+		.color-info
+			float: left
+			.color-round-wrapper
+				float: left
+				width: 40px
+				.color-round
+					width: 34px 
+					height: 34px 
+					border-radius: 50%
+					background: #1e848e
+					float: left
+					margin-right: 7px
+			.color-info-text
+				float: left
+				width: 70%
+				h5
+					font: 16px $gpmed
+				span
+					font: 12px $gplig
+					color: #a7a9ab
+				p
+					font: 12px $gplig
+				a
+					font: 12px $gpmed
+					text-decoration: underline
+					text-decoration-style: dashed
+					color: #a7a9ab
+					display: block
+					margin-top: 20px
+	.color-price
+		margin-top: 15px
+
+	.price-with-color
+		.prices-text
+			width: 50%
+
+			float: left
+			h5
+				padding-top: 0
+			p
+				font: 12px $gplig
+				color: #a7a9ab
+
+		.old-price
+			&:after
+				background: transparent !important
+	.button-buy
+		margin-top: 30px !important
+		a
+			transition: .2s all ease
+			&:hover
+				background: #92001c
+				text-decoration: none			
+	

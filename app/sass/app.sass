@@ -1,0 +1,1511 @@
+@import 'variables'
+@import 'mixins'
+@import 'fonts'
+html,body
+	height: 100%
+.col-md-3,
+.col-md-6,
+.col-md-12
+	padding-left: 10px
+	padding-right: 10px
+body
+	width: 100%
+	font-family: $gplig
+	display: flex
+	flex-direction: column
+main 
+	flex: 1 0 auto
+// p
+// 	line-height: 1.5
+.footer 
+	flex: 0 0 auto
+.container
+	max-width: 940px
+	padding: 0
+a
+	cursor: pointer
+a:active,a:visited,a:focus
+	text-decoration: none
+	border: none
+ul
+	padding: 0
+	margin: 0
+h1
+	font: 26px $gpreg
+	padding: 25px 0px
+	margin: 0
+.col-md-4
+	padding-left: 10px
+	padding-right: 10px
+.col-md-8
+	padding-left: 10px
+	padding-right: 10px
+.row
+	margin-right: -10px
+	margin-left: -10px
+.button-ask
+	float: right
+	a
+		color: #fff
+		background: #ec1a3b
+		padding: 15px 20px
+		height: 100%
+		width: 100%
+		display: block
+		border-radius: 3px
+		font: 14px $gpnarbol
+		transition: .2s all ease
+		&:hover
+			background: #92001c !important
+			text-decoration: none !important
+.button-go-to-shop
+	&:hover
+		text-decoration: none !important
+		background: #92001c !important
+.button-buy
+	width: 83px
+	height: 25px
+	background: #ed1a3b
+	float: right
+	border-radius: 3px
+	padding: 5px 10px
+	color: #fff
+	margin-top: 10px
+	transition: .2s all ease
+	&:hover
+		background: #92001c !important
+		cursor: pointer !important
+		text-decoration: none
+		a
+			text-decoration: none
+	img
+		float: left
+		width: 10px
+	a
+		float: right
+		font: 12px $gpnarbol
+		padding-top: 1px
+		color: #fff
+.top-flag
+	position: absolute
+	width: 60px
+	height: 60px
+	top: 5px
+	left: -7px
+	background: url(../img/flag.png)
+	background-repeat: no-repeat
+	background-size: 100%
+	p
+		font: 11px $gpmed
+		color: #fff
+		padding: 5px
+		line-height: 14px
+.circle-to-action
+	position: absolute
+	top: -2px
+	right: 20px
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	background: #ffb500
+	text-align: center
+	padding-top: 8px
+	img
+		width: 20px
+	p
+		font: 15px $gpmed
+		color: #000
+.dotted-border
+	border: 1px dotted #dadada 	
+	margin: 10px 0px
+	float: left
+	width: 100%
+input[type="radio"]
+	display: none
+input[type=radio] + label
+	width: 100%
+	float: left
+	position: relative
+	padding-left: 20px
+	padding-bottom: 30px
+	font: 16px $gpmed
+	transition: all .5s ease
+	&:before
+		content: ''
+		position: absolute
+		top: 1px
+		left: 0
+		width: 16px
+		height: 16px
+		border-radius: 50%
+		background: #fff
+		border: 1px solid #dadada
+input[type=radio] + label
+	color: #a6a8ab
+input[type=radio]:checked + label
+	color: #000
+input[type=radio]:checked + label:before
+	content: "\2022"
+	color: #0099a8
+	text-align: center
+	margin: 0 auto
+	font-size: 20px
+	line-height: 15px
+       // конец повторяющихся элементов
+input:focus
+	outline-color: #0099a8
+.top-nav
+	width: 100%
+	height: 30px
+	background: #272727
+	img
+		float: left
+		width: 12px
+		padding-top: 8px
+	ul
+		display: inline-block
+		margin: 0
+		padding: 0
+		margin-left: -5px
+		margin-top: -1px
+		li
+			float: left
+			padding: 5px 9px 5px 12px
+			list-style: none
+			position: relative
+			&:last-child
+				margin-left: 15px
+			a
+				color: #fff
+				text-decoration: underline
+				text-decoration-style: dashed
+				font-family: $gplig
+				font-size: 12px
+				cursor: pointer
+				transition: all 0.3s ease 
+				&:hover
+					color: #0099a8
+		.has-child
+			position: relative
+			float: left
+			padding: 5px 8px 5px 12px
+			list-style: none
+			position: relative
+			&:hover
+				li
+					&:last-child
+						margin-left: 0px
+					a
+						color: #000
+						text-decoration: none
+						transition: .2s all ease
+						&:hover
+							color: #0099a8				
+			a
+				color: #fff
+				text-decoration: underline
+				text-decoration-style: dashed
+				font-family: $gplig
+				font-size: 12px
+				cursor: pointer
+				transition: .2s all ease
+				&:hover
+					color: #0099a8
+			ul
+				display: none
+				li
+					display: block
+			&:hover
+				ul
+					position: absolute
+					background: #fff
+					top: 30px
+					left: 0
+					display: block
+					z-index: 20
+					min-width: 180px
+					padding: 15px
+					border-radius: 0 0 5px 5px
+					border: 1px solid #a7a9ac
+					li
+						a
+							color: #000
+							text-decoration: none
+				&:before
+					content: ''
+					position: absolute
+					top: 5px
+					pointer-events: none
+					left: 4px
+					z-index: 111
+					border: 20px solid transparent
+					border-bottom: 20px solid #fff
+		.has-child:after
+			content: ''
+			position: absolute
+			background: url(../img/arrow-down.png)
+			background-size: cover
+			width: 10px
+			height: 8px
+			top: 47%
+			right: -9px
+	.phone-number
+		float: right
+		color: #fff
+		font-size: 20px
+		font-family: $gpmed
+		margin-top: 2px
+.topnav-mobile
+	display: none
+
+	z-index: 1111
+	img
+		width: 30px
+		top: 10px
+		left: 10px
+		position: fixed
+	ul
+		position: fixed
+		width: 100%
+		padding: 30px
+		height: 100%
+		display: none
+		background: rgba(0, 0, 0, 0.77)
+		li
+			text-align: center
+			padding-top: 20px
+			a
+				font-size: 1.8em
+				width: 100%
+				color: #fff
+				cursor: pointer
+header
+	.container
+		position: relative
+		.logo
+			width: 78px
+			margin-top: -5px
+			position: absolute
+			top: 0
+			left: 0
+		.logoname
+			width: 213px
+			margin: 9px 0px 7px 80px
+		.search-wrapper
+			display: inline-block
+			position: relative
+			margin: 23px 28px 14px 45px
+			.search-input
+				width: 258px
+				height: 34px
+				padding: 13px
+				border: 1px solid #a7a9ac
+				font: 12px $gplig
+				&:active,
+				&:focus
+
+		.search-wrapper:after
+			content: ''
+			position: absolute
+			background-image: url(../img/search.png)!important
+			background-repeat: no-repeat
+			background-size: cover
+			width: 17px
+			height: 17px
+			top: 9px
+			right: 11px
+		.login
+			color: #272727
+			font-size: 12px
+			display: inline
+			a
+				padding: 0px 7px 0px 8px
+				&:hover
+					text-decoration: none
+					color: #0097a7
+			a:first-child
+				border-right: 1px solid #a7a9ac
+		.wishlist
+			display: inline
+			margin-left: 30px
+			position: relative
+			img
+				width: 24px
+				margin-top: 3px
+			.red-circle
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				background: red
+				position: absolute
+				top: 8px
+				right: -1px
+				p
+					text-align: center
+					color: #fff
+					font: 10px $gpmed
+					padding-top: 3px
+		.to-cart
+			display: inline
+			margin-left: 15px
+			position: relative
+			margin-top: -5px
+			a
+				font-size: 	12px
+				&:hover
+					text-decoration: none
+					color: #0097a7
+			img
+				width: 21px
+				margin-left: 8px
+				margin-top: -1px
+			.red-circle
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				background: red
+				position: absolute
+				top: 9px
+				right: -8px
+				p
+					text-align: center
+					color: #fff
+					font: 10px $gpmed
+					padding-top: 3px
+.nav-mobile
+	position: relative
+	display: none
+	.nav-burger
+		padding: 10px
+		img
+			width: 50px
+			float: left
+			margin-right: 20px
+		p
+			text-transform: uppercase
+			font-size: 24px
+			padding-top: 10px
+	ul
+		position: absolute
+		padding: 30px
+		top: 50px
+		left: 0
+		display: none
+		z-index: 1111
+		background: rgba(0, 0, 0, 0.77)
+		li
+			text-align: center
+			padding-top: 20px
+			a
+				font-size: 1.8em
+				width: 100%
+				color: #fff
+				cursor: pointer	
+.categories
+	width: 100%
+	height: 50px
+	background: #e6e7e8
+	// position: relative
+	ul
+		height: 40px
+		font: 12px $gpmed
+		display: inline-flex
+		flex-wrap: inherit
+		li
+			list-style: none
+			display: inline-flex
+			vertical-align: middle
+			align-items: center
+			margin: 10px 0
+			border-right: 1px dotted #a7a9ac
+
+			&:hover
+				a
+					color: #0099a8
+					text-decoration: none
+			a
+				text-align: center
+				align-content: center
+				// margin: 10px 0px
+				padding: 0px 7px
+				font: 12px $gpmed
+				transition: 0.3s all ease
+
+	.special
+		color: #fff !important
+		background: #ed1a3b
+		margin: 0
+		transition: .2s all ease
+		&:hover
+			background: #92001c
+			cursor: pointer
+			color: #fff
+		a
+			color: #fff !important
+	.categories-has-child
+		position: relative
+		&:hover
+			&:before
+				content: ""
+				position: absolute
+				top: 22px
+				z-index: 111
+				left: 30%
+				width: 13px
+				height: 19px
+				background: url('../img/pick.png')
+				background-size: 100%
+				background-repeat: no-repeat
+				// border: 20px solid transparent
+				// border-bottom: 20px solid #fff
+				// outline-bottom: 1px solid #272727
+				// display: none	
+.sub-categories-menus
+	position: relative
+	// &:before
+	// 		content: ""
+	// 		position: absolute
+	// 		top: 20
+	// 		left: 5px
+	// 		border: 20px solid transparent
+	// 		border-bottom: 20px solid #fff		
+	.sub-categories-menu
+		display: none
+		background: #fff
+		width: 100%
+		position: absolute
+		top: -2px
+		height: auto
+		z-index: 10
+		padding: 40px 0
+		border-top: 1px solid #272727
+		border-bottom: 2px solid #b1b1b1
+		.col-md-3
+			border-left: 1px dotted #a7a9ac
+			min-height: 375px
+			&:first-child
+				border: none
+			ul
+				padding: 0 15px
+				height: 100%
+				// border-left: 1px dotted #a7a9ac
+
+				li
+					display: block
+					padding: 5px 0
+				a
+					font: 12px $gplig
+					line-height: 17px
+					display: inline-block
+					&:hover
+						color: #0099a8
+						text-decoration: none
+				.subcategory-title
+					font: 13px $gpbol !important
+					margin-bottom: 20px
+					display: block
+					text-transform: uppercase
+			.see-all-categories
+				margin-top: 50px
+				display: block
+				font: 12px $gpmed
+				margin-left: 20px
+				img
+					width: 7px
+					transform: rotate(270deg)
+					padding-top: 17px
+			.to-color
+				img
+					width: 9px
+					transform: rotate(270deg)
+					margin-left: 10px
+					margin-top: -4px
+
+main
+	.special-row
+		width: 100%
+		height: 370px
+		background: #f1f2f2
+		.main-special-slider
+			min-height: 370px
+			padding: 90px 0px
+			.slider-text 
+				width: 40%
+				float: left
+				p
+					font: 34px $gplig
+					color: #000
+				.special-percent
+					font: 50px $gpmed
+					color: #009aa5
+					text-transform: uppercase
+			.slider-image
+				width: 60%
+				float: left
+				img
+					width: 100%
+	.main-posts-slider
+		float: left
+		width: 100%
+		padding-top: 30px
+		.main-product-slider-item,
+		.main-post-slider-item
+			// margin: 0px 10px
+			width: 100%
+			min-height: 330px
+			border: 1px solid #ececec
+			padding: 20px
+		.main-product-slider-item,
+		.main-post-slider-item
+			position: relative
+			.top-flag
+				position: absolute
+				width: 60px
+				height: 60px
+				top: 5px
+				left: -8px
+				background: url(../img/flag.png)
+				background-repeat: no-repeat
+				background-size: 100%
+				p
+					font: 11px $gpmed
+					color: #fff
+					padding: 5px
+					line-height: 14px
+		.image-wrapper
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			height: 150px
+			align-items: center
+			img
+				width: 80%
+				margin: 0 auto
+
+		.text-wrapper
+			height: 100px
+			padding-top: 7px 
+		.slider-product-name
+			font: 14px $gpmed
+			color: #000
+			line-height: 17px
+			margin-bottom: 3px
+		.slider-product-description
+			font: 12px $gplig
+			color: #000
+			line-height: 15px
+		.action-block
+			border-top: 1px dotted #b2b2b1
+			padding-top: 10px
+			bottom: 0
+			height: 40px
+			// position: absolute
+			.prices
+				float: left
+				.old-price
+					position: relative
+					float: left
+					margin-bottom: -7px
+					p
+						font: 13px $gpreg
+						color: #a7a9ac
+						margin: 0px
+					span
+						font: 12px $gpmed
+						margin-left: -2px
+						img
+							width: 7px
+							margin-top: -2px
+							display: inline-block
+				.old-price:after
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0px
+					height: 1px
+					width: 100%
+					background: #ed1a3b
+				.new-price
+					font: 21px $gpmed
+					span
+						font: 12px $gpmed
+						margin-left: 2px
+						img
+							width: 8px
+							margin-top: -5px
+							display: inline-block
+							margin-left: -1px							
+
+			.button-buy
+				width: 83px
+				height: 25px
+				background: #ed1a3b
+				float: right
+				border-radius: 3px
+				padding: 5px 10px
+				color: #fff
+				margin-top: 2px
+				transition: .2s all ease
+				&:hover
+					background: #92001c
+					cursor: pointer
+					a
+						text-decoration: none
+				img
+					float: left
+					width: 10px
+				p
+					float: right
+					font: 12px $gpnarbol
+					padding-top: 1px
+			.to-post-button
+				width: 140px
+				height: 25px
+				background: #ed1a3b
+				border-radius: 3px
+				padding: 5px 10px
+				color: #fff
+				
+				margin: 0 auto
+				margin-top: 2px
+				display: inherit
+				transition: .2s all ease
+				&:hover
+					background: #92001c
+					cursor: pointer
+					a
+						text-decoration: none
+				img
+					float: left
+					width: 10px
+				a
+					float: right
+					font: 12px $gpnarbol
+					padding-top: 1px
+					color: #fff
+	.main-posts-slider
+		position: relative
+		// .next-posts,
+		// .prev-posts
+		// 	position: absolute
+		// 	.circle-wrap
+		// 		border-radius: 50%
+		// 		width: 50px
+		// 		height: 50px
+		// 		top: 50%
+		// 		left: 0
+		// 		background: #444
+		.previous-post,
+		.next-post,
+		.previous-recomended,
+		.next-recomended
+			// &:hover img
+			// 	transform: scale(1.1)
+		.previous-post
+			width: 44px
+			height: 44px
+			border-radius: 50%
+			border: 1px solid #dadada
+			display: flex
+			align-items: center
+			cursor: pointer
+			position: absolute
+			top: 45%
+			left: -60px
+			transition: .2s all ease
+			img
+				width: 22%
+				margin: 0 auto
+				display: block
+				margin-left: 15px
+				transition: all 0.2s ease
+		.next-post
+			width: 44px
+			height: 44px
+			border-radius: 50%
+			border: 2px solid #dadada
+			display: none
+			align-items: center
+			cursor: pointer
+			position: absolute
+			top: 45%
+			right: -60px
+			transition: .2s all ease
+			img
+				width: 22%
+				transform: rotate(180deg)
+				margin: 0 auto
+				display: block
+				margin-top: 13px
+				margin-left: 17px
+	.brands
+		float: left
+		width: 100%
+		padding: 19px 0px
+		h1
+			font: 26px $gpreg
+			padding: 40px 0px 33px
+		.prev-brands, .next-brands
+			float: left
+			width: 30px
+			height: 20px
+			margin: 15px
+			margin-top: 10px
+			margin-right: 0px
+			cursor: pointer
+			margin-left: 10px
+			img
+				width: 100%
+		.next-brands
+			transform: rotate(180deg)
+			float: right
+			margin-top: 21px
+			margin-left: 0px
+			margin-right: 7px
+		.brands-slider
+			// width: 90%
+			img
+				// width: 80px
+		.to-all-brands
+			float: right
+			height: 50px
+			width: 13%
+			border-left: 1px dotted #a7a9ac
+			padding: 15px 0px 12px 21px
+			margin-left: 10px
+			a
+				font: 12px $gplig
+				text-align: center
+				margin-top: 20px
+				position: relative
+				transition: .2s all ease
+				&:hover
+					text-decoration: none
+					color: #0099a8
+				&:after
+					content: ''
+					position: absolute
+					background: url(../img/arrow-down.png)
+					background-size: cover
+					width: 9px
+					height: 8px
+					top: 30%
+					right: -21px
+					transform: rotate(270deg)
+		.slider-wrapper
+			width: 85%
+			float: left
+		.slick-list.draggable
+			padding-top: 0px
+		.slick-track
+			// display: flex
+			// align-items: center
+		.slick-track img
+			height: 100%
+			padding: 0 19px 	
+		.brands-item
+			height: 47px
+	.may-like
+		float: left
+		width: 100%
+		h1
+			font: 26px $gpreg
+			padding: 27px 0px 36px
+		.main-product-slider-item,
+		.main-post-slider-item
+			// margin: 0px 10px
+			width: 100%
+			min-height: 310px
+			border: 1px solid #b2b2b1
+			padding: 20px
+		.main-product-slider-item,
+		.main-post-slider-item
+			position: relative
+		.image-wrapper
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			height: 137px
+			align-items: center
+			img
+				width: 82%
+				margin: 0 auto
+
+		.text-wrapper
+			height: 92px
+		.slider-product-name
+			font: 14px $gpmed
+			color: #000
+			line-height: 17px
+			margin-bottom: 3px
+		.slider-product-description
+			font: 12px $gplig
+			color: #000
+			line-height: 15px
+		.action-block
+			border-top: 1px dotted #a7a9ac
+			padding-top: 15px
+			bottom: 0
+			height: 40px
+			// position: absolute
+			.prices
+				float: left
+				.new-price
+					font: 21px $gpmed
+					span
+						font: 12px $gpmed
+						margin-left: 2px
+						img
+							width: 8px
+							margin-top: -5px
+							display: inline-block
+							margin-left: -1px	
+			.button-buy
+				width: 83px
+				height: 25px
+				background: #ed1a3b
+				float: right
+				border-radius: 3px
+				padding: 5px 10px
+				color: #fff
+				margin-top: -2px 
+				transition: .2s all ease
+				&:hover
+					background: #92001c
+					cursor: pointer
+					a
+						text-decoration: none
+				img
+					float: left
+					width: 12px
+					margin-left: 2px
+				a
+					float: right
+					font: 12px $gpnarbol
+					padding-top: 1px
+					color: #fff
+	.main-banner-special
+		min-height: 180px
+		width: 100%
+		float: left
+		padding: 46px 0px 44px
+		.blue-banner
+			background: #009aa5
+			min-height: 180px
+			width: 100%
+			padding: 10px
+			border-radius: 5px
+			.blue-banner-text
+				width: 58%
+				padding: 18px 22px
+				float: left
+				line-height: 33px
+
+				p
+					font: 29px $gplig
+					color: #fff
+					margin-bottom: 0px
+				.special-percent
+					font: 54px $gpmed
+					color: #fff
+					text-transform: uppercase
+			.blue-banner-image
+				width: 41%
+				float: left
+				img
+					width: 100%
+	.hot-sell
+		width: 100%
+		float: left
+		background: #e6e7e8
+		padding-bottom: 40px
+		border: 1px solid #dadada
+		box-shadow: inset 0 5px 10px 0px #dadada
+		h1
+			font: 26px $gpreg
+			padding-top: 37px
+			padding-bottom: 35px
+			padding-left: 10px
+		.col-md-3,
+		.col-md-6
+			padding-left: 10px
+			padding-right: 10px
+		.hot-sell-layer-big
+			background: #fff
+			min-height: 436px
+			padding: 20px
+			position: relative
+			outline: 1px solid #c6c6c6
+			.circle-to-action
+				position: absolute
+				top: 20px
+				right: 20px
+				width: 125px
+				height: 125px
+				border-radius: 50%
+				background: #ffb500
+				text-align: center
+				padding-top: 20px
+				img
+					width: 25px
+				p
+					font: 20px $gpmed
+					color: #000
+					padding-top: 10px
+			.product-image-wrapper
+				display: flex
+				align-items: center
+				padding: 10px		
+				img
+					width: 84%
+					margin: 0 auto
+			.text-wrapper 
+				float: left
+				width: 50%
+				border-bottom: 1px dotted #dadada
+			.slider-product-name
+				font: 14px $gpmed
+				color: #000
+				line-height: 17px
+				margin-bottom: 3px
+			.slider-product-description
+				font: 12px $gplig
+				color: #000
+				line-height: 15px
+			.special-timer-wrapper
+				border-bottom: 1px dotted #dadada
+				padding-top: 10px
+			.action-block
+				padding-top: 15px
+				bottom: 0
+				height: 40px
+				// position: absolute
+				.prices
+					float: left
+					.old-price
+						position: relative
+						font: 13px $gpreg
+						color: #a7a9ac
+						margin: 0px
+						margin-right: 10px
+						img
+							width: 7px  !important
+							margin-top: -2px !important
+							display: inline-block !important
+							margin-left: 2px !important 
+					.old-price:after
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0px
+						height: 1px
+						width: 100%
+						background: #ed1a3b
+						span
+							margin-left: 2px
+							font-size: 9px
+
+					.new-price
+						font: 21px $gpmed
+						padding: 9px 13px
+						span
+							font-size: 13px
+							margin-left: 2px
+							img
+								width: 8px
+								margin-top: -5px
+								display: inline-block
+								margin-left: -1px
+			.economy
+				margin-top: 11px
+				width: 29%
+				float: left
+				padding: 5px 3px
+				color: #fff 	
+				border-right: 1px dotted #dadada
+				span
+					font-size: 9px
+				.economy-sum
+					padding: 0px 1px
+					line-height: 13px
+					background: #faa61a
+					border-radius: 2px
+					float: left
+					font-family: $gpmed
+				.economy-call
+					float: left
+					color: #a7a9ac
+					font: 9px $gpmed
+					padding: 4px
+			.special-timer-wrapper
+				width: 50%
+				float: left
+				margin-top: 20px
+				padding-top: 12px
+				height: 58px
+				.special-timer
+					width: 100%
+					max-width: 177px
+					height: 31px
+					background: #f1f2f2
+					border-radius: 3px
+					float: right
+					.icon-wrapper
+						width: 30px
+						background: #272727
+						height: 100%
+						padding-top: 6px
+						border-radius: 3px 0px 0px 3px
+						float: left
+						img
+							width: 14px
+							margin: 0 auto
+							display: inherit
+					.timer-bordered
+						width: 147px
+						float: left
+						height: 100%
+						border: 1px solid #a7a9ac
+						border-radius: 0px 3px 3px 0px
+						.time-details
+							float: left
+							height: 100%
+							background: #f1f2f2
+							width: 98px
+							.divide
+								display: inline-block
+								padding-top: 4px
+								height: 25px
+								width: 1px
+								p
+									display: inline-block
+									float: left
+							.time-details-item
+								display: inline-block
+								width: 26px
+								height: 100%
+								text-align: center
+								padding-top: 3px
+
+								p
+									color: #000
+									font:  13px $gpmed
+									margin: 0
+									text-align: center
+								span
+									color: #a7a9ac
+									font: 9px $gplig
+									display: block
+						.timer-items
+							float: left
+							width: 47px
+							height: 100%
+							background: #fff
+							border-left: 1px solid #a7a9ac
+							text-align: center
+							p
+								color: #faa519
+								
+								font: 13px $gpmed
+								margin: 4px 0 0 0
+							span
+								font: 9px $gplig
+								display: block
+			.button-buy
+				img
+					width: 12px
+					margin-left: 1px
+		.hot-sell-layer
+			background: #fff
+			min-height: 436px
+			padding: 20px
+			position: relative
+			outline: 1px solid #c6c6c6
+			.circle-to-action
+				position: absolute
+				top: 20px
+				right: 20px
+				width: 80px
+				height: 80px
+				border-radius: 50%
+				background: #ffb500
+				text-align: center
+				padding-top: 8px
+				img
+					width: 20px
+				p
+					font: 15px $gpmed
+					color: #000
+			.product-image-wrapper
+				display: flex
+				align-items: center
+				padding: 10px		
+				img
+					width: 90%
+					margin: 0 auto
+			.text-wrapper
+				height: 97px
+				padding-top: 4px
+			.slider-product-name
+				font: 14px $gpmed
+				color: #000
+				line-height: 17px
+				margin-bottom: 4px
+			.slider-product-description
+				font: 12px $gplig
+				color: #000
+				line-height: 14px
+			.action-block
+				border-top: 1px dotted #a7a9ac
+				padding-top: 4px
+				bottom: 0
+				height: 40px
+				// position: absolute
+				.prices
+					float: left
+					.old-price
+						position: relative
+						float: left
+						p
+							font: 13px $gpreg
+							color: #a7a9ac
+							margin: 0px
+							span
+								margin-left: 2px
+								font-size: 9px
+								img
+									width: 7px
+									margin-top: -4px
+									display: inline-block
+									margin-left: -4px	
+					.old-price:after
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0px
+						height: 1px
+						width: 100%
+						background: #ed1a3b
+
+					.new-price
+						font: 21px $gpmed
+						span
+							font-size: 12px
+							margin-left: 2px
+							img
+								width: 8px
+								margin-top: -5px
+								display: inline-block
+								margin-left: -1px
+			.economy
+				margin-top: -6px
+				width: 100%
+				float: left
+				// padding: 2px 3px
+				color: #fff
+				padding-top: 3px
+				.economy-sum
+					padding: 0px 1px
+					line-height: 12px
+					background: #faa61a
+					border-radius: 2px
+					float: left
+					span
+						font-size: 9px
+				.economy-call
+					float: left
+					color: #a7a9ac
+					font: 9px $gpmed
+					padding: 5px
+			.special-timer-wrapper
+				width: 100%
+				float: left
+				// margin-top: 12px
+				border-top: 1px dotted #a7a9ac
+				padding-top: 13px
+				height: 90px
+				margin-top: 5px
+				.special-timer
+					width: 100%
+					max-width: 180px
+					height: 33px
+					background: #f1f2f2
+					border-radius: 3px
+					.icon-wrapper
+						width: 29px
+						background: #272727
+						height: 100%
+						padding-top: 8px
+						border-radius: 3px 0px 0px 3px
+						float: left
+						img
+							width: 14px
+							margin: 0 auto
+							display: inherit
+					.timer-bordered
+						width: 150px
+						float: left
+						height: 100%
+						border: 1px solid #a7a9ac
+						border-radius: 0px 3px 3px 0px
+						.time-details
+							float: left
+							height: 100%
+							background: #f1f2f2
+							width: 101px
+							.divide
+								display: inline-block
+								padding-top: 4px
+								height: 25px
+								width: 1px
+								p
+									display: inline-block
+									float: left
+							.time-details-item
+								display: inline-block
+								width: 26px
+								height: 100%
+								text-align: center
+								padding-top: 4px
+								p
+									color: #000
+									font:  13px $gpmed
+									margin: 0
+								span
+									color: #a7a9ac
+									font: 9px $gplig
+									display: block
+						.timer-items
+							float: left
+							width: 47px
+							height: 100%
+							background: #fff
+							border-left: 1px solid #a7a9ac
+							text-align: center
+							p
+								color: #faa519
+								
+								font: 13px $gpmed
+								margin: 4px 0 0 0
+							span
+								font: 9px $gplig
+								display: block
+	.recomended
+		width: 100%
+		float: left
+		padding-bottom: 44px
+		position: relative
+		h1
+			padding: 40px 0 35px
+		.container
+			// position: relative
+			.previous-recomended,
+			.next-recomended
+				// &:hover
+				// 	background: #0097a7
+			.previous-recomended
+				width: 44px
+				height: 44px
+				border-radius: 50%
+				border: 2px solid #dadada
+				display: flex
+				align-items: center
+				cursor: pointer
+				position: absolute
+				top: 33%
+				left: -11px
+				background: #fff
+				z-index: 100
+				// transition: .2s all ease
+				display: none
+				&:hover 
+					background: url(../img/arrow-left-hover.png) #fff
+					background-size: 10px
+					background-repeat: no-repeat
+					background-position: 44% 50%
+					img
+						display: none
+				img
+					width: 22%
+					margin: 0 auto
+					display: block
+					margin-left: 15px
+
+
+			.next-recomended
+				width: 44px
+				height: 44px
+				border-radius: 50%
+				border: 2px solid #dadada
+				display: flex
+				align-items: center
+				cursor: pointer
+				position: absolute
+				top: 33%
+				right: -11px
+				background: #fff
+				z-index: 100
+				display: none
+				// transition: .2s all ease
+				&:hover 
+					background: url(../img/arrow-left-hover.png) #fff
+					background-size: 10px
+					background-repeat: no-repeat
+					background-position: 44% 50%
+					transform: rotate(180deg)
+					img
+						display: none
+				img
+					width: 22%
+					transform: rotate(180deg)
+					margin: 0 auto
+					display: block
+					margin-left: 17px
+			.previous-recomended.slick-arrow,
+			.next-recomended.slick-arrow
+				display: flex
+		.recomended-slider
+			.recomended-slider-wrapper
+				width: 100%
+				min-height: 235px
+				height: 230px
+				border: 1px solid #dadada
+				.recomended-text-block
+					float: left
+					width: 53%
+					padding: 45px 30px 45px 49px
+					h2
+						font: 14px $gpmed
+						margin-top: 0
+						line-height: 17px
+					p
+						font: 12px $gplig
+						line-height: 14px
+					a
+						font: 12px $gpmed
+						margin-top: 40px
+						display: block
+						position: relative
+						&:hover
+							color: #0097a7
+							text-decoration: none
+						&:after
+							content: ''
+							position: absolute
+							background: url(../img/arrow-down.png)
+							background-size: cover
+							width: 9px
+							height: 8px
+							top: 30%
+							right: 30%
+							transform: rotate(270deg)						
+				.recomended-image-block
+					float: right
+					width: 47%
+					height: 100%
+					background: linear-gradient(to top, #0098a6, #51b89f)
+					display: flex
+					padding: 0px 25px
+					align-items: center
+					img
+						width: 82%
+						margin: 0 auto
+		.slick-dots
+			padding-top: 23px
+			button
+				padding: 6px
+				width: 11px
+				height: 11px
+		.slick-dots li
+			width: 12px
+			height: 12px
+			margin: 0 6px
+footer
+	width: 100%
+	float: left
+	background: #272727
+	// min-height: 270px
+	padding: 0 20px 33px
+	flex: 0 0 auto
+	.logo
+		float: right
+		width: 106px
+		margin-top: -7px
+		margin-right: 6%
+	.logo-footer
+		width: 211px
+		float: left
+		padding: 46px 0 37px
+	.footer-phone-number
+		font: 20px $gpmed
+		color: #fff
+		text-align: right
+	.row
+		h3
+			margin: 0
+			font: 12px $gpmed
+			color: #a7a9ac
+			margin-bottom: 14px
+			margin-top: 5px
+		ul
+			li
+				list-style: none
+				margin-bottom: 5px
+				a
+					font: 12px $gpmed
+					color: #fff
+					transition: all .2s ease
+					&:hover
+						text-decoration: none
+						color: #0099a8
+.blue-footer 
+	width: 100%
+	float: left
+	background: #009aa5
+	height: 20px
+	border-top: 1px solid #003e42
+	border-bottom: 1px solid #bfcecf
+	padding: 6px 0
+.fork-color-banner
+	width: 100%
+	float: left
+	background: url(../img/fork-color-banner.png)
+	background-size: cover
+	padding-top: 26px
+	padding-bottom: 81px
+	h1
+		font: 54px $gplig
+		width: 50%
+		line-height: 63px
+	.fork-color-button
+		width: 195px
+		height: 35px
+		display: inline-block
+		background: #0099a8
+		border-radius: 3px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding-top: 11px
+		font: 12px $gpmed
+		margin-top: 21px
+		transition: .2s all ease
+		&:hover
+			text-decoration: none
+			background: #0b6e78
+@import '_categories'
+@import '_fork'
+@import 'registration'
+@import 'signin'
+@import 'special'
+@import 'product'
+@import 'faq'
+@import 'ask'
+@import 'payment'
+@import 'delivery'
+@import 'shops'
+@import 'shop'
+@import 'cabinet'
+@import 'cart'
+@import 'color'
+@import 'media'

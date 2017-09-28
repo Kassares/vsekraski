@@ -1,0 +1,49 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Оплата
+	.payment-wrapper
+		.container
+			h1 Способы оплаты
+		#payment-tabs
+			.payment-tabs-buttons
+				.container
+					ul.nav.nav-tabs
+						li.active
+							a(href='#payment1', data-toggle='tab') Наличными
+						li
+							a(href='#payment2', data-toggle='tab') банковской картой
+			.container
+				.tab-content
+					#payment1.tab-pane.in.active
+							h5 При получении товара	
+							p Вы можете оплатить товары наличными в магазине, а так же при получении курьером.		
+					#payment2.tab-pane.fade
+						h5 При получении товара	
+						p Вы можете осуществить оплату банковской картой при получении товара, как в магазине так и при доставке курьером.
+
+						h5 При заказе через сайт
+						p Вы можете оплатить заказ сразу или при получении. При заказе заколерованной продукции оплата осуществляется сразу
+		.ask-wrapper
+			.container
+				.ask-send
+					p 
+						| Задать вопросы касаемо оплаты можно задать менеджеру, по телефону: 
+						span +7 (4852) 555-555 (доб. 122)
+					.button-ask#form-ask
+						a Перезвонить
+		.container
+			.row
+				.go-to-shop
+					.button-go-to-shop
+						a(href="./categories.html") Начать покупки >
+						//- img(src="./img/arrow-down.png", alt="")
+include footer.jade 

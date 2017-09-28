@@ -1,0 +1,13 @@
+[0912/123421.652:ERROR:crashpad_client_win.cc(130)] crash server failed to launch, self-terminating
+[0918/172408.410:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0918/172408.415:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0918/172408.416:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0925/233029.491:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0925/233029.493:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0925/233029.494:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0926/202921.083:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0926/202921.107:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0926/202921.107:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0928/171034.877:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0928/171034.936:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0928/171034.937:ERROR:crash_report_database_win.cc(568)] CreateDirectory C:\Program Files (x86)\Junemike\Reports\Dump: Системе не удается найти указанный путь. (0x3)

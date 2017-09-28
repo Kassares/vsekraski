@@ -1,0 +1,99 @@
+.cabinet-wrapper
+	.category-you-saw .container
+		border: none
+	#payment-tabs
+		.payment-tabs-buttons
+			width: 100%
+			background: #e6e7e8
+			float: left
+			margin-bottom: 40px
+			.nav.nav-tabs
+				display: flex
+				flex-wrap: inherit
+				li
+					a
+						padding: 20px 33px
+						border: 0px solid transparent
+						border-radius: 0px
+						font: 13px $gpbol
+						text-transform: uppercase
+						span
+							color: #fff
+							border-radius: 10px
+							background: #808080
+							margin-left: 5px
+							padding: 1px 7px
+					&.active
+						a
+							background: #f1f2f2
+							color: #0099a8
+			.tab-pane
+				border: none
+	.main-product-slider-item,
+	.main-post-slider-item
+		// margin: 0px 10px
+		width: 100%
+		min-height: 330px
+		border: 2px solid #ececec
+		padding: 20px
+	.main-product-slider-item,
+	.main-post-slider-item
+		position: relative
+		.image-wrapper
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			height: 150px
+			align-items: center
+			img
+				width: 80%
+				margin: 0 auto
+		.text-wrapper
+			height: 100px 
+		.slider-product-name
+			font: 14px $gpmed
+			color: #000
+		.slider-product-description
+			font: 12px $gplig
+			color: #000
+		.action-block
+			border-top: 1px dotted #a7a9ac
+			padding-top: 10px
+			bottom: 0
+			height: 40px
+			// position: absolute
+			.prices
+				float: left
+				.old-price
+					position: relative
+					float: left
+					p
+						font: 13px $gpreg
+						color: #a7a9ac
+						margin: 0px
+				.old-price:after
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0px
+					height: 1px
+					width: 100%
+					background: #ed1a3b
+				.new-price
+					font: 21px $gpmed
+			.button-buy
+				width: 83px
+				height: 25px
+				background: #ed1a3b
+				float: right
+				border-radius: 3px
+				padding: 5px 10px
+				color: #fff
+				margin-top: 10px
+				img
+					float: left
+					width: 10px
+				p
+					float: right
+					font: 12px $gpnarbol
+					padding-top: 1px	

@@ -1,0 +1,77 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Получение
+	.payment-wrapper
+		.container
+			h1 Как получить товар
+		#payment-tabs
+			.payment-tabs-buttons
+				.container
+					ul.nav.nav-tabs
+						li.active
+							a(href='#payment1', data-toggle='tab') Доставка курьером
+						li
+							a(href='#payment2', data-toggle='tab') забрать в магазине
+			.container
+				.tab-content
+					#payment1.tab-pane.in.active
+						.row
+							.col-md-6
+								h1 
+									| Доставка
+									br
+									| по Ярославлю
+								.delivery-tab-item
+									h5 Доставка заказа суммой менее 5 000 рублей
+									p 
+										| 10:00 - 20:00 
+										span 250 рублей
+								.delivery-tab-item
+									h5 Доставка заказа суммой более 5 000 рублей
+									p 
+										| 10:00 - 20:00 
+										span Бесплатно
+							.col-md-6
+								h1 Доставка в другие населённые пункты
+								.delivery-tab-item
+									h5 Доставка заказа до 150 км от Ярославля
+									p 
+										| 10:00 - 20:00 
+										span 300 рублей
+								.delivery-tab-item
+									h5 Доставка заказа до 150 км от Ярославля
+									p 
+										| 10:00 - 20:00 
+										span от 1000 до 5000 рублей
+					#payment2.tab-pane.fade
+						.row
+							.col-md-6
+								.delivery-tab-item
+									h5 Закажи сейчас — забери в магазине
+									p 
+										| Заказ: Круглосуточно   Самовывоз: 9:00 - 18:00  
+										span Бесплатно
+		.ask-wrapper
+			.container
+				.ask-send
+					p 
+						| Задать вопросы касаемо оплаты можно задать менеджеру, по телефону: 
+						span +7 (4852) 555-555 (доб. 122)
+					.button-ask#form-ask
+						a Перезвонить
+		.container
+			.row
+				.go-to-shop
+					.button-go-to-shop
+						a(href="./categories.html") Начать покупки >
+						//- img(src="./img/arrow-down.png", alt="")
+include footer.jade 

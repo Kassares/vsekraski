@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ВСЕКРАСКИ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Comcdpatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./vendor/styles/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/styles/slick.css">
+    <link rel="stylesheet" href="./vendor/styles/slick-theme.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./vendor/styles/jquery-ui.css">
+    <link rel="stylesheet" href="./vendor/styles/jquery-ui.css">
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="container"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAdCAYAAACwuqxLAAAACXBIWXMAABcRAAAXEQHKJvM/AAABQElEQVRIS62WwRmCMAyFOwIjOAIjMAIjdARHYASv3jh6ZISO4AiOwAaYYPSL0PSl6OFdNLw/pElKWJYlWArXWyRNpJm0bPQgjaSu6GEY92KwNbWUSC0EUFAjWSFDS9EEiPndYYI0WIBfMt8qfgHCq+booRpxU5w0oOZAvRpX7/BqRRTMCZxJnchbzoYBEwjig28yrdyG/HxoxQCC5py5gnQAMAYQcLHMFaTU2gkBOgfg8gugdwBKZwgBIzDn6S+dYfLMgFkm+m8Azw6eFcEZxkzmpdq/1desCX7TJEL9vya2JiMZoTId0aABnnVRo8+A6rr+8y3OH18FQGPvVfpqiMq2Q9rtrlxvo7Ytme8u/hzg6N2MvyoOQjhzc2dlf6woV7YsboBArIO/I3MXQCDcwnpOeEWbN101QCDvBRdRrNYT7KKJe/J3rQEAAAAASUVORK5CYII=" alt="" class="_idGenObjectAttribute-1">
+        <ul>
+          <li><a href="shops.html">Магазины</a></li>
+          <li><a href="./delivery.html">Получение						</a></li>
+          <li><a href="./payment.html">Оплата</a></li>
+          <li class="has-child"><a>Сервис</a>
+            <ul>
+              <li><a href="./faq.html">Вопросы и ответы</a></li>
+              <li><a href="./ask.html">Задать вопрос</a></li>
+            </ul>
+          </li>
+          <li class="has-child"><a>Компаниям</a>
+            <ul>
+              <li><a>Франшиза</a></li>
+              <li><a>Организациям					</a></li>
+              <li><a>Дизайнерам</a></li>
+              <li><a>Строителям							</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="phone-number"><span>+7 (4852) 648-648</span></div>
+      </div>
+    </div>
+    <div class="topnav-mobile">
+      <div class="burger-menu"><img src="./img/burger.png" alt=""></div>
+      <ul>
+        <li><a href="shops.html">Магазин</a></li>
+        <li><a href="./delivery.html">Получение						</a></li>
+        <li><a href="./payment.html">Оплата					</a></li>
+        <li><a>Франшиза</a></li>
+        <li><a>Организациям					</a></li>
+        <li><a>Дизайнерам</a></li>
+        <li><a>Строителям					</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="container"><img src="data:image/png;base64,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" alt="" class="logo _idGenObjectAttribute-1"><a href="./index.html"><img src="data:image/png;base64,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" alt="" class=" logoname _idGenObjectAttribute-1"></a>
+        <div class="search-wrapper">
+          <input type="text" placeholder="Поиск товара" class="search-input">
+        </div>
+        <div class="login"><a href="./sign-in.html">Войти</a><a href="./registration.html">Регистрация</a></div><a href="./cabinet.html" class="wishlist"><img class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAACXBIWXMAABcRAAAXEQHKJvM/AAACxElEQVRoQ92Z24GCQAxFKcES+MuvJViCJVACJViCJVgCJVCCJVCCHbDcBdwxZOYOb9yP87MkmRzmpW5S13Xyn6AB3wYNACJyasgaHg3PhlpRNRQNeUPK6jl10y6n6Grous9uTIx9YvWoUDcgCr6MwUKgwXOg7qWhjKjjgh5uTCwkk08Q0dzdBqSd6SIij4ll0UILDeqCZYOZPou9rKbyoELSylh7pO6awRu/GC8BzeaB3Jf4Z/spnr0n7dK8B3IHUrqANTMolltvw6KJvUrcTEBk8HI8NfGibzFSbpKV8Ltc2ICeBkLLFgdN1Kml6vqWbfYhJO0at2T0hoZ0fzqhsPck63IelgxrnNQ8GVKvvlffwAhInSKZ2Ou4imjArT1Lxql5Nnq5/Qp1xt4p7GT087c4G9yRWkTGqam3yKsXytWDyknCUvSdMO+3sgfSToTu7YoHevPmTpK1B7C3MGvB/bMF0h7pbm+PxLBMnQT97OOg2Btp7ym3vzLRM6AS9Oxc2SBbo3vUfyhDwRJ5EW7JWCF3yb3P+iPBhCoVjI8xZcfhlhtgQvURZ8GHDC/YKpHhF61DzoSFDO/QwjrLC1boKMjw60puTRvY/dJkyPAOAmn/UJuWrOCeiP1FtMSzPuBq2N5Z4b0Q+yPZBc/cIH04gIwV3xqPzHvfu4Gp2J+sMzbIVnhkKnGuGp1wPqqURwa9fhxgVuLhpGJlgK/AYaTGyIBQIet+2lRqrAxgBbO9pKbIgJjCm0tNlQG0eDfAZlJzZAANcAZaXWquDKABasDVpJaQATTAGHhxqaVkAA3wNLCY1JIygAYEGpkttbQMoAGkoclSa8gAGsCYIrWWDKABMYyRWlMG0IBYYqTWlgE0YAwhqS1kAA0YS0BqdRlAA6YQIbWKDKABUwlIrSYDaMAcpP3h5SZ//7XGPkpZ3hxowLdBA76NHx0QPRTUCiskAAAAAElFTkSuQmCC" alt="" />
+          <div class="red-circle">
+            <p>23</p>
+          </div></a>
+        <div class="to-cart"><a href="./cart1.html">Корзина</a><img class="_idGenObjectAttribute-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAA4CAYAAABkHwH1AAAACXBIWXMAABcRAAAXEQHKJvM/AAACvklEQVRoQ+2ZwZWjMAyGU0JK4KYrJVDAHKYESkgJlJASKCElcJgCUgIlcNh7Bq3lGUVIyCZ45+0uh/+9SWxJn2XZMMrp8XiccgQAzax+1jDrQRrpu8azf0XuhCiCvDNAS7dZZ8/fFrkTCPSSAMl1LwHsTpiDXleAcKwDPeNXz3euPNB3BQJrtTLmTmLuYt4rWgM9K8H7NWfwXS5Yt60XPFdrgTsBevOckV2lfFdDOKBRm+p5LSjP6pQbgHYGFzyKRfNyqj0/LiytnjvuPEfCvoVlCVlqPX8erCyBynPEbPsEwE3ASbCeEwcUM4xXXKxXvDUGZY5bZrvBgn7N9RaEsrDOi7ELLOjX3CXT5u7F2QtWPo5Tr7mn7HrzLSd4mocozwk8P26T6o/sspISjZKcGwHPIqu9Z8Ns82DFFma/fMDyTn73bDzY+e8KwoHFcdxdLJcKB+TBwMHkTCuwjWdjwUJ4p7AeJv3JGJhSg+bC0nzczX4FTNNgwUZ1r8BCeIFpITwU7qDHSJULi8KtMcsClrCYsSHBr6aJbLE8sGb5AhewVyPQCOwNCcIN0JDTjwQISyP/rCSCsyxgO5okCz/qJgNkCLOEWcd6rbU4m2BpIm5DzgHgwgXdCMY8cLvB0uQK/IPxS3x+s+CKwjIjmTWs7ZYW04hxM5M/AduJsf8D1tMB+9fAltQBW0oHbCkdsKV0wJbSAVtKB2wpHbCl9E/BjqD83POnYCH8A9qC3mwZJH3URTjZHRZCV4e3Nb0exW/Y2pj41eN6FRae201bujrIV/P0a80M/K7OhYXntqbXJLG0aDfJIFfFSGa9Eza4GKvOUoWZ/mo3gdG11LLi9bii05Q60zSRbUexKm+nTFiWra3bJ4Vgsd2U9cNyEiwB46HoE2C4eJ01XvBcuRPA/oU7qc72lDsBBeG2uMCGOttTnwyNc3zju4AZAAAAAElFTkSuQmCC" alt="" />
+          <div class="red-circle">
+            <p>13</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="categories">
+      <div class="container">
+        <ul>
+          <li class="special"><a href="./special.html">Акции</a></li>
+          <li class="categories-has-child"><a href="./fork.html">Краски, эмали</a></li>
+          <li><a href="./categories.html">Лаки, Масла</a></li>
+          <li><a>Грунты</a></li>
+          <li><a>Декоративные покрытия</a></li>
+          <li><a>Монтажные пены</a></li>
+          <li><a>Клеи, герметики</a></li>
+          <li><a>Готовые шпатлёвки</a></li>
+          <li><a>Сухие смеси</a></li>
+          <li><a>Растворители, очистители</a></li>
+          <li><a>Инструмент</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <div class="container">
+        <div class="nav-burger"><img src="./img/burger.png" alt="">
+          <p>Разделы</p>
+        </div>
+        <ul>
+          <li class="special"><a href="./special.html">Акции</a></li>
+          <li class="categories-has-child"><a href="./fork.html">Краски, эмали</a></li>
+          <li><a href="./categories.html">Лаки, Масла</a></li>
+          <li><a>Грунты</a></li>
+          <li><a>Декоративные покрытия</a></li>
+          <li><a>Монтажные пены</a></li>
+          <li><a>Клеи, герметики</a></li>
+          <li><a>Готовые шпатлёвки</a></li>
+          <li><a>Сухие смеси</a></li>
+          <li><a>Растворители, очистители</a></li>
+          <li><a>Инструмент</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-categories-menus">
+      <div class="sub-categories-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">Для внутренних работ</a></li>
+                <li><a>Для потолков специализированные</a></li>
+                <li><a>Для стен и потолков универсальные</a></li>
+                <li><a>Для радиаторов</a></li>
+                <li><a>Красители для ручного колерования</a></li>
+                <li><a>Для кухонь и влажных помещений</a></li>
+                <li><a>Для пола</a></li>
+                <li><a>Специального назначения</a></li>
+              </ul><a class="see-all-categories">Показать все<img src="./img/arrow-down.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">ДЛЯ НАРУЖНЫХ РАБОТ</a></li>
+                <li><a>Для минеральных поверхностей</a></li>
+                <li><a>По металлу и ржавчине</a></li>
+                <li><a>Для деревянных поверхностей</a></li>
+                <li><a>Для кровли и шифера</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title">УНИВЕРСАЛЬНЫЕ</a></li>
+                <li><a>Для окон и дверей</a></li>
+                <li><a>На водной основе</a></li>
+                <li><a>На основе растворителя</a></li>
+                <li><a>Аэрозольные</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a class="subcategory-title to-color">Колеровка<img src="./img/arrow-down.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

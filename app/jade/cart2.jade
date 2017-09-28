@@ -1,0 +1,226 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Магазины
+	.cart1-wrapper.cart2-wrapper
+		.cart-position
+			.container
+				.cart-pos-item
+					.cart-pos-icon.done
+						img(src="./img/done.png", alt="")
+					h5 Ваша корзина
+				.cart-dotted-border
+				.cart-pos-item
+					.cart-pos-icon
+						img(src="./img/delivery.png", alt="")
+					h5 Детали получения
+				.cart-dotted-border
+				.cart-pos-item.next-step
+					.cart-pos-icon
+						img(src="./img/payment.png", alt="")
+					h5 Способ оплаты
+		.cart-content
+			.container
+				.row
+					.col-md-9
+						.cart-prev-choosen-products(data-toggle="collapse" data-target="#products-collapse")
+							p.your-choose
+								| Ваш заказ:
+								span 2 товара
+							p#cart-collapse-products Свернуть список 
+							p#cart-show-products Показать список
+						.cart-product-collapse#products-collapse.collapse
+							.cart-product-wrapper
+								.cart-product-image
+									img(src="./img/banka.png", alt="")
+								.cart-product-text
+									p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+									a Удалить
+								.cart-product-price-wrapper
+									p.cart-product-price
+										| 2390
+										span 
+											img(src="./img/rubl1.svg", alt="")
+									span Цена
+								.cart-product-quantity-wrapper
+									select#sel1.form-control
+										option 1
+										option 2
+										option 3
+										option 4
+									span Кол-во
+								.cart-product-total-price-wrapper
+									p.cart-product-price
+										| 2390
+										span 
+											img(src="./img/rubl1.svg", alt="")
+									span Сумма
+
+							.cart-product-wrapper
+								.cart-product-image
+									img(src="./img/banka.png", alt="")
+								.cart-product-text
+									p.cart-product-name Ослепительно белая акриловая краска DUFA SUPERWEISS для внутренних работ
+									a Удалить
+								.cart-product-price-wrapper
+									p.cart-product-price
+										| 2390
+										span 
+											img(src="./img/rubl1.svg", alt="")
+									span Цена
+								.cart-product-quantity-wrapper
+									select#sel1.form-control
+										option 1
+										option 2
+										option 3
+										option 4
+									span Кол-во
+								.cart-product-total-price-wrapper
+									p.cart-product-price
+										| 2390
+										span 
+											img(src="./img/rubl1.svg", alt="")
+									span Сумма
+						.cart-delivery-collapse(data-toggle="collapse" data-target="#cart-delivery")
+							p.collapse-delivery-name Способ получения товара	
+							p#cart-collapse-delivery Свернуть			
+							p#cart-show-delivery Показать						
+						.cart-delivery-method#cart-delivery.collapse.in
+							.cart-delivery-shop
+								.radio-wrapper(data-toggle="collapse" data-target="#cart-delivery-shop-collapse")
+									input(type="radio" name="delivery" id="shop-delivery")
+									label(for="shop-delivery") Забрать в магазине
+							#cart-delivery-shop-collapse.collapse
+								h5 Часы работы:
+								p Пн-Пт с 9:00 до 19:00
+								p Сб-Вс с 9:00 до 18:00
+								h5.title-margin
+									| Укажите дату и время прибытия 
+									span *
+								.cart-delivery-date
+									h5 Дата
+									select#date1.form-control
+										option 5
+										option 2
+										option 3
+										option 4
+									select#date1.form-control
+										option Июня
+										option 2
+										option 3
+										option 4
+								.cart-delivery-time
+									h5 Время
+									select#date1.form-control
+										option 13
+										option 2
+										option 3
+										option 4
+									span :
+									select#date1.form-control
+										option 13
+										option 2
+										option 3
+										option 4
+								.next-cart-wrapper
+									.next-cart
+										a(href="./cart3.html") Далее >
+							.cart-delivery-car
+								.radio-wrapper(data-toggle="collapse" data-target="#cart-delivery-carcollapse")
+									input(type="radio" name="delivery" id="shop-deliverycar")
+									label(for="shop-deliverycar") Доставка
+								.active-wrapper
+									.active-wrapper-edge
+										h5
+											| Курьерская доставка в пределах
+											span Ярославля
+										p.price-delivery 250 
+									.active-wrapper-sign
+										.login-button
+											a Войти
+										p или
+										.signup-button
+											a Зарегистрироваться
+										p.under-buttons Чтобы система заполнила/запомнила ваши данные
+							#cart-delivery-carcollapse.collapse
+								.row
+									.col-md-6
+										h5
+											| Населённый пункт
+											span *
+										input(type="text")
+									.col-md-6
+										h5
+											| Улица
+											span *
+										input(type="text")
+								.row
+									.col-md-3
+										h5
+											| Дом / корпус
+											span *
+										input(type="text")
+									.col-md-3
+										h5
+											| Квартира / офис
+										input(type="text")
+									.col-md-3
+										h5
+											| Этаж
+										input(type="text")
+									.col-md-3
+										h5
+											| 	Подъезд
+										input(type="text")
+								.row
+									.col-md-12
+										h5
+											| Комментарий к заказу
+										textarea(name="", rows="6")
+								.car-delivery-dating
+									h5 
+										|Дата и время доставки
+										span *
+									.cart-delivery-date
+										h5 
+											| Дата
+											span *
+										select#date1.form-control
+											option 5
+											option 2
+											option 3
+											option 4
+										select#date1.form-control
+											option Июня
+											option 2
+											option 3
+											option 4
+									.cart-delivery-time
+										h5 
+											| Время
+											span *
+										select#date1.form-control
+											option В течен ии дня
+											option В течении дня
+											option В течении дня
+											option В течении дня
+									.next-cart-wrapper
+										.next-cart
+											a(href="./cart3.html") Далее >								
+					.col-md-3
+						.cart-sum
+							h5 Товары (2)
+							.dotted-border
+							.total-cart-wrapper
+								h5 Всего (руб.)
+								p.total-cart-sum 12199
+							.dotted-border
+include footer.jade

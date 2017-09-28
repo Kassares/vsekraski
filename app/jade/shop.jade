@@ -1,0 +1,90 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Магазины >
+							li 
+								a Ул. Победы, 48 
+	.shop-single-wrapper
+		.container
+			h1 Ярославль, ул. Победы, 48
+			.shop-slider-wrapper
+				.shop-slider
+					img(src="./img/front-shop.png", alt="")
+					img(src="./img/front-shop.png", alt="")
+			.shop-top
+				h3 О магазине
+				.button-ask#form-ask
+					a Связаться с магазином
+			.row.shop-information
+				.col-md-4
+					img(src="./img/shop-target.png", alt="")
+					h5 Адрес:
+					p г. Ярославль, ул. Победы, 48
+				.col-md-4
+					img(src="./img/shop-phone.png", alt="")
+					h5 Телефон:
+					p +7 (4852) 648-648 (доб. 131)
+				.col-md-4
+					img(src="./img/shop-time.png", alt="")
+					h5 Режим работы:
+					p Пн-Пт с 9:00 до 19:00
+					p Сб-Вс с 9:00 до 18:00
+			.shop-text
+				p Рыбы (лат. Pisces) — парафилетическая группа (по современной кладистической классификации) водных позвоночных животных. Обширная группа челюстноротых, для которых характерно жаберное дыхание на всех этапах постэмбрионального развития организма. Рыбы обитают как в солёных, так и в пресных водоёмах, от глубоких океанических впадин до горных ручьёв. Рыбы играют важную роль в большинстве водных экосистем как составляющая пищевых цепей. Они имеют большое экономическое значение для человека из-за употребления их в пищу.
+			.shop-top
+				h3 Как добраться:
+			.shop-ways
+				h5 
+					| Автобусы:
+					span № 6, 9, 10, 11, 25;
+				h5 
+					| Троллейбусы:
+					span № 7, 8;
+				h5 
+					| Трамвай:
+					span № 7;
+				h5
+					| Маршрутные такси:
+					span № 46, 71, 83, 91, 95, 97 до ост. «Авторемонтное предприятие».
+	.shops-map.shop-map
+		#map(style="width: 100%; height: 458px;")
+		script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDcmXiz60UvaAKD8YmrqE6T9oLkXTFIfmo&')
+		script.
+			var locations = [
+			    ["Название метки 1", 57.623582,39.867732],
+			];
+			var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 20,
+			    center: new google.maps.LatLng(57.623582,39.867732),
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+			 
+			var infowindow = new google.maps.InfoWindow();
+			var marker, i;
+			 
+			for (i = 0; i < locations.length; i++) {
+			    marker = new google.maps.Marker({
+			        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			        map: map,
+			        icon: {
+			            url: locations[i][3],
+			            scaledSize: new google.maps.Size(34, 38)
+			        }
+			    });
+			    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			        return function() {
+			            infowindow.setContent(locations[i][0]);
+			            infowindow.open(map, marker);
+			        }
+			    })(marker, i));
+			   	marker.setMap(null);
+			}	
+include footer.jade 

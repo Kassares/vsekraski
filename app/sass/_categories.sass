@@ -1,0 +1,437 @@
+.breadcrumbs
+	width: 100%
+	float: left
+	position: relative
+
+	.breads
+		width: 100%
+		border-bottom: 1px dotted #a7a9ac
+		&:before
+			content: ''
+			width: 11px
+			height: 11px
+			border-radius: 50%
+			border: 1px solid #b0b0b0
+			position: absolute
+			top: 40%
+			left: 10px
+			background-image: url(../img/breads-arrow.png)
+			background-size: 4px
+			background-repeat: no-repeat
+			background-position: 40% 50%
+		ul
+			padding-left: 15px
+			li
+				list-style: none
+				display: inline-block
+				padding: 10px 0px
+				&:last-child
+					a
+						color: #a7a9ac
+						text-decoration: none
+					&:hover
+						
+				a
+					font: 12px $gplig
+					text-decoration: none
+					&:hover
+						cursor: pointer
+						color: #0097a7
+.category-top
+	float: left
+	width: 100%
+	h1
+		float: left
+		padding: 40px 0 33px
+		span
+			font: 10px $gpreg
+			padding-left: 5px
+			color: #a7a9ac
+	.mobile-filter
+		float: left
+		display: none
+		p
+			display: block
+			padding: 10px 20px
+			background: #e6e7e8	
+	.to-color
+		width: 150px
+		padding: 10px 20px
+		background: #e6e7e8
+		height: 40px
+		float: right
+		margin-top: 38px
+		&:hover a
+			color: #0097a7
+			text-decoration: none
+
+		a
+			text-transform: uppercase
+			font: 13px $gpmed
+		img
+			float: right
+			width: 	9px
+			transform: rotate(270deg)
+			margin-top: 6px
+.category-products-wrapper
+	float: left
+	width: 700px
+.category-wrapper
+	width: 100%
+	float: left
+	height: auto
+	min-height: 1000px
+
+	.filter-wrapper
+		background: #f1f2f2
+		height: auto
+		width: 100%
+		border: 1px solid #e6e7e8
+		width: 220px
+		float: left
+		margin-right: 20px
+		padding: 20px
+		.remove-filters
+			width: 100%
+			height: 40px
+			background: #fff
+			border-radius: 3px
+			border: 1px solid #e6e7e8
+			text-align: center
+			padding-top: 12px
+			cursor: pointer
+			float: left
+			p
+				font: 12px $gpmed
+				color: #a7a9ac
+		.remove-filters.active
+			border-color: #a7a9ac
+			p
+				color: #000
+		.remove-bottom
+			margin-top: 30px
+		.filters
+			float: left
+		.filters-wrapper
+			height: 157px
+			overflow: hidden	
+		.type-filter
+			border-bottom: 1px dotted #a7a9ac
+			margin-top: 9px
+			padding: 10px 0
+			float: left
+			width: 100%
+			cursor: pointer
+			position: relative
+			&:after
+				content: ''
+				right: 0
+				top: 33%
+				width: 15px
+				height: 18px
+				position: absolute
+				background-size: cover
+				background-image: url(../img/stop.png)
+				background-repeat: no-repeat
+			p
+				font: 12px $gpmed
+				display: inline
+			img
+				width: 15px
+				padding-top: 3px
+				float: right
+
+		.type-filter.collapsed
+			&:after
+				background-image: url(../img/blue-plus.png)
+		.type-checkbox
+			width: 15px
+			height: 15px
+			background: #fff
+		.more-filters-button
+			float: right
+			width: 100%
+			text-align: right
+			p
+				font: 12px $gplig
+				span
+					color: #0097a7
+					margin-right: 2px
+				a
+					text-decoration: underline
+					&:hover
+						color: #0097a7
+
+		.filter-price.collapse
+			display: none
+		.row-type-filter
+			padding-top: 15px
+			margin-bottom: 8px
+		label
+			span
+				color: #a6a8ab	
+		input[type=checkbox]
+			display:none !important
+		input[type=checkbox] + label 
+			display:inline-block
+			float: left
+			font: 12px $gplig
+			margin: 0
+			position: relative
+			padding: 10px 0 0 30px
+			line-height: 17px
+			span
+				color: #a6a8ab
+			&:before
+				content: ""
+				position: absolute
+				background:  #fff
+				height: 15px
+				width: 15px
+				background-size: 100%
+				border: 1px solid #a7a9ac
+				border-radius: 3px
+				top: 10px
+				left: 0
+		input[type=checkbox]:checked + label:before
+			content: ""
+			color: #0099a8
+			background: url(../img/galka.svg) #fff
+			background-repeat: no-repeat
+			background-size: 90%
+			background-position: 50% 50%
+			text-align: center
+			margin: 0 auto
+			font-size: 20px
+			line-height: 10px
+		.type-category
+			font: 12px $gplig
+			padding: 0 0 0 30px
+			margin: 0
+			float: left
+		.filter-price 
+			width: 100%
+			float: left
+			height: 130px
+			padding: 20px 0px 0px 0px
+			margin: 0 auto
+			// margin-bottom: 30px
+			display: inherit
+			.row
+				margin-left: 0
+				margin-right: 0
+				p
+					color: #33485e
+					font-size: 17.0px
+					float: left
+					padding-top: 4px
+				.time-rent
+					border-radius: 5px
+					float: right
+					width: 150px
+					height: 36px
+					background: #c7dbf9
+					.active
+						background: #71A2EA
+						color: #fff
+					.rent-day
+						text-align: center
+						font-size: 16px
+						float: left
+						padding: 5px
+						width: 50%
+						height: 100%
+						cursor: pointer
+						border-radius: 5px 0px 0px 5px
+						transition: all 0.5s ease
+					.rent-week
+						text-align: center
+						font-size: 16px
+						float: left
+						height: 100%
+						padding: 5px
+						width: 50%
+						border-radius: 0px 5px 5px 0px
+						cursor:pointer
+						transition: all 0.5s ease	
+			.price-interval
+				display: block
+				margin-top: 20px
+				input
+					border: 1px solid #a7a9ac
+					width: 78px
+					height: 32px
+					background: #ffffff
+					border-radius: 2px
+					display: block
+				#minCost
+					float: left
+					font: 12px $gpreg
+					text-align: center
+				span
+					padding-left: 6px
+					display: inline-block
+					font-size: 19px
+					margin-top: -5px
+					float: left
+					margin-left: -2px
+					font-family: $gplig
+				.filtered-items
+					font: 12px $gplig
+					// margin-top: 15px
+					padding-top: 0
+				#maxCost
+					float: right
+					font: 12px $gpreg
+					text-align: center
+			#slider-range
+				margin-top: 15px		
+.category-product-item
+	// margin: 0px 10px
+	width: 100%
+	min-height: 313px
+	border: 1px solid #b2b2b1
+	padding: 15px 20px 15px
+.category-product-item
+	position: relative
+	margin-bottom: 20px
+	&:hover a
+		text-decoration: none
+	a:hover
+		text-decoration: none
+	.image-wrapper
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		height: 144px
+		align-items: center
+		img
+			width: 80%
+			margin: 0 auto
+	.text-wrapper
+		height: 92px 
+	.slider-product-name
+		font: 14px $gpmed
+		color: #000
+	.slider-product-description
+		font: 12px $gplig
+		color: #000
+	.action-block
+		border-top: 1px dotted #a7a9ac
+		padding-top: 6px
+		bottom: 0
+		height: 40px
+		.prices
+			margin-top: 12px
+			float: left
+			.new-price
+				font: 21px $gpmed
+				span
+					font: 12px $gpmed
+					margin-left: 2px
+					img
+						width: 8px
+						margin-top: -5px
+						display: inline-block
+						margin-left: -1px	
+		.button-buy
+			width: 83px
+			height: 25px
+			background: #ed1a3b
+			float: right
+			border-radius: 3px
+			padding: 5px 10px
+			color: #fff
+			margin-top: 10px
+			img
+				float: left
+				width: 10px
+			p
+				float: right
+				font: 12px $gpnarbol
+				padding-top: 1px
+				padding-left: 5px
+a.more-products
+	width: 100%
+	float: left
+	height: 45px
+	background: #e6e7e8
+	transition: all .2s ease
+	margin-top: 14px
+	&:hover
+		text-decoration: none
+		color: #0097a7
+	p
+		text-align: center
+		font:  13px $gpbol
+		text-transform: uppercase
+		padding-top: 15px
+		span
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				background: url(../img/arrow-down.png)
+				background-size: cover
+				width: 9px
+				height: 8px
+				top: 16%
+				right: -25px
+	img
+		float: right
+		width: 	7px
+		transform: rotate(270deg)
+		padding-top: 12px
+.category-pages
+	padding: 41px 0px 50px
+	width: 100%
+	float: left
+	display: flex
+	justify-content: center
+	.pages-wrapper
+
+		.pages-button
+			width: 30px
+			height: 30px
+			border: 1px solid #a7a9ac
+			margin: 0 auto
+			text-align: center
+
+			float: left
+			margin-left: 2px
+			display: flex
+			align-items: center
+			a
+				padding-top: 7px
+				width: 100%
+				height: 100%
+				font: 12px $gplig
+				display: block
+				transition: all .2s ease
+				&:hover
+					text-decoration: none
+					color: #fff
+					background: #a7a9ac
+					img
+						filter: brightness(400)
+		.prev-page
+			img
+				width: 9px
+				margin-top: -2px
+				margin-left: 2px
+		.next-page
+			img
+				width: 9px
+				margin-top: -2px
+				margin-left: -1px
+				transform: rotate(180deg)			
+.category-you-saw
+	width: 100%
+	float: right
+	padding-bottom: 64px
+
+	.container
+		border-top: 1px dotted #a7a9ac	
+	h1
+		text-align: center
+		padding: 37px 0px 36px !important

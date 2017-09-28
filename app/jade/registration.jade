@@ -1,0 +1,89 @@
+include header.jade
+main
+	.breadcrumbs
+		.container
+			.row
+				.col-md-12
+					.breads
+						ul
+							li 
+								a Главная >
+							li 
+								a Регистрация
+	.sign-top
+		.container
+			.row
+				.col-md-6
+					h1 Регистрация
+				.col-md-6
+					h1 Войти, используя аккаунт соцсети
+	.sign-content
+		.container
+			.row
+				.col-md-6
+					.registration-form
+						form
+							p
+								| Имя
+								span *
+							input
+							p 
+								| E-mail
+								span *
+							input
+							.dotted-border
+							.checkbox-wrapper
+								input(id="card-bonus",class="type-checkbox", type="checkbox")
+								label(for="card-bonus")
+								p.card-bonus Зарегистрировать или добавить Бонусную карту
+							p
+								| Фамилия
+								span *
+							input
+							p 
+								| Номер телефона	
+								span *
+							input
+							.dotted-border
+							p
+								| Ваш пароль
+								span *
+							input
+							p 
+								| Подтверждение пароля 		
+								span *
+							input
+							.password-check
+								.password-bad
+								.password-normal
+								.password-good
+							p.password-des Cлабый
+							.dotted-border
+							.checkbox-wrapper
+								input(id="sign-rules",class="type-checkbox", type="checkbox")
+								label(for="sign-rules")
+								p.sign-rules 
+									| Настоящим подтверждаю, что 
+									| я ознакомлен и согласен с 
+									| условиями политики 
+									| конфиденциальности. 
+									a  Узнать больше
+							.sign-up-button
+								a 
+									p Зарегистрироваться	
+	
+				.col-md-6
+					.sign-up-socials
+						a
+							img(src="./img/facebook.png", alt="")
+						a
+							img(src="./img/twitter.png", alt="")
+						a
+							img(src="./img/linked.png", alt="")
+						a
+							img(src="./img/vk.png", alt="")
+						a
+							img(src="./img/od.png", alt="")
+						a
+							img(src="./img/insta.png", alt="")
+include footer.jade
