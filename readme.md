@@ -1,3 +1,3 @@
-npm init
-npm install
-gulp
+>npm init
+>npm install
+>gulp
